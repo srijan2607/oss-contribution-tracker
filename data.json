@@ -1,73 +1,9 @@
 {
-  "generated_at": "2026-10-16T11:55:04.347352+00:00",
-  "scope": "All public external-OSS and own-fork pull-request records authored by srijan2607, all states. Personal/product repositories excluded. Counts are PR records, not distinct fixes. Lifecycle refreshed separately from head-specific CI.",
+  "generated_at": "2026-10-16T12:05:05.906026+00:00",
+  "scope": "Only this implemented contribution campaign with source/publication receipts, starting 15 October 2026. Unrelated account history and unimplemented plans are excluded. Counts are PR records, not distinct fixes. Official merges count actual upstream acceptance only.",
   "refresh_interval_minutes": 10,
   "ci_snapshot_at": "2026-10-16T11:52:51.588012+00:00",
   "records": [
-    {
-      "id": "AOSSIE-Org/PictoPy#642",
-      "url": "https://github.com/AOSSIE-Org/PictoPy/pull/642",
-      "repo": "AOSSIE-Org/PictoPy",
-      "number": 642,
-      "title": "Fix: Restrict CORS to localhost origins for security",
-      "kind": "upstream",
-      "state": "open",
-      "draft": false,
-      "head": "e60146c8e11412dbacd2912011108cc1f4a351c8",
-      "ci": "observed success required test coverage unverified (CI scan 2026-10-16T11:52:51.588012+00:00)",
-      "blocker": "",
-      "next_action": "Resolve source/CLA/CI gates, then request one maintainer review without duplicate pings.",
-      "close_reason": "",
-      "lesson": "",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/AOSSIE-Org/PictoPy/pull/642"
-        },
-        {
-          "label": "Latest public human comment",
-          "url": "https://github.com/AOSSIE-Org/PictoPy/pull/642#issuecomment-4819915723"
-        }
-      ],
-      "human_reply": "@VanshajPoonia: This is still relevant — `allow_origins=[\"*\"]` with `allow_credentials=True` is live in both `backend/main.py:126-127` and `sync-microservice/main.py:38-39`. The PR looks mergeable but has been idle ~6 months. @rohan-pandeyy - can this be rebased/merged, or should someone take it over? Happy to help finish it.",
-      "upstream_url": "",
-      "updated_at": "2026-06-27T18:04:59Z",
-      "upstream_repo": "AOSSIE-Org/PictoPy",
-      "head_ref": "fix/cors-security",
-      "created_at": "2025-11-16T02:03:32Z",
-      "merged_at": null,
-      "closed_at": null
-    },
-    {
-      "id": "apache/airavata-site#15",
-      "url": "https://github.com/apache/airavata-site/pull/15",
-      "repo": "apache/airavata-site",
-      "number": 15,
-      "title": "Fix: Padding,typos & HTML Tags",
-      "kind": "upstream",
-      "state": "open",
-      "draft": false,
-      "head": "8d0c56435b6537fe960d35354a76d453d72ecaff",
-      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
-      "blocker": "No hosted CI evidence.",
-      "next_action": "Resolve source/CLA/CI gates, then request one maintainer review without duplicate pings.",
-      "close_reason": "",
-      "lesson": "",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/apache/airavata-site/pull/15"
-        }
-      ],
-      "human_reply": "",
-      "upstream_url": "",
-      "updated_at": "2025-11-10T00:12:07Z",
-      "upstream_repo": "apache/airavata-site",
-      "head_ref": "asf-site",
-      "created_at": "2025-11-10T00:12:07Z",
-      "merged_at": null,
-      "closed_at": null
-    },
     {
       "id": "facebookincubator/submitit#1826",
       "url": "https://github.com/facebookincubator/submitit/pull/1826",
@@ -80,7 +16,6 @@
       "head": "42c750e9c330db53c2828ab94fd450b7ef65c661",
       "ci": "Workflow approval required; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
       "blocker": "Contributor agreement check unresolved; personal action or coverage verification required. Test workflow awaits maintainer approval; no passing CI established. Draft, not ready for review.",
-      "next_action": "Resolve source/CLA/CI gates, then request one maintainer review without duplicate pings.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -96,7 +31,15 @@
       "head_ref": "fix/atomic-checkpoint-replacement",
       "created_at": "2026-10-16T03:40:35Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Contributor (@srijan2607) and CLA provider — personal agreement/identity coverage",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No maintainer ping for a personal CLA gate; no agreement signed automatically."
     },
     {
       "id": "google/etils#840",
@@ -110,7 +53,6 @@
       "head": "e61ddd8ef46c11292cabe4d70a1de92b060abc32",
       "ci": "Workflow approval required; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
       "blocker": "Contributor agreement check unresolved; personal action or coverage verification required. Test workflow awaits maintainer approval; no passing CI established. Draft, not ready for review.",
-      "next_action": "Resolve source/CLA/CI gates, then request one maintainer review without duplicate pings.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -126,7 +68,15 @@
       "head_ref": "fix/dataclass-contextvars-forwarding",
       "created_at": "2026-10-16T06:33:27Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Contributor (@srijan2607) and CLA provider — personal agreement/identity coverage",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No maintainer ping for a personal CLA gate; no agreement signed automatically."
     },
     {
       "id": "google/etils#841",
@@ -139,8 +89,7 @@
       "draft": true,
       "head": "108d6d66fc4c03f8e14eb37b0ce7e06fe9a39a75",
       "ci": "Workflow approval required; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
-      "blocker": "Contributor agreement check unresolved; personal action or coverage verification required. Test workflow awaits maintainer approval; no passing CI established. Draft, not ready for review.",
-      "next_action": "Resolve source/CLA/CI gates, then request one maintainer review without duplicate pings.",
+      "blocker": "Reviewed test relocation remains unpublished; contributor CLA coverage and upstream workflow approval are also unresolved. Contributor agreement check unresolved; personal action or coverage verification required. Test workflow awaits maintainer approval; no passing CI established. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -156,37 +105,15 @@
       "head_ref": "fix/inherited-unfrozen-dataclass-methods",
       "created_at": "2026-10-16T06:33:40Z",
       "merged_at": null,
-      "closed_at": null
-    },
-    {
-      "id": "internetarchive/bookreader#1370",
-      "url": "https://github.com/internetarchive/bookreader/pull/1370",
-      "repo": "internetarchive/bookreader",
-      "number": 1370,
-      "title": "Fixed the CSS Mistakes",
-      "kind": "upstream",
-      "state": "open",
-      "draft": false,
-      "head": "d94d34801570779462a784fac36195c6db8d3b20",
-      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
-      "blocker": "No hosted CI evidence.",
-      "next_action": "Resolve source/CLA/CI gates, then request one maintainer review without duplicate pings.",
-      "close_reason": "",
-      "lesson": "",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/internetarchive/bookreader/pull/1370"
-        }
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
       ],
-      "human_reply": "",
-      "upstream_url": "",
-      "updated_at": "2025-01-30T17:02:52Z",
-      "upstream_repo": "internetarchive/bookreader",
-      "head_ref": "master",
-      "created_at": "2025-01-28T09:35:55Z",
-      "merged_at": null,
-      "closed_at": null
+      "blocker_owner": "Contributor implementation and personal CLA coverage",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No maintainer ping for a personal CLA gate; no agreement signed automatically."
     },
     {
       "id": "jmespath/jmespath.py#384",
@@ -200,7 +127,6 @@
       "head": "9ac1905ac3459d054ff66cc46cce255f6258a83a",
       "ci": "Workflow approval required; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
       "blocker": "Test workflow awaits maintainer approval; no passing CI established. Draft, not ready for review.",
-      "next_action": "Workflow-approval request sent to @jamesls. Await approval and actual test results; this is not passing CI or a code-review approval.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -211,6 +137,10 @@
         {
           "label": "Verified maintainer workflow-approval request",
           "url": "https://github.com/jmespath/jmespath.py/pull/384#issuecomment-6214512293"
+        },
+        {
+          "label": "Verified maintainer authority",
+          "url": "https://github.com/jmespath/jmespath.py/pull/339"
         }
       ],
       "human_reply": "",
@@ -220,7 +150,16 @@
       "head_ref": "fix/function-argument-separators-reissue",
       "created_at": "2026-10-15T15:32:08Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded.",
+        "Verified workflow-approval mention posted."
+      ],
+      "blocker_owner": "@jamesls — upstream workflow approval",
+      "owner_url": "https://github.com/jamesls",
+      "follow_up_status": "Tagged on GitHub on 2026-10-16T11:29:04Z; awaiting workflow execution, not claiming green CI."
     },
     {
       "id": "lmfit/uncertainties#365",
@@ -234,7 +173,6 @@
       "head": "1cb05794a7037769e72a47afa9504794bd4e3159",
       "ci": "Workflow approval required; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
       "blocker": "Test workflow awaits maintainer approval; no passing CI established. Draft, not ready for review.",
-      "next_action": "Workflow-approval request sent to @newville. Await approval and actual test results; this is not passing CI or a code-review approval.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -245,6 +183,10 @@
         {
           "label": "Verified maintainer workflow-approval request",
           "url": "https://github.com/lmfit/uncertainties/pull/365#issuecomment-6214513644"
+        },
+        {
+          "label": "Verified maintainer authority",
+          "url": "https://github.com/lmfit/uncertainties/pull/358"
         }
       ],
       "human_reply": "",
@@ -254,7 +196,16 @@
       "head_ref": "fix/atan2-scaled-derivatives",
       "created_at": "2026-10-16T03:41:11Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded.",
+        "Verified workflow-approval mention posted."
+      ],
+      "blocker_owner": "@newville — upstream workflow approval",
+      "owner_url": "https://github.com/newville",
+      "follow_up_status": "Tagged on GitHub on 2026-10-16T11:29:09Z; awaiting workflow execution, not claiming green CI."
     },
     {
       "id": "microsoft/knack#311",
@@ -268,7 +219,6 @@
       "head": "78abf0ef682955e1b9a1cba61865affa3085111a",
       "ci": "pending (CI scan 2026-10-16T11:52:51.588012+00:00)",
       "blocker": "Contributor agreement check unresolved; personal action or coverage verification required. Draft, not ready for review.",
-      "next_action": "Resolve source/CLA/CI gates, then request one maintainer review without duplicate pings.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -284,7 +234,15 @@
       "head_ref": "fix/preserve-custom-command-loaders",
       "created_at": "2026-10-16T03:40:47Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Contributor (@srijan2607) and CLA provider — personal agreement/identity coverage",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No maintainer ping for a personal CLA gate; no agreement signed automatically."
     },
     {
       "id": "microsoft/knack#312",
@@ -298,7 +256,6 @@
       "head": "7f0589c452a96613bd85002e4e84bc3ab3566165",
       "ci": "pending (CI scan 2026-10-16T11:52:51.588012+00:00)",
       "blocker": "Contributor agreement check unresolved; personal action or coverage verification required. Draft, not ready for review.",
-      "next_action": "Resolve source/CLA/CI gates, then request one maintainer review without duplicate pings.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -314,7 +271,15 @@
       "head_ref": "fix/help-parameter-alias-matching",
       "created_at": "2026-10-16T03:40:59Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Contributor (@srijan2607) and CLA provider — personal agreement/identity coverage",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No maintainer ping for a personal CLA gate; no agreement signed automatically."
     },
     {
       "id": "networkx/networkx#8958",
@@ -328,7 +293,6 @@
       "head": "2bae3d9869ccbe78fef754d9cc89c6d59e9d8eed",
       "ci": "failed (CI scan 2026-10-16T11:52:51.588012+00:00)",
       "blocker": " Current-head CI reports a failure; inspect the actual checks before requesting code review.",
-      "next_action": "Resolve source/CLA/CI gates, then request one maintainer review without duplicate pings.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -348,7 +312,15 @@
       "head_ref": "main",
       "created_at": "2026-10-15T15:15:28Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Contributor / failing CI infrastructure; individual reviewer responsibility not verified",
+      "owner_url": "https://github.com/networkx/networkx/pull/8958",
+      "follow_up_status": "No guessed maintainer tag; current CI/source/policy gates remain."
     },
     {
       "id": "python-periodictable/periodictable#137",
@@ -362,7 +334,6 @@
       "head": "4cfd75a8e6294ded73fa61314103f56e5749a1de",
       "ci": "Workflow approval required; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
       "blocker": "Published head has a known default-suite typing failure. Independently approved local typing repair is not yet pushed.  Test workflow awaits maintainer approval; no passing CI established. Draft, not ready for review.",
-      "next_action": "Publish the exact reviewed repair and verify the current public head before requesting maintainer work.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -378,7 +349,15 @@
       "head_ref": "fix/stable-skew-cell-volume",
       "created_at": "2026-10-16T03:41:23Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Contributor implementation — our reviewed typing repair has not been published",
+      "owner_url": "https://github.com/python-periodictable/periodictable/pull/137",
+      "follow_up_status": "Local repair was independently verified; no maintainer ping for our unpublished repair."
     },
     {
       "id": "simonw/llm#1778",
@@ -392,7 +371,6 @@
       "head": "29512960204d3ccbd527e819e6ae03bdc076ae8f",
       "ci": "Workflow approval required; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
       "blocker": "Test workflow awaits maintainer approval; no passing CI established.",
-      "next_action": "Workflow-approval request sent to @simonw. Await approval and actual test results; this is not passing CI or a code-review approval.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -403,6 +381,10 @@
         {
           "label": "Verified maintainer workflow-approval request",
           "url": "https://github.com/simonw/llm/pull/1778#issuecomment-6214509796"
+        },
+        {
+          "label": "Verified maintainer authority",
+          "url": "https://github.com/simonw/llm"
         }
       ],
       "human_reply": "",
@@ -412,7 +394,16 @@
       "head_ref": "review/reissued-srijan2607-20261015",
       "created_at": "2026-10-15T15:29:57Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded.",
+        "Verified workflow-approval mention posted."
+      ],
+      "blocker_owner": "@simonw — upstream workflow approval",
+      "owner_url": "https://github.com/simonw",
+      "follow_up_status": "Tagged on GitHub on 2026-10-16T11:28:55Z; awaiting workflow execution, not claiming green CI."
     },
     {
       "id": "Textualize/trogon#130",
@@ -426,7 +417,6 @@
       "head": "1dd8354e492a4125d49fe13897fe8ca0beaee004",
       "ci": "Workflow approval required; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
       "blocker": "Test workflow awaits maintainer approval; no passing CI established.",
-      "next_action": "Workflow-approval request sent to @daneah. Await approval and actual test results; this is not passing CI or a code-review approval.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -437,6 +427,10 @@
         {
           "label": "Verified maintainer workflow-approval request",
           "url": "https://github.com/Textualize/trogon/pull/130#issuecomment-6214510922"
+        },
+        {
+          "label": "Verified maintainer authority",
+          "url": "https://github.com/Textualize/trogon/pull/96"
         }
       ],
       "human_reply": "",
@@ -446,7 +440,16 @@
       "head_ref": "review/reissued-srijan2607-20261015",
       "created_at": "2026-10-15T15:30:16Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded.",
+        "Verified workflow-approval mention posted."
+      ],
+      "blocker_owner": "@daneah — upstream workflow approval",
+      "owner_url": "https://github.com/daneah",
+      "follow_up_status": "Tagged on GitHub on 2026-10-16T11:28:59Z; awaiting workflow execution, not claiming green CI."
     },
     {
       "id": "theskumar/python-dotenv#733",
@@ -459,8 +462,7 @@
       "draft": false,
       "head": "0f7609f116b19ac7355daa6b5d9147a8c5817907",
       "ci": "observed success required test coverage unverified (CI scan 2026-10-16T11:52:51.588012+00:00)",
-      "blocker": "",
-      "next_action": "A review request was already sent; await maintainer response rather than repeating the ping.",
+      "blocker": "Awaiting upstream review; a prior review request is verified.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -480,7 +482,15 @@
       "head_ref": "fix/valueless-load-result-reissued",
       "created_at": "2026-10-15T15:31:16Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "@theskumar / upstream reviewers",
+      "owner_url": "https://github.com/theskumar",
+      "follow_up_status": "Code review was already requested; no duplicate ping sent."
     },
     {
       "id": "srijan2607/cloudpickle#1",
@@ -494,7 +504,6 @@
       "head": "9414305762556e4509c57440a77e479077ec4273",
       "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
       "blocker": "Fork-only review draft; not an upstream submission.  No hosted CI evidence. Draft, not ready for review.",
-      "next_action": "Final head and proposed text approval required before upstream submission.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -510,7 +519,15 @@
       "head_ref": "fix/classmethod-function-reference",
       "created_at": "2026-10-16T02:51:30Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Contributor / final reviewer (@srijan2607)",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No upstream maintainer mention: this is a fork-only review or contributor-owned gate."
     },
     {
       "id": "srijan2607/etils#3",
@@ -523,8 +540,7 @@
       "draft": true,
       "head": "e61ddd8ef46c11292cabe4d70a1de92b060abc32",
       "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
-      "blocker": "Fork review copy; a related upstream PR exists.  No hosted CI evidence. Draft, not ready for review.",
-      "next_action": "Related actual upstream PR already exists. This is a fork review record; inspect upstream status and any pending revision.",
+      "blocker": "Related upstream submission: Contributor agreement check unresolved; personal action or coverage verification required. Test workflow awaits maintainer approval; no passing CI established. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -544,7 +560,16 @@
       "head_ref": "fix/dataclass-contextvars-forwarding",
       "created_at": "2026-10-15T22:37:54Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Contributor (@srijan2607) and CLA provider — personal agreement/identity coverage",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No maintainer ping for a personal CLA gate; no agreement signed automatically.",
+      "upstream_ci": "Workflow approval required; not green (CI scan 2026-10-16T11:52:51.588012+00:00)"
     },
     {
       "id": "srijan2607/etils#4",
@@ -557,8 +582,7 @@
       "draft": true,
       "head": "108d6d66fc4c03f8e14eb37b0ce7e06fe9a39a75",
       "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
-      "blocker": "Fork review copy; a related upstream PR exists.  No hosted CI evidence. Draft, not ready for review.",
-      "next_action": "Related actual upstream PR already exists. This is a fork review record; inspect upstream status and any pending revision.",
+      "blocker": "Related upstream submission: Reviewed test relocation remains unpublished; contributor CLA coverage and upstream workflow approval are also unresolved. Contributor agreement check unresolved; personal action or coverage verification required. Test workflow awaits maintainer approval; no passing CI established. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -578,7 +602,16 @@
       "head_ref": "fix/inherited-unfrozen-dataclass-methods",
       "created_at": "2026-10-15T22:38:18Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Contributor implementation and personal CLA coverage",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No maintainer ping for a personal CLA gate; no agreement signed automatically.",
+      "upstream_ci": "Workflow approval required; not green (CI scan 2026-10-16T11:52:51.588012+00:00)"
     },
     {
       "id": "srijan2607/filesystem_spec#1",
@@ -592,7 +625,6 @@
       "head": "ffac38db2c51eda51e0af3e943f99b969c352df0",
       "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
       "blocker": "Fork-only review draft; not an upstream submission.  No hosted CI evidence. Draft, not ready for review.",
-      "next_action": "Final head and proposed text approval required before upstream submission.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -608,7 +640,15 @@
       "head_ref": "fix/fsmap-deletion-errors",
       "created_at": "2026-10-16T00:24:19Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Contributor / final reviewer (@srijan2607)",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No upstream maintainer mention: this is a fork-only review or contributor-owned gate."
     },
     {
       "id": "srijan2607/ion-python#4",
@@ -622,7 +662,6 @@
       "head": "79d581331a32e9474927558ec78e048b8cad9258",
       "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
       "blocker": "Personal Apache licensing affirmation remains outstanding. Fork-only review draft; not an upstream submission.  No hosted CI evidence. Draft, not ready for review.",
-      "next_action": "Final head and proposed text approval required before upstream submission.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -638,41 +677,15 @@
       "head_ref": "fix/text-numeric-whitespace-terminators",
       "created_at": "2026-10-15T22:40:22Z",
       "merged_at": null,
-      "closed_at": null
-    },
-    {
-      "id": "srijan2607/jenkins#1",
-      "url": "https://github.com/srijan2607/jenkins/pull/1",
-      "repo": "srijan2607/jenkins",
-      "number": 1,
-      "title": "Fix link formatting in CONTRIBUTING.md",
-      "kind": "fork",
-      "state": "open",
-      "draft": false,
-      "head": "410e905f1164d1e30fb750fdecf6512a1daf1a47",
-      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
-      "blocker": "Fork review copy; a related upstream PR exists.  No hosted CI evidence.",
-      "next_action": "Related actual upstream PR already exists. This is a fork review record; inspect upstream status and any pending revision.",
-      "close_reason": "",
-      "lesson": "",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/srijan2607/jenkins/pull/1"
-        },
-        {
-          "label": "Related actual upstream PR",
-          "url": "https://github.com/jenkinsci/jenkins/pull/23875"
-        }
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
       ],
-      "human_reply": "",
-      "upstream_url": "https://github.com/jenkinsci/jenkins/pull/23875",
-      "updated_at": "2025-11-28T14:57:05Z",
-      "upstream_repo": "jenkinsci/jenkins",
-      "head_ref": "Fix-Documentation",
-      "created_at": "2025-11-28T14:57:05Z",
-      "merged_at": null,
-      "closed_at": null
+      "blocker_owner": "Contributor implementation and personal Apache licensing affirmation",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "Reviewed C-skip removal is not yet published; no personal licensing affirmation supplied."
     },
     {
       "id": "srijan2607/jmespath.py#2",
@@ -685,8 +698,7 @@
       "draft": true,
       "head": "9ac1905ac3459d054ff66cc46cce255f6258a83a",
       "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
-      "blocker": "Fork review copy; a related upstream PR exists.  No hosted CI evidence. Draft, not ready for review.",
-      "next_action": "Related actual upstream PR already exists. This is a fork review record; inspect upstream status and any pending revision.",
+      "blocker": "Related upstream submission: Test workflow awaits maintainer approval; no passing CI established. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -706,7 +718,16 @@
       "head_ref": "fix/function-argument-separators-reissue",
       "created_at": "2026-10-15T15:31:51Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "@jamesls — upstream workflow approval",
+      "owner_url": "https://github.com/jamesls",
+      "follow_up_status": "Tagged on GitHub on 2026-10-16T11:29:04Z; awaiting workflow execution, not claiming green CI.",
+      "upstream_ci": "Workflow approval required; not green (CI scan 2026-10-16T11:52:51.588012+00:00)"
     },
     {
       "id": "srijan2607/joblib#1",
@@ -720,7 +741,6 @@
       "head": "8b5e63ad4a8d9a8875c1007e9653dd34f1916381",
       "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
       "blocker": "Fork-only review draft; not an upstream submission.  No hosted CI evidence. Draft, not ready for review.",
-      "next_action": "Final head and proposed text approval required before upstream submission.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -736,7 +756,15 @@
       "head_ref": "fix/dict-hash-namespace",
       "created_at": "2026-10-16T01:39:11Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Contributor / final reviewer (@srijan2607)",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No upstream maintainer mention: this is a fork-only review or contributor-owned gate."
     },
     {
       "id": "srijan2607/knack#3",
@@ -749,8 +777,7 @@
       "draft": true,
       "head": "78abf0ef682955e1b9a1cba61865affa3085111a",
       "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
-      "blocker": "Fork review copy; a related upstream PR exists.  No hosted CI evidence. Draft, not ready for review.",
-      "next_action": "Related actual upstream PR already exists. This is a fork review record; inspect upstream status and any pending revision.",
+      "blocker": "Related upstream submission: Contributor agreement check unresolved; personal action or coverage verification required. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -770,7 +797,16 @@
       "head_ref": "fix/preserve-custom-command-loaders",
       "created_at": "2026-10-15T22:39:08Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Contributor (@srijan2607) and CLA provider — personal agreement/identity coverage",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No maintainer ping for a personal CLA gate; no agreement signed automatically.",
+      "upstream_ci": "pending (CI scan 2026-10-16T11:52:51.588012+00:00)"
     },
     {
       "id": "srijan2607/knack#4",
@@ -783,8 +819,7 @@
       "draft": true,
       "head": "7f0589c452a96613bd85002e4e84bc3ab3566165",
       "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
-      "blocker": "Fork review copy; a related upstream PR exists.  No hosted CI evidence. Draft, not ready for review.",
-      "next_action": "Related actual upstream PR already exists. This is a fork review record; inspect upstream status and any pending revision.",
+      "blocker": "Related upstream submission: Contributor agreement check unresolved; personal action or coverage verification required. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -804,7 +839,16 @@
       "head_ref": "fix/help-parameter-alias-matching",
       "created_at": "2026-10-15T22:39:33Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Contributor (@srijan2607) and CLA provider — personal agreement/identity coverage",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No maintainer ping for a personal CLA gate; no agreement signed automatically.",
+      "upstream_ci": "pending (CI scan 2026-10-16T11:52:51.588012+00:00)"
     },
     {
       "id": "srijan2607/laspy#1",
@@ -818,7 +862,6 @@
       "head": "67c0316e4871ab5f055836b18c8390dec87517e8",
       "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
       "blocker": "Fork-only review draft; not an upstream submission.  No hosted CI evidence. Draft, not ready for review.",
-      "next_action": "Final head and proposed text approval required before upstream submission.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -834,7 +877,15 @@
       "head_ref": "fix/subfield-integer-thresholds",
       "created_at": "2026-10-16T05:27:35Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Contributor / final reviewer (@srijan2607)",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No upstream maintainer mention: this is a fork-only review or contributor-owned gate."
     },
     {
       "id": "srijan2607/llm#2",
@@ -847,8 +898,7 @@
       "draft": true,
       "head": "29512960204d3ccbd527e819e6ae03bdc076ae8f",
       "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
-      "blocker": "Fork review copy; a related upstream PR exists.  No hosted CI evidence. Draft, not ready for review.",
-      "next_action": "Related actual upstream PR already exists. This is a fork review record; inspect upstream status and any pending revision.",
+      "blocker": "Related upstream submission: Test workflow awaits maintainer approval; no passing CI established.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -868,7 +918,16 @@
       "head_ref": "review/reissued-srijan2607-20261015",
       "created_at": "2026-10-15T15:29:50Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "@simonw — upstream workflow approval",
+      "owner_url": "https://github.com/simonw",
+      "follow_up_status": "Tagged on GitHub on 2026-10-16T11:28:55Z; awaiting workflow execution, not claiming green CI.",
+      "upstream_ci": "Workflow approval required; not green (CI scan 2026-10-16T11:52:51.588012+00:00)"
     },
     {
       "id": "srijan2607/meshio#1",
@@ -882,7 +941,6 @@
       "head": "a2f0113fb4afdabf10208d75ffb54701e8d50501",
       "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
       "blocker": "Fork-only review draft; not an upstream submission.  No hosted CI evidence. Draft, not ready for review.",
-      "next_action": "Final head and proposed text approval required before upstream submission.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -898,7 +956,15 @@
       "head_ref": "fix/obj-relative-face-indices",
       "created_at": "2026-10-15T21:21:12Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Contributor / final reviewer (@srijan2607)",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No upstream maintainer mention: this is a fork-only review or contributor-owned gate."
     },
     {
       "id": "srijan2607/mrcfile#1",
@@ -912,7 +978,6 @@
       "head": "27f72f95bb815857ab0c57977807c09c9f1f30ad",
       "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
       "blocker": "Explicit final-head/text approval still required; no upstream submission or maintainer contact authorized. Fork-only review draft; not an upstream submission.  No hosted CI evidence. Draft, not ready for review.",
-      "next_action": "Final head and proposed text approval required before upstream submission.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -928,7 +993,15 @@
       "head_ref": "fix/extended-header-write-size",
       "created_at": "2026-10-16T07:40:10Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Contributor / final reviewer (@srijan2607)",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No upstream maintainer mention: this is a fork-only review or contributor-owned gate."
     },
     {
       "id": "srijan2607/networkx#6",
@@ -942,7 +1015,6 @@
       "head": "3e4a76bf4d02101833f35728b4964aab2152502a",
       "ci": "failed (CI scan 2026-10-16T11:52:51.588012+00:00)",
       "blocker": "Fork-only review draft; not an upstream submission.  Draft, not ready for review. Project human-accountability and human-written-prose requirements remain separate gates. Current-head CI reports a failure; inspect the actual checks before requesting code review.",
-      "next_action": "Final head and proposed text approval required before upstream submission.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -962,7 +1034,15 @@
       "head_ref": "review/reissued-hidden-edges-srijan2607",
       "created_at": "2026-10-15T15:32:53Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Contributor / final reviewer (@srijan2607)",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No upstream maintainer mention: this is a fork-only review or contributor-owned gate."
     },
     {
       "id": "srijan2607/networkx#7",
@@ -976,7 +1056,6 @@
       "head": "150d99968a47a10b1c2d1fec844f30162115b486",
       "ci": "failed (CI scan 2026-10-16T11:52:51.588012+00:00)",
       "blocker": "Fork-only review draft; not an upstream submission.  Draft, not ready for review. Project human-accountability and human-written-prose requirements remain separate gates. Current-head CI reports a failure; inspect the actual checks before requesting code review.",
-      "next_action": "Final head and proposed text approval required before upstream submission.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -996,7 +1075,15 @@
       "head_ref": "review/reissued-negative-cycle-srijan2607",
       "created_at": "2026-10-15T15:32:56Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Contributor / final reviewer (@srijan2607)",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No upstream maintainer mention: this is a fork-only review or contributor-owned gate."
     },
     {
       "id": "srijan2607/nibabel#1",
@@ -1010,7 +1097,6 @@
       "head": "8b4326a1b0ff6f5654b8e30aa1af28ea92f57e1f",
       "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
       "blocker": "Fork-only review draft; not an upstream submission.  No hosted CI evidence. Draft, not ready for review.",
-      "next_action": "Final head and proposed text approval required before upstream submission.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -1026,7 +1112,15 @@
       "head_ref": "fix/annot-vertex-addressing",
       "created_at": "2026-10-16T11:32:38Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Contributor / final reviewer (@srijan2607)",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No upstream maintainer mention: this is a fork-only review or contributor-owned gate."
     },
     {
       "id": "srijan2607/npTDMS#1",
@@ -1040,7 +1134,6 @@
       "head": "1c54b4291ef750b450079b28a896efa8b29b4c52",
       "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
       "blocker": "Fork-only review draft; not an upstream submission.  No hosted CI evidence. Draft, not ready for review.",
-      "next_action": "Final head and proposed text approval required before upstream submission.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -1056,7 +1149,15 @@
       "head_ref": "fix/channel-gap-range-reads",
       "created_at": "2026-10-16T06:36:12Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Contributor / final reviewer (@srijan2607)",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No upstream maintainer mention: this is a fork-only review or contributor-owned gate."
     },
     {
       "id": "srijan2607/partd#1",
@@ -1070,7 +1171,6 @@
       "head": "0f8582c72d84084dea895ab9c2cd0595f4e991c7",
       "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
       "blocker": "Fork-only review draft; not an upstream submission.  No hosted CI evidence. Draft, not ready for review. Final upstream prose must be genuinely human-written; approving generated text does not satisfy that policy.",
-      "next_action": "Personal understanding/testing and human-authored final upstream prose are required before submission.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -1086,7 +1186,15 @@
       "head_ref": "fix/buffer-append-order",
       "created_at": "2026-10-16T03:23:13Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Contributor / final reviewer (@srijan2607)",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No upstream maintainer mention: this is a fork-only review or contributor-owned gate."
     },
     {
       "id": "srijan2607/periodictable#2",
@@ -1099,8 +1207,7 @@
       "draft": true,
       "head": "4cfd75a8e6294ded73fa61314103f56e5749a1de",
       "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
-      "blocker": "Fork review copy; a related upstream PR exists.  No hosted CI evidence. Draft, not ready for review.",
-      "next_action": "Related actual upstream PR already exists. This is a fork review record; inspect upstream status and any pending revision.",
+      "blocker": "Related upstream submission: Published head has a known default-suite typing failure. Independently approved local typing repair is not yet pushed.  Test workflow awaits maintainer approval; no passing CI established. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -1120,7 +1227,16 @@
       "head_ref": "fix/stable-skew-cell-volume",
       "created_at": "2026-10-15T22:41:11Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Contributor implementation — our reviewed typing repair has not been published",
+      "owner_url": "https://github.com/python-periodictable/periodictable/pull/137",
+      "follow_up_status": "Local repair was independently verified; no maintainer ping for our unpublished repair.",
+      "upstream_ci": "Workflow approval required; not green (CI scan 2026-10-16T11:52:51.588012+00:00)"
     },
     {
       "id": "srijan2607/pipx#2",
@@ -1133,8 +1249,7 @@
       "draft": true,
       "head": "13dfc942875f72ef2765690192cf7202a065889f",
       "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
-      "blocker": "Fork review copy; a related upstream PR exists.  No hosted CI evidence. Draft, not ready for review.",
-      "next_action": "Related actual upstream PR already exists. This is a fork review record; inspect upstream status and any pending revision.",
+      "blocker": "The associated fix is officially merged upstream. This fork review copy remains open; it is not an additional pending upstream fix.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -1154,7 +1269,17 @@
       "head_ref": "review/reissued-srijan2607-20261015",
       "created_at": "2026-10-15T15:33:05Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "No blocker — officially merged upstream",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "Official upstream merge verified.",
+      "upstream_ci": "Not verified for this head",
+      "upstream_accepted": true
     },
     {
       "id": "srijan2607/PyAbel#1",
@@ -1168,7 +1293,6 @@
       "head": "7fd3b7f4bc82383e17689a0eea4401cb78a7af00",
       "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
       "blocker": "Fork-only review draft; not an upstream submission.  No hosted CI evidence. Draft, not ready for review.",
-      "next_action": "Final head and proposed text approval required before upstream submission.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -1184,7 +1308,15 @@
       "head_ref": "fix/angular-subtraction-order",
       "created_at": "2026-10-16T09:34:58Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Contributor / final reviewer (@srijan2607)",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No upstream maintainer mention: this is a fork-only review or contributor-owned gate."
     },
     {
       "id": "srijan2607/pynrrd#1",
@@ -1198,7 +1330,6 @@
       "head": "2c1025578f0c4bf030b818dbfa27a83b360aecf0",
       "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
       "blocker": "Fork-only review draft; not an upstream submission.  No hosted CI evidence. Draft, not ready for review.",
-      "next_action": "Final head and proposed text approval required before upstream submission.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -1214,7 +1345,15 @@
       "head_ref": "fix/ascii-integer-precision",
       "created_at": "2026-10-16T04:26:12Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Contributor / final reviewer (@srijan2607)",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No upstream maintainer mention: this is a fork-only review or contributor-owned gate."
     },
     {
       "id": "srijan2607/python-dotenv#2",
@@ -1227,8 +1366,7 @@
       "draft": true,
       "head": "0f7609f116b19ac7355daa6b5d9147a8c5817907",
       "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
-      "blocker": "Fork review copy; a related upstream PR exists.  No hosted CI evidence. Draft, not ready for review.",
-      "next_action": "Related actual upstream PR already exists. This is a fork review record; inspect upstream status and any pending revision.",
+      "blocker": "Related upstream submission: Awaiting upstream review; a prior review request is verified.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -1248,7 +1386,16 @@
       "head_ref": "fix/valueless-load-result-reissued",
       "created_at": "2026-10-15T15:30:34Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "@theskumar / upstream reviewers",
+      "owner_url": "https://github.com/theskumar",
+      "follow_up_status": "Code review was already requested; no duplicate ping sent.",
+      "upstream_ci": "observed success required test coverage unverified (CI scan 2026-10-16T11:52:51.588012+00:00)"
     },
     {
       "id": "srijan2607/spectral#1",
@@ -1262,7 +1409,6 @@
       "head": "6f221fbcf5bc68704672c7dc5a02e61eb6819362",
       "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
       "blocker": "Fork-only review draft; not an upstream submission.  No hosted CI evidence. Draft, not ready for review.",
-      "next_action": "Final head and proposed text approval required before upstream submission.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -1278,7 +1424,15 @@
       "head_ref": "fix/envi-library-header-offset",
       "created_at": "2026-10-16T10:32:56Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Contributor / final reviewer (@srijan2607)",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No upstream maintainer mention: this is a fork-only review or contributor-owned gate."
     },
     {
       "id": "srijan2607/submitit#2",
@@ -1291,8 +1445,7 @@
       "draft": true,
       "head": "42c750e9c330db53c2828ab94fd450b7ef65c661",
       "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
-      "blocker": "Fork review copy; a related upstream PR exists.  No hosted CI evidence. Draft, not ready for review.",
-      "next_action": "Related actual upstream PR already exists. This is a fork review record; inspect upstream status and any pending revision.",
+      "blocker": "Related upstream submission: Contributor agreement check unresolved; personal action or coverage verification required. Test workflow awaits maintainer approval; no passing CI established. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -1312,7 +1465,16 @@
       "head_ref": "fix/atomic-checkpoint-replacement",
       "created_at": "2026-10-15T22:38:43Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Contributor (@srijan2607) and CLA provider — personal agreement/identity coverage",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No maintainer ping for a personal CLA gate; no agreement signed automatically.",
+      "upstream_ci": "Workflow approval required; not green (CI scan 2026-10-16T11:52:51.588012+00:00)"
     },
     {
       "id": "srijan2607/trogon#2",
@@ -1325,8 +1487,7 @@
       "draft": true,
       "head": "1dd8354e492a4125d49fe13897fe8ca0beaee004",
       "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
-      "blocker": "Fork review copy; a related upstream PR exists.  No hosted CI evidence. Draft, not ready for review.",
-      "next_action": "Related actual upstream PR already exists. This is a fork review record; inspect upstream status and any pending revision.",
+      "blocker": "Related upstream submission: Test workflow awaits maintainer approval; no passing CI established.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -1346,7 +1507,16 @@
       "head_ref": "review/reissued-srijan2607-20261015",
       "created_at": "2026-10-15T15:30:03Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "@daneah — upstream workflow approval",
+      "owner_url": "https://github.com/daneah",
+      "follow_up_status": "Tagged on GitHub on 2026-10-16T11:28:59Z; awaiting workflow execution, not claiming green CI.",
+      "upstream_ci": "Workflow approval required; not green (CI scan 2026-10-16T11:52:51.588012+00:00)"
     },
     {
       "id": "srijan2607/twine#2",
@@ -1360,7 +1530,6 @@
       "head": "192e5b84e7e2eb77099386eae39b8e8d8c48eb73",
       "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
       "blocker": "Reference-only archive: upstream rejected the unsupported-input premise and prohibited further automated AI issues/PRs.",
-      "next_action": "Do not resubmit, reopen or contact upstream automatically; preserve the decision and evidence.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -1380,7 +1549,16 @@
       "head_ref": "fix/decode-repository-url-credentials-reissue",
       "created_at": "2026-10-15T15:32:34Z",
       "merged_at": null,
-      "closed_at": null
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Historical record; see closure/review evidence",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No new contact sent for this historical record.",
+      "upstream_ci": "Not verified for this head"
     },
     {
       "id": "srijan2607/uncertainties#2",
@@ -1393,8 +1571,7 @@
       "draft": true,
       "head": "1cb05794a7037769e72a47afa9504794bd4e3159",
       "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T11:52:51.588012+00:00)",
-      "blocker": "Fork review copy; a related upstream PR exists.  No hosted CI evidence. Draft, not ready for review.",
-      "next_action": "Related actual upstream PR already exists. This is a fork review record; inspect upstream status and any pending revision.",
+      "blocker": "Related upstream submission: Test workflow awaits maintainer approval; no passing CI established. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -1414,1045 +1591,16 @@
       "head_ref": "fix/atan2-scaled-derivatives",
       "created_at": "2026-10-15T22:40:46Z",
       "merged_at": null,
-      "closed_at": null
-    },
-    {
-      "id": "AOSSIE-Org/PictoPy#637",
-      "url": "https://github.com/AOSSIE-Org/PictoPy/pull/637",
-      "repo": "AOSSIE-Org/PictoPy",
-      "number": 637,
-      "title": "Fix: use Link component to prevent page reload flash",
-      "kind": "upstream",
-      "state": "closed",
-      "draft": false,
-      "head": "3fd9cf6ec73ad9e162c6c1b319671d13e91a9faf",
-      "ci": "Not verified for this head",
-      "blocker": "",
-      "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "GitHub Actions explicitly closed this for unresolved merge conflicts and prolonged inactivity after its warning window. This was automated backlog cleanup, not a human rejection of the routing fix.",
-      "lesson": "Keep an active contribution conflict-free and respond substantively to conflict warnings; distinguish automated closure from a maintainer decision.",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/AOSSIE-Org/PictoPy/pull/637"
-        },
-        {
-          "label": "Closure discussion",
-          "url": "https://github.com/AOSSIE-Org/PictoPy/pull/637#issuecomment-4738958587"
-        }
+      "closed_at": null,
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
       ],
-      "human_reply": "",
-      "upstream_url": "",
-      "updated_at": "2026-06-18T07:08:44Z",
-      "upstream_repo": "AOSSIE-Org/PictoPy",
-      "head_ref": "fix/navbar-profile-white-screen",
-      "created_at": "2025-11-15T21:51:19Z",
-      "merged_at": null,
-      "closed_at": "2026-06-18T07:08:44Z",
-      "close_reason_certainty": "explicit",
-      "closed_by": "github-actions[bot]"
-    },
-    {
-      "id": "AOSSIE-Org/PictoPy#639",
-      "url": "https://github.com/AOSSIE-Org/PictoPy/pull/639",
-      "repo": "AOSSIE-Org/PictoPy",
-      "number": 639,
-      "title": "Fix: Prevent progress bar overflow in onboarding steps",
-      "kind": "upstream",
-      "state": "closed",
-      "draft": false,
-      "head": "c23c7970bec049f6fb7845be735dca4390f7f5fa",
-      "ci": "Not verified for this head",
-      "blocker": "",
-      "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "A human maintainer closed the PR, but the cached comments, reviews and timeline do not state a reason. The bot walkthrough and its docstring warning are not evidence of the closure rationale.",
-      "lesson": "Do not label unexplained closure as technical rejection; confirm current project direction before investing in any authorized follow-up.",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/AOSSIE-Org/PictoPy/pull/639"
-        },
-        {
-          "label": "Closure discussion",
-          "url": "https://github.com/AOSSIE-Org/PictoPy/pull/639#issuecomment-3537311421"
-        }
-      ],
-      "human_reply": "",
-      "upstream_url": "",
-      "updated_at": "2025-12-31T08:46:26Z",
-      "upstream_repo": "AOSSIE-Org/PictoPy",
-      "head_ref": "fix/onboarding-progress-bar-overflow",
-      "created_at": "2025-11-16T01:34:15Z",
-      "merged_at": null,
-      "closed_at": "2025-12-31T08:46:26Z",
-      "close_reason_certainty": "unknown",
-      "closed_by": "rahulharpal1603"
-    },
-    {
-      "id": "AOSSIE-Org/PictoPy#643",
-      "url": "https://github.com/AOSSIE-Org/PictoPy/pull/643",
-      "repo": "AOSSIE-Org/PictoPy",
-      "number": 643,
-      "title": "Fix: Standardize database connections using context manager in images.py",
-      "kind": "upstream",
-      "state": "closed",
-      "draft": false,
-      "head": "65acc923923b0e908be98d4d56cefd3da1c07c12",
-      "ci": "Not verified for this head",
-      "blocker": "",
-      "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "Maintainer explicitly closed this because PR #607 had already addressed the database-connection change. This was a duplicate/already-solved decision, not evidence that context-managed connections were technically rejected.",
-      "lesson": "Search open and merged PRs for the same behavior immediately before implementing and submitting; an issue link alone does not establish that work remains needed.",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/AOSSIE-Org/PictoPy/pull/643"
-        },
-        {
-          "label": "Closure discussion",
-          "url": "https://github.com/AOSSIE-Org/PictoPy/pull/643#issuecomment-3537423709"
-        },
-        {
-          "label": "Latest public human comment",
-          "url": "https://github.com/AOSSIE-Org/PictoPy/pull/643#issuecomment-3621804931"
-        }
-      ],
-      "human_reply": "@rahulharpal1603: Already addressed in PR #607",
-      "upstream_url": "",
-      "updated_at": "2025-12-07T08:09:24Z",
-      "upstream_repo": "AOSSIE-Org/PictoPy",
-      "head_ref": "fix/database-connection-standardization",
-      "created_at": "2025-11-16T02:22:04Z",
-      "merged_at": null,
-      "closed_at": "2025-12-07T08:09:23Z",
-      "close_reason_certainty": "explicit",
-      "closed_by": "rahulharpal1603"
-    },
-    {
-      "id": "apache/airavata#572",
-      "url": "https://github.com/apache/airavata/pull/572",
-      "repo": "apache/airavata",
-      "number": 572,
-      "title": "Fix: critical security vulnerabilities by replacing hardcoded credent…",
-      "kind": "upstream",
-      "state": "closed",
-      "draft": false,
-      "head": "d596582ed1ca154bf614262c08ae54ffa2b3c2b5",
-      "ci": "Not verified for this head",
-      "blocker": "",
-      "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "Maintainer closed this because the change was no longer required for the new implementation. This was an implementation-direction decision, not evidence of a failed security review.",
-      "lesson": "Confirm the current architecture and whether the proposed deployment change is still needed before expanding security and configuration work.",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/apache/airavata/pull/572"
-        },
-        {
-          "label": "Closure discussion",
-          "url": "https://github.com/apache/airavata/pull/572#issuecomment-5814350039"
-        }
-      ],
-      "human_reply": "@DImuthuUpe: Closing as no longer required for new implementation",
-      "upstream_url": "",
-      "updated_at": "2026-09-24T12:43:45Z",
-      "upstream_repo": "apache/airavata",
-      "head_ref": "master",
-      "created_at": "2025-11-10T00:47:04Z",
-      "merged_at": null,
-      "closed_at": "2026-09-24T12:43:45Z",
-      "close_reason_certainty": "explicit",
-      "closed_by": "DImuthuUpe"
-    },
-    {
-      "id": "certego/BuffaLogs#488",
-      "url": "https://github.com/certego/BuffaLogs/pull/488",
-      "repo": "certego/BuffaLogs",
-      "number": 488,
-      "title": "Implement session timeout feature with idle detection, warning modal,…",
-      "kind": "upstream",
-      "state": "merged",
-      "draft": false,
-      "head": "765f921488fd0fc0c935deb286acdfadd79fde3a",
-      "ci": "Not verified for this head",
-      "blocker": "",
-      "next_action": "Accepted upstream; no further review ping.",
-      "close_reason": "Merged into the actual upstream repository.",
-      "lesson": "Retain the reproducer, tests and exact accepted revision as the success evidence.",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/certego/BuffaLogs/pull/488"
-        },
-        {
-          "label": "Latest public human comment",
-          "url": "https://github.com/certego/BuffaLogs/pull/488#issuecomment-3597975852"
-        }
-      ],
-      "human_reply": "@Lorygold: Great! Thank you",
-      "upstream_url": "",
-      "updated_at": "2025-12-01T17:44:44Z",
-      "upstream_repo": "certego/BuffaLogs",
-      "head_ref": "pix-feature-session-timeout",
-      "created_at": "2025-11-28T14:17:57Z",
-      "merged_at": "2025-12-01T17:44:44Z",
-      "closed_at": "2025-12-01T17:44:44Z"
-    },
-    {
-      "id": "certego/BuffaLogs#489",
-      "url": "https://github.com/certego/BuffaLogs/pull/489",
-      "repo": "certego/BuffaLogs",
-      "number": 489,
-      "title": "docs: add Elasticsearch cluster configuration guide",
-      "kind": "upstream",
-      "state": "merged",
-      "draft": false,
-      "head": "7a8d371cbf2f44d536335faf47df4c581a302cbb",
-      "ci": "Not verified for this head",
-      "blocker": "",
-      "next_action": "Accepted upstream; no further review ping.",
-      "close_reason": "Merged into the actual upstream repository.",
-      "lesson": "Retain the reproducer, tests and exact accepted revision as the success evidence.",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/certego/BuffaLogs/pull/489"
-        },
-        {
-          "label": "Latest public human comment",
-          "url": "https://github.com/certego/BuffaLogs/pull/489#issuecomment-3620449325"
-        }
-      ],
-      "human_reply": "@Lorygold: > @Lorygold i have some questions related to the project can you tell me where can i reach out to you ? I'll check the PR in the next days, regarding the contact, I'm on LinkedIn or Discord (@lorygold)",
-      "upstream_url": "",
-      "updated_at": "2025-12-17T17:29:38Z",
-      "upstream_repo": "certego/BuffaLogs",
-      "head_ref": "docs/elasticsearch-cluster-config",
-      "created_at": "2025-11-28T17:53:28Z",
-      "merged_at": "2025-12-17T17:29:38Z",
-      "closed_at": "2025-12-17T17:29:38Z"
-    },
-    {
-      "id": "certego/BuffaLogs#490",
-      "url": "https://github.com/certego/BuffaLogs/pull/490",
-      "repo": "certego/BuffaLogs",
-      "number": 490,
-      "title": "fix: enhance chart tooltips for better readability and accessibility",
-      "kind": "upstream",
-      "state": "merged",
-      "draft": false,
-      "head": "14c7de35de10516119878b432d417ebbbf27516b",
-      "ci": "Not verified for this head",
-      "blocker": "",
-      "next_action": "Accepted upstream; no further review ping.",
-      "close_reason": "Merged into the actual upstream repository.",
-      "lesson": "Retain the reproducer, tests and exact accepted revision as the success evidence.",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/certego/BuffaLogs/pull/490"
-        },
-        {
-          "label": "Latest public human comment",
-          "url": "https://github.com/certego/BuffaLogs/pull/490#issuecomment-3669124375"
-        }
-      ],
-      "human_reply": "@Lorygold: > @Lorygold take a look Great job, thank you!",
-      "upstream_url": "",
-      "updated_at": "2025-12-18T08:47:04Z",
-      "upstream_repo": "certego/BuffaLogs",
-      "head_ref": "fix/tooltip-enhancements",
-      "created_at": "2025-11-29T11:50:32Z",
-      "merged_at": "2025-12-18T08:47:03Z",
-      "closed_at": "2025-12-18T08:47:03Z"
-    },
-    {
-      "id": "certego/BuffaLogs#502",
-      "url": "https://github.com/certego/BuffaLogs/pull/502",
-      "repo": "certego/BuffaLogs",
-      "number": 502,
-      "title": "fix: support multiple values for list fields in setup_config command",
-      "kind": "upstream",
-      "state": "closed",
-      "draft": true,
-      "head": "00d142fbfbaccd2cdab97fdb530d485a6e08370e",
-      "ci": "Not verified for this head",
-      "blocker": "",
-      "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "The final closure followed a maintainer statement that PR #562 had already solved the problem. Earlier review requested tests and documentation without AI assistance and demonstrated that a documented multi-value shell command still failed.",
-      "lesson": "Test the actual shell invocation, not just a parser helper; update examples as requested and respect the explicit human-written documentation requirement.",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/certego/BuffaLogs/pull/502"
-        },
-        {
-          "label": "Closure discussion",
-          "url": "https://github.com/certego/BuffaLogs/pull/502#issuecomment-3946545013"
-        },
-        {
-          "label": "Maintainer reproduction",
-          "url": "https://github.com/certego/BuffaLogs/pull/502#issuecomment-3738084228"
-        },
-        {
-          "label": "Documentation authorship instruction",
-          "url": "https://github.com/certego/BuffaLogs/pull/502#issuecomment-3702623141"
-        }
-      ],
-      "human_reply": "@Lorygold: @lucaCigarini @eugenioseveri this can be **closed** Already solved by the PR #562",
-      "upstream_url": "",
-      "updated_at": "2026-02-24T08:12:49Z",
-      "upstream_repo": "certego/BuffaLogs",
-      "head_ref": "fix/setup-config-multiple-values",
-      "created_at": "2025-12-18T00:33:35Z",
-      "merged_at": null,
-      "closed_at": "2026-02-24T08:12:48Z",
-      "close_reason_certainty": "explicit",
-      "closed_by": "lucaCigarini"
-    },
-    {
-      "id": "certego/BuffaLogs#508",
-      "url": "https://github.com/certego/BuffaLogs/pull/508",
-      "repo": "certego/BuffaLogs",
-      "number": 508,
-      "title": "fix: correct API endpoints and field mapping in frontend dashboard",
-      "kind": "upstream",
-      "state": "merged",
-      "draft": false,
-      "head": "84bf4c13e29ba1bf42cbf4a7ca03bd4cfb86d0b3",
-      "ci": "Not verified for this head",
-      "blocker": "",
-      "next_action": "Accepted upstream; no further review ping.",
-      "close_reason": "Merged into the actual upstream repository.",
-      "lesson": "Retain the reproducer, tests and exact accepted revision as the success evidence.",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/certego/BuffaLogs/pull/508"
-        }
-      ],
-      "human_reply": "",
-      "upstream_url": "",
-      "updated_at": "2025-12-29T11:06:05Z",
-      "upstream_repo": "certego/BuffaLogs",
-      "head_ref": "fix/frontend-dashboard-bugs",
-      "created_at": "2025-12-21T22:47:51Z",
-      "merged_at": "2025-12-29T11:06:05Z",
-      "closed_at": "2025-12-29T11:06:05Z"
-    },
-    {
-      "id": "GreedyBear-Project/GreedyBear#643",
-      "url": "https://github.com/GreedyBear-Project/GreedyBear/pull/643",
-      "repo": "GreedyBear-Project/GreedyBear",
-      "number": 643,
-      "title": "Refactor: Rename models to singular form and fix admin registration",
-      "kind": "upstream",
-      "state": "merged",
-      "draft": false,
-      "head": "aeb4dd6c28759c8f7cf57532fb3367fdaa0b3d5a",
-      "ci": "Not verified for this head",
-      "blocker": "",
-      "next_action": "Accepted upstream; no further review ping.",
-      "close_reason": "Merged into the actual upstream repository.",
-      "lesson": "Retain the reproducer, tests and exact accepted revision as the success evidence.",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/GreedyBear-Project/GreedyBear/pull/643"
-        },
-        {
-          "label": "Latest public human comment",
-          "url": "https://github.com/GreedyBear-Project/GreedyBear/pull/643#issuecomment-3686146758"
-        }
-      ],
-      "human_reply": "@regulartim: I am not sure if my terminology is correct though. But for the purpose of this PR, this is was matters to me.",
-      "upstream_url": "",
-      "updated_at": "2025-12-23T11:06:49Z",
-      "upstream_repo": "GreedyBear-Project/GreedyBear",
-      "head_ref": "refactor/rename-models-singular",
-      "created_at": "2025-12-22T15:48:48Z",
-      "merged_at": "2025-12-23T10:45:47Z",
-      "closed_at": "2025-12-23T10:45:47Z"
-    },
-    {
-      "id": "GreedyBear-Project/GreedyBear#645",
-      "url": "https://github.com/GreedyBear-Project/GreedyBear/pull/645",
-      "repo": "GreedyBear-Project/GreedyBear",
-      "number": 645,
-      "title": "Refactor: Replace Cowrie and Log4j boolean fields with GeneralHoneypo…",
-      "kind": "upstream",
-      "state": "closed",
-      "draft": false,
-      "head": "7c4f9dbbf7e41f8a864d0e400656b5376f90d35a",
-      "ci": "Not verified for this head",
-      "blocker": "",
-      "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "The author closed this and then explained on successor PR #646 that the earlier PR had become messy and had been replaced. This is an author-requested clean reissue, not a maintainer rejection; the nearby GitGuardian alert does not establish a closure cause.",
-      "lesson": "Keep unrelated changes out of the diff and explicitly cross-link clean replacements; do not infer closure reasons from a security bot alert appearing nearby.",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/GreedyBear-Project/GreedyBear/pull/645"
-        },
-        {
-          "label": "Closure discussion",
-          "url": "https://github.com/GreedyBear-Project/GreedyBear/pull/645#issuecomment-3686346901"
-        },
-        {
-          "label": "Latest public human comment",
-          "url": "https://github.com/GreedyBear-Project/GreedyBear/pull/645#issuecomment-3686206251"
-        },
-        {
-          "label": "Author explanation on successor",
-          "url": "https://github.com/GreedyBear-Project/GreedyBear/pull/646#issuecomment-3686514598"
-        }
-      ],
-      "human_reply": "@regulartim: Yes, will do.",
-      "upstream_url": "",
-      "updated_at": "2025-12-23T11:42:09Z",
-      "upstream_repo": "GreedyBear-Project/GreedyBear",
-      "head_ref": "refactor/honeypot-unification",
-      "created_at": "2025-12-23T10:41:38Z",
-      "merged_at": null,
-      "closed_at": "2025-12-23T11:42:09Z",
-      "close_reason_certainty": "explicit",
-      "closed_by": "srijan2607"
-    },
-    {
-      "id": "GreedyBear-Project/GreedyBear#646",
-      "url": "https://github.com/GreedyBear-Project/GreedyBear/pull/646",
-      "repo": "GreedyBear-Project/GreedyBear",
-      "number": 646,
-      "title": "refactor: replace cowrie/log4j boolean fields with unified general_ho…",
-      "kind": "upstream",
-      "state": "closed",
-      "draft": false,
-      "head": "dd2c3a0ac167f3a1a0024ea904b199b7ed2a69dd",
-      "ci": "Not verified for this head",
-      "blocker": "",
-      "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "Maintainer closed this without an explicit closing explanation. Earlier human reviews requested migration/legacy-API validation, a narrowly scoped formatting diff, passing linters, and resolution of merge conflicts; those requests are documented context, not a proven final closure reason.",
-      "lesson": "Keep migration PRs narrowly scoped, demonstrate legacy API and representative-data compatibility, and resolve requested changes and conflicts before asking for approval.",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/GreedyBear-Project/GreedyBear/pull/646"
-        },
-        {
-          "label": "Closure discussion",
-          "url": "https://github.com/GreedyBear-Project/GreedyBear/pull/646#pullrequestreview-3665949776"
-        },
-        {
-          "label": "Migration compatibility questions",
-          "url": "https://github.com/GreedyBear-Project/GreedyBear/pull/646#issuecomment-3687802543"
-        },
-        {
-          "label": "Reviewability feedback",
-          "url": "https://github.com/GreedyBear-Project/GreedyBear/pull/646#issuecomment-3689363811"
-        }
-      ],
-      "human_reply": "@regulartim: Please resolve the merge conflicts and react to Copilot's review comments.",
-      "upstream_url": "",
-      "updated_at": "2026-01-21T13:33:39Z",
-      "upstream_repo": "GreedyBear-Project/GreedyBear",
-      "head_ref": "issue-637-honeypot-unification",
-      "created_at": "2025-12-23T12:34:11Z",
-      "merged_at": null,
-      "closed_at": "2026-01-21T13:33:39Z",
-      "close_reason_certainty": "unknown",
-      "closed_by": "regulartim"
-    },
-    {
-      "id": "GreedyBear-Project/GreedyBear#649",
-      "url": "https://github.com/GreedyBear-Project/GreedyBear/pull/649",
-      "repo": "GreedyBear-Project/GreedyBear",
-      "number": 649,
-      "title": "Fix/bug orphaned decorator",
-      "kind": "upstream",
-      "state": "merged",
-      "draft": false,
-      "head": "c39f30b1e587deff6e615721b38056c7d36c8714",
-      "ci": "Not verified for this head",
-      "blocker": "",
-      "next_action": "Accepted upstream; no further review ping.",
-      "close_reason": "Merged into the actual upstream repository.",
-      "lesson": "Retain the reproducer, tests and exact accepted revision as the success evidence.",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/GreedyBear-Project/GreedyBear/pull/649"
-        }
-      ],
-      "human_reply": "",
-      "upstream_url": "",
-      "updated_at": "2025-12-23T15:25:39Z",
-      "upstream_repo": "GreedyBear-Project/GreedyBear",
-      "head_ref": "fix/BUG-001-orphaned-decorator",
-      "created_at": "2025-12-23T13:53:20Z",
-      "merged_at": "2025-12-23T15:25:39Z",
-      "closed_at": "2025-12-23T15:25:39Z"
-    },
-    {
-      "id": "intelowlproject/IntelOwl#3094",
-      "url": "https://github.com/intelowlproject/IntelOwl/pull/3094",
-      "repo": "intelowlproject/IntelOwl",
-      "number": 3094,
-      "title": "feat(visualizer): Add VisualizableImage component. Closes #3023",
-      "kind": "upstream",
-      "state": "merged",
-      "draft": false,
-      "head": "5e814c63bd86aff89d268aa60582e90a51214023",
-      "ci": "Not verified for this head",
-      "blocker": "",
-      "next_action": "Accepted upstream; no further review ping.",
-      "close_reason": "Merged into the actual upstream repository.",
-      "lesson": "Retain the reproducer, tests and exact accepted revision as the success evidence.",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/intelowlproject/IntelOwl/pull/3094"
-        },
-        {
-          "label": "Latest public human comment",
-          "url": "https://github.com/intelowlproject/IntelOwl/pull/3094#pullrequestreview-3586735426"
-        }
-      ],
-      "human_reply": "@drosetti: Hi @srijan2607, sorry if I take a lot of time to review your code, but i'm very busy. You did an excellent work! I ask just a little change. Add `Image = VisualizableImage` to `Visualizer` class, like the other components",
-      "upstream_url": "",
-      "updated_at": "2025-12-17T16:51:05Z",
-      "upstream_repo": "intelowlproject/IntelOwl",
-      "head_ref": "feature/3023-rebase-develop",
-      "created_at": "2025-12-03T14:11:15Z",
-      "merged_at": "2025-12-17T16:51:05Z",
-      "closed_at": "2025-12-17T16:51:05Z"
-    },
-    {
-      "id": "intelowlproject/IntelOwl#3097",
-      "url": "https://github.com/intelowlproject/IntelOwl/pull/3097",
-      "repo": "intelowlproject/IntelOwl",
-      "number": 3097,
-      "title": "fix(frontend): prevent datetime inputs overflow in Reports Search page",
-      "kind": "upstream",
-      "state": "closed",
-      "draft": false,
-      "head": "6379c5eba72d404c9837856ed7dd5183c75f9576",
-      "ci": "Not verified for this head",
-      "blocker": "",
-      "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "Maintainer closed this without an explicit closing explanation. The prior human comment said the issue was not assigned to the author and that the author already had other PRs pending; the cached record supports that process objection, not a technical rejection.",
-      "lesson": "Confirm issue assignment and the project’s contribution-workload rules before starting another PR, and finish pending review work first.",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/intelowlproject/IntelOwl/pull/3097"
-        },
-        {
-          "label": "Closure discussion",
-          "url": "https://github.com/intelowlproject/IntelOwl/pull/3097#issuecomment-3694599559"
-        },
-        {
-          "label": "Latest public human comment",
-          "url": "https://github.com/intelowlproject/IntelOwl/pull/3097#issuecomment-3659895493"
-        }
-      ],
-      "human_reply": "@fgibertoni: Hey @srijan2607 this issue has not been assigned to you... you already have other PRs pending.",
-      "upstream_url": "",
-      "updated_at": "2025-12-30T15:53:48Z",
-      "upstream_repo": "intelowlproject/IntelOwl",
-      "head_ref": "fix/reports-search-overflow",
-      "created_at": "2025-12-03T14:46:11Z",
-      "merged_at": null,
-      "closed_at": "2025-12-30T15:53:48Z",
-      "close_reason_certainty": "unknown",
-      "closed_by": "fgibertoni"
-    },
-    {
-      "id": "intelowlproject/IntelOwl#3099",
-      "url": "https://github.com/intelowlproject/IntelOwl/pull/3099",
-      "repo": "intelowlproject/IntelOwl",
-      "number": 3099,
-      "title": "fix: make Quad9 analyzers and YARA updater resilient to network errors",
-      "kind": "upstream",
-      "state": "closed",
-      "draft": false,
-      "head": "ce5dbfc4186bb4276157eb724f82df5f028e762c",
-      "ci": "Not verified for this head",
-      "blocker": "",
-      "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "Maintainer explicitly rejected silencing intentional production network errors to make tests pass. They asked for mocked tests instead of changing runtime failure behavior.",
-      "lesson": "Repair test isolation with mocks while preserving the production error contract; never turn a failed security/network check into a misleading clean result.",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/intelowlproject/IntelOwl/pull/3099"
-        },
-        {
-          "label": "Closure discussion",
-          "url": "https://github.com/intelowlproject/IntelOwl/pull/3099#issuecomment-3698798005"
-        },
-        {
-          "label": "Latest public human comment",
-          "url": "https://github.com/intelowlproject/IntelOwl/pull/3099#issuecomment-3699878429"
-        }
-      ],
-      "human_reply": "@mlodic: hey @srijan2607, I checked the PR. I understand that the fix can be helpful, but errors are made to be triggered, not silenced. Tests are a special case and they should not trigger there and I agree. But to solve that, you should touch the tests, not the current logic which actually is intentionally made to fail in case there are network errors. This is intended behavior. So I'll drop this PR. Please feel free to open a new one where you mock the",
-      "upstream_url": "",
-      "updated_at": "2025-12-30T16:29:41Z",
-      "upstream_repo": "intelowlproject/IntelOwl",
-      "head_ref": "fix/ci-network-resilience",
-      "created_at": "2025-12-04T11:53:08Z",
-      "merged_at": null,
-      "closed_at": "2025-12-30T16:29:41Z",
-      "close_reason_certainty": "explicit",
-      "closed_by": "mlodic"
-    },
-    {
-      "id": "intelowlproject/IntelOwl#3126",
-      "url": "https://github.com/intelowlproject/IntelOwl/pull/3126",
-      "repo": "intelowlproject/IntelOwl",
-      "number": 3126,
-      "title": " fix(security): sanitize notification HTML to prevent XSS.",
-      "kind": "upstream",
-      "state": "closed",
-      "draft": false,
-      "head": "ef9c012af292f06fd547445ff84ac2696090b9a6",
-      "ci": "Not verified for this head",
-      "blocker": "",
-      "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "Maintainer closed this without an explicit final reason in the cached thread. Earlier human discussion opposed adding another frontend dependency and requested removing dangerouslySetInnerHTML instead; a stale warning alone does not prove the reason for the later human closure.",
-      "lesson": "Agree on dependency and rendering strategy before implementation, then address the requested revision rather than treating a stale warning as the maintainer decision.",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/intelowlproject/IntelOwl/pull/3126"
-        },
-        {
-          "label": "Closure discussion",
-          "url": "https://github.com/intelowlproject/IntelOwl/pull/3126#issuecomment-3804131237"
-        },
-        {
-          "label": "Latest public human comment",
-          "url": "https://github.com/intelowlproject/IntelOwl/pull/3126#issuecomment-3762823357"
-        },
-        {
-          "label": "Maintainer dependency objection",
-          "url": "https://github.com/intelowlproject/IntelOwl/pull/3126#issuecomment-3709784715"
-        },
-        {
-          "label": "Requested alternative",
-          "url": "https://github.com/intelowlproject/IntelOwl/pull/3126#issuecomment-3743123388"
-        }
-      ],
-      "human_reply": "@mlodic: @srijan2607 any update about this?",
-      "upstream_url": "",
-      "updated_at": "2026-01-27T14:44:19Z",
-      "upstream_repo": "intelowlproject/IntelOwl",
-      "head_ref": "fix/xss-notifications-3123",
-      "created_at": "2025-12-19T23:15:22Z",
-      "merged_at": null,
-      "closed_at": "2026-01-27T14:44:19Z",
-      "close_reason_certainty": "unknown",
-      "closed_by": "mlodic"
-    },
-    {
-      "id": "jenkinsci/jenkins#23875",
-      "url": "https://github.com/jenkinsci/jenkins/pull/23875",
-      "repo": "jenkinsci/jenkins",
-      "number": 23875,
-      "title": "Fix link formatting in CONTRIBUTING.md",
-      "kind": "upstream",
-      "state": "merged",
-      "draft": false,
-      "head": "410e905f1164d1e30fb750fdecf6512a1daf1a47",
-      "ci": "Not verified for this head",
-      "blocker": "",
-      "next_action": "Accepted upstream; no further review ping.",
-      "close_reason": "Merged into the actual upstream repository.",
-      "lesson": "Retain the reproducer, tests and exact accepted revision as the success evidence.",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/jenkinsci/jenkins/pull/23875"
-        },
-        {
-          "label": "Latest public human comment",
-          "url": "https://github.com/jenkinsci/jenkins/pull/23875#issuecomment-3589656097"
-        }
-      ],
-      "human_reply": "@MarkEWaite: Merging immediately because it is a waste of money to run a full CI job on a documentation change that is not tested by the CI process.",
-      "upstream_url": "",
-      "updated_at": "2025-11-28T15:06:49Z",
-      "upstream_repo": "jenkinsci/jenkins",
-      "head_ref": "Fix-Documentation",
-      "created_at": "2025-11-28T14:58:31Z",
-      "merged_at": "2025-11-28T15:06:47Z",
-      "closed_at": "2025-11-28T15:06:47Z"
-    },
-    {
-      "id": "jitsi/jitsi-meet#16644",
-      "url": "https://github.com/jitsi/jitsi-meet/pull/16644",
-      "repo": "jitsi/jitsi-meet",
-      "number": 16644,
-      "title": "fix(chat): remove debug console.log statements from resize handlers",
-      "kind": "upstream",
-      "state": "merged",
-      "draft": false,
-      "head": "0269eae9c46c8f75b384c3d5ebb4f81354363bdf",
-      "ci": "Not verified for this head",
-      "blocker": "",
-      "next_action": "Accepted upstream; no further review ping.",
-      "close_reason": "Merged into the actual upstream repository.",
-      "lesson": "Retain the reproducer, tests and exact accepted revision as the success evidence.",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/jitsi/jitsi-meet/pull/16644"
-        },
-        {
-          "label": "Latest public human comment",
-          "url": "https://github.com/jitsi/jitsi-meet/pull/16644#issuecomment-3530060811"
-        }
-      ],
-      "human_reply": "@damencho: Thank you for your contribution.",
-      "upstream_url": "",
-      "updated_at": "2025-11-13T22:53:14Z",
-      "upstream_repo": "jitsi/jitsi-meet",
-      "head_ref": "master",
-      "created_at": "2025-11-12T23:54:12Z",
-      "merged_at": "2025-11-13T22:52:24Z",
-      "closed_at": "2025-11-13T22:52:24Z"
-    },
-    {
-      "id": "jitsi/jitsi-meet#16648",
-      "url": "https://github.com/jitsi/jitsi-meet/pull/16648",
-      "repo": "jitsi/jitsi-meet",
-      "number": 16648,
-      "title": "Feature/whiteboard close button",
-      "kind": "upstream",
-      "state": "closed",
-      "draft": false,
-      "head": "8ecfa67540e42af2b742917ac638077ef89924d6",
-      "ci": "Not verified for this head",
-      "blocker": "",
-      "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "The author closed this PR, and the cached thread gives no explicit reason. Its CLA reminder is automated boilerplate, not proof of a licensing-related rejection or a maintainer decision.",
-      "lesson": "Record a short author-closure explanation and cross-link any replacement; keep stacked changes independently reviewable and do not infer licensing failure from a reminder.",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/jitsi/jitsi-meet/pull/16648"
-        },
-        {
-          "label": "Closure discussion",
-          "url": "https://github.com/jitsi/jitsi-meet/pull/16648#issuecomment-3529659912"
-        }
-      ],
-      "human_reply": "@jitsi-jenkins: Hi, thanks for your contribution! If you haven't already done so, could you please make sure you sign our CLA ([link] for individuals and [link] for corporations)? We would unfortunately be unable to merge your patch unless we have that piece :(.",
-      "upstream_url": "",
-      "updated_at": "2025-11-14T06:23:57Z",
-      "upstream_repo": "jitsi/jitsi-meet",
-      "head_ref": "feature/whiteboard-close-button",
-      "created_at": "2025-11-13T20:47:28Z",
-      "merged_at": null,
-      "closed_at": "2025-11-14T06:12:31Z",
-      "close_reason_certainty": "unknown",
-      "closed_by": "srijan2607"
-    },
-    {
-      "id": "jitsi/jitsi-meet#16651",
-      "url": "https://github.com/jitsi/jitsi-meet/pull/16651",
-      "repo": "jitsi/jitsi-meet",
-      "number": 16651,
-      "title": "feat(whiteboard) : add close button to whiteboard interface",
-      "kind": "upstream",
-      "state": "closed",
-      "draft": false,
-      "head": "a347337903a86b14d9c54bf6770c696168ddd6c0",
-      "ci": "Not verified for this head",
-      "blocker": "",
-      "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "After internal discussion, maintainers chose to retain the existing whiteboard menu button rather than add the proposed dedicated close button. This was an explicit product/UI decision.",
-      "lesson": "Confirm that maintainers want an additional control before implementing it; an existing alternate interaction can make a technically valid feature unwanted.",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/jitsi/jitsi-meet/pull/16651"
-        },
-        {
-          "label": "Closure discussion",
-          "url": "https://github.com/jitsi/jitsi-meet/pull/16651#issuecomment-3711459445"
-        }
-      ],
-      "human_reply": "@damencho: After internal discussion we decided to stick with what we have, the button in the menu can close the whiteboard.",
-      "upstream_url": "",
-      "updated_at": "2026-01-05T17:47:58Z",
-      "upstream_repo": "jitsi/jitsi-meet",
-      "head_ref": "feature/whiteboard-close-button",
-      "created_at": "2025-11-14T07:13:30Z",
-      "merged_at": null,
-      "closed_at": "2026-01-05T17:47:58Z",
-      "close_reason_certainty": "explicit",
-      "closed_by": "damencho"
-    },
-    {
-      "id": "jitsi/jitsi-meet#16655",
-      "url": "https://github.com/jitsi/jitsi-meet/pull/16655",
-      "repo": "jitsi/jitsi-meet",
-      "number": 16655,
-      "title": "feat(logging): replace console.* with centralized logger infrastructure",
-      "kind": "upstream",
-      "state": "merged",
-      "draft": false,
-      "head": "4b56e078c5fefb27683073df1878b500a4ad66d2",
-      "ci": "Not verified for this head",
-      "blocker": "",
-      "next_action": "Accepted upstream; no further review ping.",
-      "close_reason": "Merged into the actual upstream repository.",
-      "lesson": "Retain the reproducer, tests and exact accepted revision as the success evidence.",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/jitsi/jitsi-meet/pull/16655"
-        },
-        {
-          "label": "Latest public human comment",
-          "url": "https://github.com/jitsi/jitsi-meet/pull/16655#issuecomment-3555210425"
-        }
-      ],
-      "human_reply": "@damencho: Thank you for your contribution.",
-      "upstream_url": "",
-      "updated_at": "2025-11-20T00:31:52Z",
-      "upstream_repo": "jitsi/jitsi-meet",
-      "head_ref": "feature/centralized-logger-infrastructure",
-      "created_at": "2025-11-15T09:20:00Z",
-      "merged_at": "2025-11-20T00:31:36Z",
-      "closed_at": "2025-11-20T00:31:36Z"
-    },
-    {
-      "id": "jitsi/jitsi-meet#16656",
-      "url": "https://github.com/jitsi/jitsi-meet/pull/16656",
-      "repo": "jitsi/jitsi-meet",
-      "number": 16656,
-      "title": "feat(systemd): use native template units for prosody visitor instances",
-      "kind": "upstream",
-      "state": "merged",
-      "draft": false,
-      "head": "449deebe943ceddd2a38e4b410aa2cfa4be4c42d",
-      "ci": "Not verified for this head",
-      "blocker": "",
-      "next_action": "Accepted upstream; no further review ping.",
-      "close_reason": "Merged into the actual upstream repository.",
-      "lesson": "Retain the reproducer, tests and exact accepted revision as the success evidence.",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/jitsi/jitsi-meet/pull/16656"
-        },
-        {
-          "label": "Latest public human comment",
-          "url": "https://github.com/jitsi/jitsi-meet/pull/16656#issuecomment-3543467664"
-        }
-      ],
-      "human_reply": "@damencho: > Check of these services are recognized `systemctl list-units | grep prosody` Yeah, seems it is not correct on my end. Will continue testing and will let you know how it goes.",
-      "upstream_url": "",
-      "updated_at": "2026-02-26T23:44:21Z",
-      "upstream_repo": "jitsi/jitsi-meet",
-      "head_ref": "feature/systemd-template-units",
-      "created_at": "2025-11-15T09:50:14Z",
-      "merged_at": "2026-02-26T23:44:21Z",
-      "closed_at": "2026-02-26T23:44:21Z"
-    },
-    {
-      "id": "jitsi/jitsi-meet#16681",
-      "url": "https://github.com/jitsi/jitsi-meet/pull/16681",
-      "repo": "jitsi/jitsi-meet",
-      "number": 16681,
-      "title": "fix(android): resolve duplicate librnworklets.so in AAR",
-      "kind": "upstream",
-      "state": "closed",
-      "draft": false,
-      "head": "d02b2f2a2767a0bde776624d1d29c1474c651d9f",
-      "ci": "Not verified for this head",
-      "blocker": "",
-      "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "The final closure was by Calinteodor, who stated that a fix was available in PR #16691. The chronology also includes an earlier author close and reopen; earlier CI failures are feedback, not the stated final reason.",
-      "lesson": "Reproduce packaging failures locally, inspect actual CI failures, and check whether another contributor has already supplied the fix before requesting reruns.",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/jitsi/jitsi-meet/pull/16681"
-        },
-        {
-          "label": "Closure discussion",
-          "url": "https://github.com/jitsi/jitsi-meet/pull/16681#issuecomment-3557992840"
-        },
-        {
-          "label": "Latest public human comment",
-          "url": "https://github.com/jitsi/jitsi-meet/pull/16681#issuecomment-3562461713"
-        },
-        {
-          "label": "Earlier human CI feedback",
-          "url": "https://github.com/jitsi/jitsi-meet/pull/16681#issuecomment-3557914365"
-        }
-      ],
-      "human_reply": "@Calinteodor: Fix is available in #16691",
-      "upstream_url": "",
-      "updated_at": "2025-11-21T10:44:25Z",
-      "upstream_repo": "jitsi/jitsi-meet",
-      "head_ref": "fix/android-worklets-aar-duplicate-libs",
-      "created_at": "2025-11-19T23:46:45Z",
-      "merged_at": null,
-      "closed_at": "2025-11-21T10:44:25Z",
-      "close_reason_certainty": "explicit",
-      "closed_by": "Calinteodor"
-    },
-    {
-      "id": "jitsi/jitsi-meet#16694",
-      "url": "https://github.com/jitsi/jitsi-meet/pull/16694",
-      "repo": "jitsi/jitsi-meet",
-      "number": 16694,
-      "title": "fix(breakout-rooms): update session variables for polls in breakout r…",
-      "kind": "upstream",
-      "state": "closed",
-      "draft": false,
-      "head": "cf6ee8f654fc4c608c5c988feacab8c70e159a3c",
-      "ci": "Not verified for this head",
-      "blocker": "",
-      "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "Maintainer closed this because the issue was addressed in PR #16702. Earlier human feedback rejected changing every session on every join and warned that client-supplied room identifiers cannot be trusted like visitor infrastructure.",
-      "lesson": "Validate room-context changes against the trust boundary, and check competing fixes before revising a rejected approach.",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/jitsi/jitsi-meet/pull/16694"
-        },
-        {
-          "label": "Closure discussion",
-          "url": "https://github.com/jitsi/jitsi-meet/pull/16694#issuecomment-3931210851"
-        },
-        {
-          "label": "Latest public human comment",
-          "url": "https://github.com/jitsi/jitsi-meet/pull/16694#issuecomment-3969898114"
-        },
-        {
-          "label": "Trust-boundary feedback",
-          "url": "https://github.com/jitsi/jitsi-meet/pull/16694#issuecomment-3563578518"
-        }
-      ],
-      "human_reply": "@damencho: This was addressed in [link]",
-      "upstream_url": "",
-      "updated_at": "2026-02-26T23:46:29Z",
-      "upstream_repo": "jitsi/jitsi-meet",
-      "head_ref": "fix/breakout-room-polls",
-      "created_at": "2025-11-21T14:42:31Z",
-      "merged_at": null,
-      "closed_at": "2026-02-26T23:46:28Z",
-      "close_reason_certainty": "explicit",
-      "closed_by": "damencho"
-    },
-    {
-      "id": "jitsi/jitsi-meet#16708",
-      "url": "https://github.com/jitsi/jitsi-meet/pull/16708",
-      "repo": "jitsi/jitsi-meet",
-      "number": 16708,
-      "title": "refactor(large-video): migrate LargeVideo.native to function componen…",
-      "kind": "upstream",
-      "state": "closed",
-      "draft": false,
-      "head": "aaa6f8da02c0abb1b6f58174dfa874c05d569489",
-      "ci": "Not verified for this head",
-      "blocker": "",
-      "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "GitHub Actions closed this after an inactivity/stale warning, but the cached record has no explicit closing explanation. No human technical rejection is recorded; the standard CLA reminder does not establish the cause.",
-      "lesson": "Keep approved work active with concrete progress, but do not interpret a stale-bot closure or boilerplate CLA reminder as a maintainer rejection.",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/jitsi/jitsi-meet/pull/16708"
-        },
-        {
-          "label": "Closure discussion",
-          "url": "https://github.com/jitsi/jitsi-meet/pull/16708#issuecomment-3988204187"
-        },
-        {
-          "label": "Latest public human comment",
-          "url": "https://github.com/jitsi/jitsi-meet/pull/16708#issuecomment-3579288144"
-        }
-      ],
-      "human_reply": "@jitsi-jenkins: Hi, thanks for your contribution! If you haven't already done so, could you please make sure you sign our CLA ([link] for individuals and [link] for corporations)? We would unfortunately be unable to merge your patch unless we have that piece :(.",
-      "upstream_url": "",
-      "updated_at": "2026-03-14T02:20:06Z",
-      "upstream_repo": "jitsi/jitsi-meet",
-      "head_ref": "refactor/large-video-hooks",
-      "created_at": "2025-11-26T05:40:03Z",
-      "merged_at": null,
-      "closed_at": "2026-03-14T02:20:06Z",
-      "close_reason_certainty": "unknown",
-      "closed_by": "github-actions[bot]"
-    },
-    {
-      "id": "kubearmor/KubeArmor#2287",
-      "url": "https://github.com/kubearmor/KubeArmor/pull/2287",
-      "repo": "kubearmor/KubeArmor",
-      "number": 2287,
-      "title": "fix: correct spelling and grammar in main.go log message",
-      "kind": "upstream",
-      "state": "merged",
-      "draft": false,
-      "head": "349a7d035447e3ac03373f85ec8a302847d212f9",
-      "ci": "Not verified for this head",
-      "blocker": "",
-      "next_action": "Accepted upstream; no further review ping.",
-      "close_reason": "Merged into the actual upstream repository.",
-      "lesson": "Retain the reproducer, tests and exact accepted revision as the success evidence.",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/kubearmor/KubeArmor/pull/2287"
-        },
-        {
-          "label": "Latest public human comment",
-          "url": "https://github.com/kubearmor/KubeArmor/pull/2287#issuecomment-3611886279"
-        }
-      ],
-      "human_reply": "@rksharma95: > @Aryan-sharma11 @rksharma95 I have some questions related to the project. Where can I reach out to? Join CNCF kubearmor slack channel, you can find the invitation link on project readme.",
-      "upstream_url": "",
-      "updated_at": "2025-12-22T12:17:03Z",
-      "upstream_repo": "kubearmor/KubeArmor",
-      "head_ref": "fix/descriptive-name",
-      "created_at": "2025-12-02T16:13:35Z",
-      "merged_at": "2025-12-22T12:17:02Z",
-      "closed_at": "2025-12-22T12:17:02Z"
-    },
-    {
-      "id": "M-Hidayatullah/hacktoberfest-2024#3",
-      "url": "https://github.com/M-Hidayatullah/hacktoberfest-2024/pull/3",
-      "repo": "M-Hidayatullah/hacktoberfest-2024",
-      "number": 3,
-      "title": "Enhancements to Contributor Display Page for Improved Readability, Modularity, and Accessibility",
-      "kind": "upstream",
-      "state": "merged",
-      "draft": false,
-      "head": "86ab7f5bd19c7ee286f9f474334e06abdba32d5d",
-      "ci": "Not verified for this head",
-      "blocker": "",
-      "next_action": "Accepted upstream; no further review ping.",
-      "close_reason": "Merged into the actual upstream repository.",
-      "lesson": "Retain the reproducer, tests and exact accepted revision as the success evidence.",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/M-Hidayatullah/hacktoberfest-2024/pull/3"
-        }
-      ],
-      "human_reply": "",
-      "upstream_url": "",
-      "updated_at": "2024-10-18T11:57:46Z",
-      "upstream_repo": "M-Hidayatullah/hacktoberfest-2024",
-      "head_ref": "main",
-      "created_at": "2024-10-18T11:55:15Z",
-      "merged_at": "2024-10-18T11:57:45Z",
-      "closed_at": "2024-10-18T11:57:45Z"
+      "blocker_owner": "@newville — upstream workflow approval",
+      "owner_url": "https://github.com/newville",
+      "follow_up_status": "Tagged on GitHub on 2026-10-16T11:29:09Z; awaiting workflow execution, not claiming green CI.",
+      "upstream_ci": "Workflow approval required; not green (CI scan 2026-10-16T11:52:51.588012+00:00)"
     },
     {
       "id": "networkx/networkx#8957",
@@ -2466,7 +1614,6 @@
       "head": "076f0bd13835632f92f7062c0b50cecd0484f4ac",
       "ci": "Not verified for this head",
       "blocker": "",
-      "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
       "close_reason": "The author closed this draft; no closing explanation is present in its cached thread. PR #8958 subsequently carries the same hidden-edge proposal, consistent with operational author-supersession, but the cached evidence does not establish attribution correction as the reason for closing #8957.",
       "lesson": "Retain an explicit old-to-new replacement notice and verify attribution before publication; do not describe an author-closed draft as a maintainer rejection or count its successor as another distinct fix.",
       "evidence": [
@@ -2488,83 +1635,15 @@
       "merged_at": null,
       "closed_at": "2026-10-15T14:46:21Z",
       "close_reason_certainty": "unknown",
-      "closed_by": "srijan2607"
-    },
-    {
-      "id": "PalisadoesFoundation/talawa-api#3139",
-      "url": "https://github.com/PalisadoesFoundation/talawa-api/pull/3139",
-      "repo": "PalisadoesFoundation/talawa-api",
-      "number": 3139,
-      "title": "Refactoring/Type Safety Improvements",
-      "kind": "upstream",
-      "state": "closed",
-      "draft": false,
-      "head": "5e648c9f3560350158d73cdc8da2e8372c8c802e",
-      "ci": "Not verified for this head",
-      "blocker": "",
-      "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "The author closed this PR without a stated reason in the cached comments, reviews or timeline. The author had asked for help fixing errors, but that does not establish why the PR was closed.",
-      "lesson": "Reproduce and isolate errors before requesting help, and record the closure or replacement rationale explicitly rather than leaving later readers to infer it.",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/PalisadoesFoundation/talawa-api/pull/3139"
-        },
-        {
-          "label": "Closure discussion",
-          "url": "https://github.com/PalisadoesFoundation/talawa-api/pull/3139#issuecomment-2633389932"
-        }
+      "closed_by": "srijan2607",
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
       ],
-      "human_reply": "",
-      "upstream_url": "",
-      "updated_at": "2025-02-04T09:59:30Z",
-      "upstream_repo": "PalisadoesFoundation/talawa-api",
-      "head_ref": "main",
-      "created_at": "2025-02-04T09:49:05Z",
-      "merged_at": null,
-      "closed_at": "2025-02-04T09:59:30Z",
-      "close_reason_certainty": "unknown",
-      "closed_by": "srijan2607"
-    },
-    {
-      "id": "PalisadoesFoundation/talawa-api#3140",
-      "url": "https://github.com/PalisadoesFoundation/talawa-api/pull/3140",
-      "repo": "PalisadoesFoundation/talawa-api",
-      "number": 3140,
-      "title": "Refactoring/Type Safety Improvements",
-      "kind": "upstream",
-      "state": "closed",
-      "draft": false,
-      "head": "63754f3f4290c7300f169ddf5905275a1b826223",
-      "ci": "Not verified for this head",
-      "blocker": "",
-      "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "Maintainer explicitly closed this while requesting proper issue-closing links, a more complete PR template, and a searchable title. Immediately beforehand they also requested fixes for failing tests.",
-      "lesson": "Complete the project template and correct issue-closing syntax, choose a specific searchable title, and verify required tests before submitting.",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/PalisadoesFoundation/talawa-api/pull/3140"
-        },
-        {
-          "label": "Closure discussion",
-          "url": "https://github.com/PalisadoesFoundation/talawa-api/pull/3140#issuecomment-2637863327"
-        },
-        {
-          "label": "Maintainer test feedback",
-          "url": "https://github.com/PalisadoesFoundation/talawa-api/pull/3140#issuecomment-2637862066"
-        }
-      ],
-      "human_reply": "@palisadoes: Please fix the first comment so that each issue listed automatically closes. The PR_GUIDELINES.md file has details. Please also fill in the template for the pull request as completely as you can. It greatly helps others searching for code changes in future and helps others understand the summarized rationale for the work you have done Also make sure the title is easily searchable for terms related to what the PR is about. Closing",
-      "upstream_url": "",
-      "updated_at": "2025-02-06T19:48:24Z",
-      "upstream_repo": "PalisadoesFoundation/talawa-api",
-      "head_ref": "develop",
-      "created_at": "2025-02-04T10:44:57Z",
-      "merged_at": null,
-      "closed_at": "2025-02-05T19:38:10Z",
-      "close_reason_certainty": "explicit",
-      "closed_by": "palisadoes"
+      "blocker_owner": "Historical record; see closure/review evidence",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No new contact sent for this historical record."
     },
     {
       "id": "pypa/pipx#2150",
@@ -2578,7 +1657,6 @@
       "head": "13dfc942875f72ef2765690192cf7202a065889f",
       "ci": "Not verified for this head",
       "blocker": "",
-      "next_action": "Accepted upstream; no further review ping.",
       "close_reason": "Merged into the actual upstream repository.",
       "lesson": "Retain the reproducer, tests and exact accepted revision as the success evidence.",
       "evidence": [
@@ -2598,7 +1676,16 @@
       "head_ref": "review/reissued-srijan2607-20261015",
       "created_at": "2026-10-15T15:34:51Z",
       "merged_at": "2026-10-15T23:23:06Z",
-      "closed_at": "2026-10-15T23:23:06Z"
+      "closed_at": "2026-10-15T23:23:06Z",
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded.",
+        "Merged into the actual project repository."
+      ],
+      "blocker_owner": "No blocker — officially merged upstream",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "Official upstream merge verified."
     },
     {
       "id": "pypa/twine#1405",
@@ -2612,7 +1699,6 @@
       "head": "192e5b84e7e2eb77099386eae39b8e8d8c48eb73",
       "ci": "Not verified for this head",
       "blocker": "",
-      "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
       "close_reason": "Maintainer rejected the premise: credentials embedded in repository URLs are unsupported; Twine expects .pypirc or a keyring backend. In the linked issue decision, the same maintainer explicitly prohibited automated AI issues or PRs to this repository.",
       "lesson": "Verify that an input is supported before implementing a fix, use the supported credential mechanisms, and stop automated AI submissions to Twine rather than reopening or rephrasing this proposal.",
       "evidence": [
@@ -2634,7 +1720,15 @@
       "merged_at": null,
       "closed_at": "2026-10-15T15:46:17Z",
       "close_reason_certainty": "explicit",
-      "closed_by": "woodruffw"
+      "closed_by": "woodruffw",
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Historical record; see closure/review evidence",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No new contact sent for this historical record."
     },
     {
       "id": "Textualize/trogon#129",
@@ -2648,7 +1742,6 @@
       "head": "1dd8354e492a4125d49fe13897fe8ca0beaee004",
       "ci": "Not verified for this head",
       "blocker": "",
-      "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
       "close_reason": "Operational author-superseded: the author closed this in favor of PR #130 to correct account-linked commit attribution. The public historical description identifies the replacement and states that the tested file tree was unchanged; this was not a maintainer technical rejection.",
       "lesson": "Check author and committer attribution before publication, preserve replacement cross-links, and count replacement records separately from distinct fixes.",
       "evidence": [
@@ -2670,7 +1763,15 @@
       "merged_at": null,
       "closed_at": "2026-10-15T15:30:12Z",
       "close_reason_certainty": "explicit",
-      "closed_by": "srijan2607"
+      "closed_by": "srijan2607",
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Historical record; see closure/review evidence",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No new contact sent for this historical record."
     },
     {
       "id": "srijan2607/etils#1",
@@ -2684,7 +1785,6 @@
       "head": "cdee7ec769a70b4c95f3603c0848426130128a83",
       "ci": "Not verified for this head",
       "blocker": "",
-      "next_action": "Historical review record; follow the current upstream/revision link.",
       "close_reason": "Merged into the author’s fork for review; this is not upstream acceptance.",
       "lesson": "Measure upstream acceptance separately from fork review merges.",
       "evidence": [
@@ -2704,7 +1804,15 @@
       "head_ref": "fix/dataclass-contextvars-forwarding",
       "created_at": "2026-10-15T18:17:48Z",
       "merged_at": "2026-10-15T21:08:52Z",
-      "closed_at": "2026-10-15T21:08:52Z"
+      "closed_at": "2026-10-15T21:08:52Z",
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Historical record; see closure/review evidence",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No new contact sent for this historical record."
     },
     {
       "id": "srijan2607/etils#2",
@@ -2718,7 +1826,6 @@
       "head": "254e46d77dc3cdd2fe1855dcc009d606cbc5bd28",
       "ci": "Not verified for this head",
       "blocker": "",
-      "next_action": "Historical review record; follow the current upstream/revision link.",
       "close_reason": "Merged into the author’s fork for review; this is not upstream acceptance.",
       "lesson": "Measure upstream acceptance separately from fork review merges.",
       "evidence": [
@@ -2738,41 +1845,15 @@
       "head_ref": "fix/inherited-unfrozen-dataclass-methods",
       "created_at": "2026-10-15T19:09:33Z",
       "merged_at": "2026-10-15T21:08:58Z",
-      "closed_at": "2026-10-15T21:08:58Z"
-    },
-    {
-      "id": "srijan2607/hacktoberfest-2024#1",
-      "url": "https://github.com/srijan2607/hacktoberfest-2024/pull/1",
-      "repo": "srijan2607/hacktoberfest-2024",
-      "number": 1,
-      "title": "Enhancements to Contributor Display Page for Improved Readability, Modularity, and Accessibility",
-      "kind": "fork",
-      "state": "merged",
-      "draft": false,
-      "head": "eff2397fa21a19243951879570ccd2d13ac5b18e",
-      "ci": "Not verified for this head",
-      "blocker": "",
-      "next_action": "Historical review record; follow the current upstream/revision link.",
-      "close_reason": "Merged into the author’s fork for review; this is not upstream acceptance.",
-      "lesson": "Measure upstream acceptance separately from fork review merges.",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/srijan2607/hacktoberfest-2024/pull/1"
-        },
-        {
-          "label": "Related actual upstream PR",
-          "url": "https://github.com/M-Hidayatullah/hacktoberfest-2024/pull/3"
-        }
+      "closed_at": "2026-10-15T21:08:58Z",
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
       ],
-      "human_reply": "",
-      "upstream_url": "https://github.com/M-Hidayatullah/hacktoberfest-2024/pull/3",
-      "updated_at": "2024-10-18T11:53:51Z",
-      "upstream_repo": "M-Hidayatullah/hacktoberfest-2024",
-      "head_ref": "main",
-      "created_at": "2024-10-18T11:53:41Z",
-      "merged_at": "2024-10-18T11:53:51Z",
-      "closed_at": "2024-10-18T11:53:51Z"
+      "blocker_owner": "Historical record; see closure/review evidence",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No new contact sent for this historical record."
     },
     {
       "id": "srijan2607/ion-python#1",
@@ -2786,7 +1867,6 @@
       "head": "d4f3a5537ef2cdcbcc944875482dfa6e50314b4c",
       "ci": "Not verified for this head",
       "blocker": "",
-      "next_action": "Historical review record; follow the current upstream/revision link.",
       "close_reason": "Merged into the author’s fork for review; this is not upstream acceptance.",
       "lesson": "Measure upstream acceptance separately from fork review merges.",
       "evidence": [
@@ -2802,7 +1882,15 @@
       "head_ref": "fix/reject-binary-negative-integer-zero",
       "created_at": "2026-10-15T18:27:25Z",
       "merged_at": "2026-10-15T21:09:22Z",
-      "closed_at": "2026-10-15T21:09:22Z"
+      "closed_at": "2026-10-15T21:09:22Z",
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Historical record; see closure/review evidence",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No new contact sent for this historical record."
     },
     {
       "id": "srijan2607/ion-python#2",
@@ -2816,7 +1904,6 @@
       "head": "39af339a3d5133579a65c9e86644ed2029e8122e",
       "ci": "Not verified for this head",
       "blocker": "",
-      "next_action": "Historical review record; follow the current upstream/revision link.",
       "close_reason": "Merged into the author’s fork for review; this is not upstream acceptance.",
       "lesson": "Measure upstream acceptance separately from fork review merges.",
       "evidence": [
@@ -2832,7 +1919,15 @@
       "head_ref": "fix/text-numeric-whitespace-terminators",
       "created_at": "2026-10-15T19:10:02Z",
       "merged_at": "2026-10-15T21:09:29Z",
-      "closed_at": "2026-10-15T21:09:29Z"
+      "closed_at": "2026-10-15T21:09:29Z",
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Historical record; see closure/review evidence",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No new contact sent for this historical record."
     },
     {
       "id": "srijan2607/ion-python#3",
@@ -2846,7 +1941,6 @@
       "head": "09471a6ef01e908dab42cf9deba909e934ea6502",
       "ci": "Not verified for this head",
       "blocker": "",
-      "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
       "close_reason": "Author-closed after an overlapping upstream fix was found in amazon-ion/ion-python#452; this was not an upstream rejection of this fork PR.",
       "lesson": "Refresh competing work before publication and offer validated additional tests instead of opening a duplicate fix.",
       "evidence": [
@@ -2871,41 +1965,15 @@
       "created_at": "2026-10-15T22:39:58Z",
       "merged_at": null,
       "closed_at": "2026-10-16T07:23:43Z",
-      "close_reason_certainty": "inferred"
-    },
-    {
-      "id": "srijan2607/jitsi-meet#1",
-      "url": "https://github.com/srijan2607/jitsi-meet/pull/1",
-      "repo": "srijan2607/jitsi-meet",
-      "number": 1,
-      "title": "Feat: add close button to whiteboard interface",
-      "kind": "fork",
-      "state": "merged",
-      "draft": false,
-      "head": "8eb7bb20ce2cd0830efec28dbb9d62a99e8926ee",
-      "ci": "Not verified for this head",
-      "blocker": "",
-      "next_action": "Historical review record; follow the current upstream/revision link.",
-      "close_reason": "Merged into the author’s fork for review; this is not upstream acceptance.",
-      "lesson": "Measure upstream acceptance separately from fork review merges.",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/srijan2607/jitsi-meet/pull/1"
-        },
-        {
-          "label": "Related actual upstream PR",
-          "url": "https://github.com/jitsi/jitsi-meet/pull/16651"
-        }
+      "close_reason_certainty": "inferred",
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
       ],
-      "human_reply": "",
-      "upstream_url": "https://github.com/jitsi/jitsi-meet/pull/16651",
-      "updated_at": "2025-11-13T01:55:31Z",
-      "upstream_repo": "jitsi/jitsi-meet",
-      "head_ref": "feature/whiteboard-close-button",
-      "created_at": "2025-11-13T01:55:23Z",
-      "merged_at": "2025-11-13T01:55:31Z",
-      "closed_at": "2025-11-13T01:55:31Z"
+      "blocker_owner": "Historical record; see closure/review evidence",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No new contact sent for this historical record."
     },
     {
       "id": "srijan2607/jmespath.py#1",
@@ -2919,7 +1987,6 @@
       "head": "9ac1905ac3459d054ff66cc46cce255f6258a83a",
       "ci": "Not verified for this head",
       "blocker": "",
-      "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
       "close_reason": "Explicitly superseded by own-fork PR #2, retaining the same corrected commit and complete patch. The older review was archived, not rejected by the upstream maintainer.",
       "lesson": "Cross-link replacement records and do not count a reissued review copy as a new distinct fix.",
       "evidence": [
@@ -2940,7 +2007,15 @@
       "created_at": "2026-10-15T14:25:31Z",
       "merged_at": null,
       "closed_at": "2026-10-15T15:32:02Z",
-      "close_reason_certainty": "explicit"
+      "close_reason_certainty": "explicit",
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Historical record; see closure/review evidence",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No new contact sent for this historical record."
     },
     {
       "id": "srijan2607/knack#1",
@@ -2954,7 +2029,6 @@
       "head": "05a9dea3a7116309310b389b81c3959e54f7f4e9",
       "ci": "Not verified for this head",
       "blocker": "",
-      "next_action": "Historical review record; follow the current upstream/revision link.",
       "close_reason": "Merged into the author’s fork for review; this is not upstream acceptance.",
       "lesson": "Measure upstream acceptance separately from fork review merges.",
       "evidence": [
@@ -2974,7 +2048,15 @@
       "head_ref": "fix/preserve-custom-command-loaders",
       "created_at": "2026-10-15T18:26:51Z",
       "merged_at": "2026-10-15T21:09:10Z",
-      "closed_at": "2026-10-15T21:09:10Z"
+      "closed_at": "2026-10-15T21:09:10Z",
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Historical record; see closure/review evidence",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No new contact sent for this historical record."
     },
     {
       "id": "srijan2607/knack#2",
@@ -2988,7 +2070,6 @@
       "head": "74f8cf5f96686da1c0d637a5a8307c172b83350e",
       "ci": "Not verified for this head",
       "blocker": "",
-      "next_action": "Historical review record; follow the current upstream/revision link.",
       "close_reason": "Merged into the author’s fork for review; this is not upstream acceptance.",
       "lesson": "Measure upstream acceptance separately from fork review merges.",
       "evidence": [
@@ -3008,7 +2089,15 @@
       "head_ref": "fix/help-parameter-alias-matching",
       "created_at": "2026-10-15T20:26:36Z",
       "merged_at": "2026-10-15T21:09:15Z",
-      "closed_at": "2026-10-15T21:09:16Z"
+      "closed_at": "2026-10-15T21:09:16Z",
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Historical record; see closure/review evidence",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No new contact sent for this historical record."
     },
     {
       "id": "srijan2607/llm#1",
@@ -3022,7 +2111,6 @@
       "head": "29512960204d3ccbd527e819e6ae03bdc076ae8f",
       "ci": "Not verified for this head",
       "blocker": "",
-      "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
       "close_reason": "The public historical description explicitly supersedes this review with own-fork PR #2, preserving the tested file tree with corrected account-linked commit attribution.",
       "lesson": "Verify both author and committer identity before publication and preserve a clear old-to-new review link.",
       "evidence": [
@@ -3047,7 +2135,15 @@
       "created_at": "2026-10-15T09:08:59Z",
       "merged_at": null,
       "closed_at": "2026-10-15T15:29:54Z",
-      "close_reason_certainty": "explicit"
+      "close_reason_certainty": "explicit",
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Historical record; see closure/review evidence",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No new contact sent for this historical record."
     },
     {
       "id": "srijan2607/networkx#1",
@@ -3061,7 +2157,6 @@
       "head": "f58a8f2bdcb6444f3604ca44f82ed92d61c89690",
       "ci": "Not verified for this head",
       "blocker": "",
-      "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
       "close_reason": "The combined review was superseded by separate own-fork PRs #2 and #3 for scope review. The author's closing comment records those fork merges; neither that closure nor the fork merges establish upstream acceptance.",
       "lesson": "Split independently reviewable behaviours and keep fork review outcomes separate from actual upstream decisions.",
       "evidence": [
@@ -3082,7 +2177,15 @@
       "created_at": "2026-10-15T09:19:21Z",
       "merged_at": null,
       "closed_at": "2026-10-15T14:53:47Z",
-      "close_reason_certainty": "explicit"
+      "close_reason_certainty": "explicit",
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Historical record; see closure/review evidence",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No new contact sent for this historical record."
     },
     {
       "id": "srijan2607/networkx#2",
@@ -3096,7 +2199,6 @@
       "head": "076f0bd13835632f92f7062c0b50cecd0484f4ac",
       "ci": "Not verified for this head",
       "blocker": "",
-      "next_action": "Historical review record; follow the current upstream/revision link.",
       "close_reason": "Merged into the author’s fork for review; this is not upstream acceptance.",
       "lesson": "Measure upstream acceptance separately from fork review merges.",
       "evidence": [
@@ -3116,7 +2218,15 @@
       "head_ref": "review/split-hidden-edges-20261015",
       "created_at": "2026-10-15T14:21:13Z",
       "merged_at": "2026-10-15T14:53:22Z",
-      "closed_at": "2026-10-15T14:53:22Z"
+      "closed_at": "2026-10-15T14:53:22Z",
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Historical record; see closure/review evidence",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No new contact sent for this historical record."
     },
     {
       "id": "srijan2607/networkx#3",
@@ -3130,7 +2240,6 @@
       "head": "9c9948cf2747f362d7173fbdaedbf60d73024c02",
       "ci": "Not verified for this head",
       "blocker": "",
-      "next_action": "Historical review record; follow the current upstream/revision link.",
       "close_reason": "Merged into the author’s fork for review; this is not upstream acceptance.",
       "lesson": "Measure upstream acceptance separately from fork review merges.",
       "evidence": [
@@ -3146,7 +2255,15 @@
       "head_ref": "review/split-negative-edge-cycle-20261015",
       "created_at": "2026-10-15T14:25:47Z",
       "merged_at": "2026-10-15T14:53:43Z",
-      "closed_at": "2026-10-15T14:53:43Z"
+      "closed_at": "2026-10-15T14:53:43Z",
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Historical record; see closure/review evidence",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No new contact sent for this historical record."
     },
     {
       "id": "srijan2607/networkx#4",
@@ -3160,7 +2277,6 @@
       "head": "7e213f335683881e34a37a227f2692c3cbc687d8",
       "ci": "Not verified for this head",
       "blocker": "",
-      "next_action": "Historical review record; follow the current upstream/revision link.",
       "close_reason": "Merged into the author’s fork for review; this is not upstream acceptance.",
       "lesson": "Measure upstream acceptance separately from fork review merges.",
       "evidence": [
@@ -3176,7 +2292,15 @@
       "head_ref": "hidden-edges-shortest-paths",
       "created_at": "2026-10-15T15:03:26Z",
       "merged_at": "2026-10-15T15:05:06Z",
-      "closed_at": "2026-10-15T15:05:07Z"
+      "closed_at": "2026-10-15T15:05:07Z",
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Historical record; see closure/review evidence",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No new contact sent for this historical record."
     },
     {
       "id": "srijan2607/networkx#5",
@@ -3190,7 +2314,6 @@
       "head": "5b63471e35448f1ae8b9d3be133eff7183f476a0",
       "ci": "Not verified for this head",
       "blocker": "",
-      "next_action": "Historical review record; follow the current upstream/revision link.",
       "close_reason": "Merged into the author’s fork for review; this is not upstream acceptance.",
       "lesson": "Measure upstream acceptance separately from fork review merges.",
       "evidence": [
@@ -3206,7 +2329,15 @@
       "head_ref": "fix-dispatch-test",
       "created_at": "2026-10-15T15:26:22Z",
       "merged_at": "2026-10-15T15:27:56Z",
-      "closed_at": "2026-10-15T15:27:57Z"
+      "closed_at": "2026-10-15T15:27:57Z",
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Historical record; see closure/review evidence",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No new contact sent for this historical record."
     },
     {
       "id": "srijan2607/periodictable#1",
@@ -3220,7 +2351,6 @@
       "head": "2bbfd2b2fdfd1f51aff262e2c6c33942116f4f9b",
       "ci": "Not verified for this head",
       "blocker": "",
-      "next_action": "Historical review record; follow the current upstream/revision link.",
       "close_reason": "Merged into the author’s fork for review; this is not upstream acceptance.",
       "lesson": "Measure upstream acceptance separately from fork review merges.",
       "evidence": [
@@ -3240,7 +2370,15 @@
       "head_ref": "fix/stable-skew-cell-volume",
       "created_at": "2026-10-15T15:36:54Z",
       "merged_at": "2026-10-15T21:09:42Z",
-      "closed_at": "2026-10-15T21:09:42Z"
+      "closed_at": "2026-10-15T21:09:42Z",
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Historical record; see closure/review evidence",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No new contact sent for this historical record."
     },
     {
       "id": "srijan2607/pipx#1",
@@ -3254,7 +2392,6 @@
       "head": "918e9f3e3f37abeb86286056f8b4da161fbbaf1f",
       "ci": "Not verified for this head",
       "blocker": "",
-      "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
       "close_reason": "The author archived this in favour of own-fork PR #2 on a fresh review branch, preserving the corrected code and test head. This closure was a review-record replacement, not a failed upstream fix.",
       "lesson": "Keep historical review artifacts but direct reviewers to the current exact revision; count the upstream merge separately.",
       "evidence": [
@@ -3275,7 +2412,15 @@
       "created_at": "2026-10-15T12:38:44Z",
       "merged_at": null,
       "closed_at": "2026-10-15T15:34:28Z",
-      "close_reason_certainty": "explicit"
+      "close_reason_certainty": "explicit",
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Historical record; see closure/review evidence",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No new contact sent for this historical record."
     },
     {
       "id": "srijan2607/python-dotenv#1",
@@ -3289,7 +2434,6 @@
       "head": "0f7609f116b19ac7355daa6b5d9147a8c5817907",
       "ci": "Not verified for this head",
       "blocker": "",
-      "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
       "close_reason": "The author's closing comment explicitly supersedes this review with own-fork PR #2, retaining the same corrected code head and a separate official-submission preview.",
       "lesson": "Preserve replacement pointers and verify the actual upstream PR rather than treating a fork-review closure as rejection.",
       "evidence": [
@@ -3310,7 +2454,15 @@
       "created_at": "2026-10-15T14:25:26Z",
       "merged_at": null,
       "closed_at": "2026-10-15T15:30:49Z",
-      "close_reason_certainty": "explicit"
+      "close_reason_certainty": "explicit",
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Historical record; see closure/review evidence",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No new contact sent for this historical record."
     },
     {
       "id": "srijan2607/submitit#1",
@@ -3324,7 +2476,6 @@
       "head": "ae6c8ca56828293c1d178b23227577614bf9d418",
       "ci": "Not verified for this head",
       "blocker": "",
-      "next_action": "Historical review record; follow the current upstream/revision link.",
       "close_reason": "Merged into the author’s fork for review; this is not upstream acceptance.",
       "lesson": "Measure upstream acceptance separately from fork review merges.",
       "evidence": [
@@ -3344,37 +2495,15 @@
       "head_ref": "fix/atomic-checkpoint-replacement",
       "created_at": "2026-10-15T18:18:21Z",
       "merged_at": "2026-10-15T21:09:04Z",
-      "closed_at": "2026-10-15T21:09:04Z"
-    },
-    {
-      "id": "srijan2607/talawa-api#1",
-      "url": "https://github.com/srijan2607/talawa-api/pull/1",
-      "repo": "srijan2607/talawa-api",
-      "number": 1,
-      "title": "WIP: Working on TypeScript fixes [2025-02-04]",
-      "kind": "fork",
-      "state": "merged",
-      "draft": false,
-      "head": "5ab53939aaee1b31731fe37bface87843697e779",
-      "ci": "Not verified for this head",
-      "blocker": "",
-      "next_action": "Historical review record; follow the current upstream/revision link.",
-      "close_reason": "Merged into the author’s fork for review; this is not upstream acceptance.",
-      "lesson": "Measure upstream acceptance separately from fork review merges.",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/srijan2607/talawa-api/pull/1"
-        }
+      "closed_at": "2026-10-15T21:09:04Z",
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
       ],
-      "human_reply": "",
-      "upstream_url": "",
-      "updated_at": "2025-02-04T09:45:42Z",
-      "upstream_repo": "PalisadoesFoundation/talawa-api",
-      "head_ref": "fix/typescript-errors",
-      "created_at": "2025-02-04T09:45:09Z",
-      "merged_at": "2025-02-04T09:45:42Z",
-      "closed_at": "2025-02-04T09:45:42Z"
+      "blocker_owner": "Historical record; see closure/review evidence",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No new contact sent for this historical record."
     },
     {
       "id": "srijan2607/trogon#1",
@@ -3388,7 +2517,6 @@
       "head": "1dd8354e492a4125d49fe13897fe8ca0beaee004",
       "ci": "Not verified for this head",
       "blocker": "",
-      "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
       "close_reason": "The original description explicitly points to own-fork PR #2 as the replacement, with the same tested tree and corrected account-linked attribution.",
       "lesson": "Check attribution before opening reviews, and retain the historical record without duplicating the distinct-fix count.",
       "evidence": [
@@ -3417,7 +2545,15 @@
       "created_at": "2026-10-15T12:38:38Z",
       "merged_at": null,
       "closed_at": "2026-10-15T15:30:07Z",
-      "close_reason_certainty": "explicit"
+      "close_reason_certainty": "explicit",
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Historical record; see closure/review evidence",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No new contact sent for this historical record."
     },
     {
       "id": "srijan2607/twine#1",
@@ -3431,7 +2567,6 @@
       "head": "ceb8a03ec9faf1036529ca67910d4607da374958",
       "ci": "Not verified for this head",
       "blocker": "Reference-only archive: upstream rejected the unsupported-input premise and prohibited further automated AI issues/PRs.",
-      "next_action": "Do not resubmit, reopen or contact upstream automatically; preserve the decision and evidence.",
       "close_reason": "This own-fork review was explicitly superseded by own-fork PR #2, preserving its reviewed source tree. The later actual-upstream unsupported-input rejection is a separate lifecycle event.",
       "lesson": "Distinguish a replaced fork-review record from the actual project's decision; respect the later upstream no-further-automated-submissions boundary.",
       "evidence": [
@@ -3456,7 +2591,15 @@
       "created_at": "2026-10-15T12:23:06Z",
       "merged_at": null,
       "closed_at": "2026-10-15T15:33:01Z",
-      "close_reason_certainty": "explicit"
+      "close_reason_certainty": "explicit",
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Historical record; see closure/review evidence",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No new contact sent for this historical record."
     },
     {
       "id": "srijan2607/uncertainties#1",
@@ -3470,7 +2613,6 @@
       "head": "c5a49fc4f0259e33889f6b4626b328a5c452b2f8",
       "ci": "Not verified for this head",
       "blocker": "",
-      "next_action": "Historical review record; follow the current upstream/revision link.",
       "close_reason": "Merged into the author’s fork for review; this is not upstream acceptance.",
       "lesson": "Measure upstream acceptance separately from fork review merges.",
       "evidence": [
@@ -3490,7 +2632,15 @@
       "head_ref": "fix/atan2-scaled-derivatives",
       "created_at": "2026-10-15T15:36:50Z",
       "merged_at": "2026-10-15T21:09:36Z",
-      "closed_at": "2026-10-15T21:09:36Z"
+      "closed_at": "2026-10-15T21:09:36Z",
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Historical record; see closure/review evidence",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No new contact sent for this historical record."
     }
   ],
   "activity": [
@@ -3638,178 +2788,26 @@
       "at": "2026-10-15T14:46:21Z",
       "text": "networkx/networkx#8957: closed",
       "url": "https://github.com/networkx/networkx/pull/8957"
-    },
-    {
-      "at": "2026-09-24T12:43:45Z",
-      "text": "apache/airavata#572: closed",
-      "url": "https://github.com/apache/airavata/pull/572"
-    },
-    {
-      "at": "2026-06-18T07:08:44Z",
-      "text": "AOSSIE-Org/PictoPy#637: closed",
-      "url": "https://github.com/AOSSIE-Org/PictoPy/pull/637"
-    },
-    {
-      "at": "2026-03-14T02:20:06Z",
-      "text": "jitsi/jitsi-meet#16708: closed",
-      "url": "https://github.com/jitsi/jitsi-meet/pull/16708"
-    },
-    {
-      "at": "2026-02-26T23:46:28Z",
-      "text": "jitsi/jitsi-meet#16694: closed",
-      "url": "https://github.com/jitsi/jitsi-meet/pull/16694"
-    },
-    {
-      "at": "2026-02-26T23:44:21Z",
-      "text": "jitsi/jitsi-meet#16656: merged",
-      "url": "https://github.com/jitsi/jitsi-meet/pull/16656"
-    },
-    {
-      "at": "2026-02-24T08:12:48Z",
-      "text": "certego/BuffaLogs#502: closed",
-      "url": "https://github.com/certego/BuffaLogs/pull/502"
-    },
-    {
-      "at": "2026-01-27T14:44:19Z",
-      "text": "intelowlproject/IntelOwl#3126: closed",
-      "url": "https://github.com/intelowlproject/IntelOwl/pull/3126"
-    },
-    {
-      "at": "2026-01-21T13:33:39Z",
-      "text": "GreedyBear-Project/GreedyBear#646: closed",
-      "url": "https://github.com/GreedyBear-Project/GreedyBear/pull/646"
-    },
-    {
-      "at": "2026-01-05T17:47:58Z",
-      "text": "jitsi/jitsi-meet#16651: closed",
-      "url": "https://github.com/jitsi/jitsi-meet/pull/16651"
-    },
-    {
-      "at": "2025-12-31T08:46:26Z",
-      "text": "AOSSIE-Org/PictoPy#639: closed",
-      "url": "https://github.com/AOSSIE-Org/PictoPy/pull/639"
-    },
-    {
-      "at": "2025-12-30T16:29:41Z",
-      "text": "intelowlproject/IntelOwl#3099: closed",
-      "url": "https://github.com/intelowlproject/IntelOwl/pull/3099"
-    },
-    {
-      "at": "2025-12-30T15:53:48Z",
-      "text": "intelowlproject/IntelOwl#3097: closed",
-      "url": "https://github.com/intelowlproject/IntelOwl/pull/3097"
-    },
-    {
-      "at": "2025-12-29T11:06:05Z",
-      "text": "certego/BuffaLogs#508: merged",
-      "url": "https://github.com/certego/BuffaLogs/pull/508"
-    },
-    {
-      "at": "2025-12-23T15:25:39Z",
-      "text": "GreedyBear-Project/GreedyBear#649: merged",
-      "url": "https://github.com/GreedyBear-Project/GreedyBear/pull/649"
-    },
-    {
-      "at": "2025-12-23T11:42:09Z",
-      "text": "GreedyBear-Project/GreedyBear#645: closed",
-      "url": "https://github.com/GreedyBear-Project/GreedyBear/pull/645"
-    },
-    {
-      "at": "2025-12-23T10:45:47Z",
-      "text": "GreedyBear-Project/GreedyBear#643: merged",
-      "url": "https://github.com/GreedyBear-Project/GreedyBear/pull/643"
-    },
-    {
-      "at": "2025-12-22T12:17:02Z",
-      "text": "kubearmor/KubeArmor#2287: merged",
-      "url": "https://github.com/kubearmor/KubeArmor/pull/2287"
-    },
-    {
-      "at": "2025-12-18T08:47:03Z",
-      "text": "certego/BuffaLogs#490: merged",
-      "url": "https://github.com/certego/BuffaLogs/pull/490"
-    },
-    {
-      "at": "2025-12-17T17:29:38Z",
-      "text": "certego/BuffaLogs#489: merged",
-      "url": "https://github.com/certego/BuffaLogs/pull/489"
-    },
-    {
-      "at": "2025-12-17T16:51:05Z",
-      "text": "intelowlproject/IntelOwl#3094: merged",
-      "url": "https://github.com/intelowlproject/IntelOwl/pull/3094"
-    },
-    {
-      "at": "2025-12-07T08:09:23Z",
-      "text": "AOSSIE-Org/PictoPy#643: closed",
-      "url": "https://github.com/AOSSIE-Org/PictoPy/pull/643"
-    },
-    {
-      "at": "2025-12-01T17:44:44Z",
-      "text": "certego/BuffaLogs#488: merged",
-      "url": "https://github.com/certego/BuffaLogs/pull/488"
-    },
-    {
-      "at": "2025-11-28T15:06:47Z",
-      "text": "jenkinsci/jenkins#23875: merged",
-      "url": "https://github.com/jenkinsci/jenkins/pull/23875"
-    },
-    {
-      "at": "2025-11-21T10:44:25Z",
-      "text": "jitsi/jitsi-meet#16681: closed",
-      "url": "https://github.com/jitsi/jitsi-meet/pull/16681"
-    },
-    {
-      "at": "2025-11-20T00:31:36Z",
-      "text": "jitsi/jitsi-meet#16655: merged",
-      "url": "https://github.com/jitsi/jitsi-meet/pull/16655"
-    },
-    {
-      "at": "2025-11-14T06:12:31Z",
-      "text": "jitsi/jitsi-meet#16648: closed",
-      "url": "https://github.com/jitsi/jitsi-meet/pull/16648"
-    },
-    {
-      "at": "2025-11-13T22:52:24Z",
-      "text": "jitsi/jitsi-meet#16644: merged",
-      "url": "https://github.com/jitsi/jitsi-meet/pull/16644"
-    },
-    {
-      "at": "2025-11-13T01:55:31Z",
-      "text": "srijan2607/jitsi-meet#1: merged into fork",
-      "url": "https://github.com/srijan2607/jitsi-meet/pull/1"
-    },
-    {
-      "at": "2025-02-05T19:38:10Z",
-      "text": "PalisadoesFoundation/talawa-api#3140: closed",
-      "url": "https://github.com/PalisadoesFoundation/talawa-api/pull/3140"
-    },
-    {
-      "at": "2025-02-04T09:59:30Z",
-      "text": "PalisadoesFoundation/talawa-api#3139: closed",
-      "url": "https://github.com/PalisadoesFoundation/talawa-api/pull/3139"
-    },
-    {
-      "at": "2025-02-04T09:45:42Z",
-      "text": "srijan2607/talawa-api#1: merged into fork",
-      "url": "https://github.com/srijan2607/talawa-api/pull/1"
     }
   ],
   "totals": {
     "upstream": {
-      "open": 15,
-      "merged": 14,
-      "closed": 20
+      "open": 12,
+      "merged": 1,
+      "closed": 3
     },
     "fork": {
-      "open": 29,
-      "merged": 16,
+      "open": 28,
+      "merged": 13,
       "closed": 8
     }
   },
   "exclusions_count": 7,
   "recent_upstream_merges": 1,
-  "closure_audit_count": 20,
+  "closure_audit_count": 3,
   "closure_audit_pending": 0,
-  "notifications_count": 4
+  "notifications_count": 4,
+  "scope_version": "implemented-only-v1",
+  "excluded_unattributed_history_count": 37,
+  "official_merged_count": 1
 }
