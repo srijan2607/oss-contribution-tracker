@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f4f0e6">
+  <meta name="description" content="A public open-source contribution ledger: upstream work, fork review drafts, decisions, and lessons.">
+  <title>Contribution control room · Open source field notes</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./app.js"></script>
+</head>
+<body>
+<a class="skip" href="#ledger">Skip to contributions</a>
+<div class="shell">
+  <header>
+    <div class="masthead"><span class="brand"><span class="brand-mark" aria-hidden="true">↗</span> OPEN SOURCE / FIELD NOTES</span><span class="edition">PUBLIC CONTRIBUTION LEDGER</span></div>
+    <div class="hero"><div><p class="eyebrow">THE WORK, NOT JUST THE NUMBERS</p><h1>Contribution<br>control room<span class="orange">.</span></h1><p class="dek">What’s moving. What’s blocked. What we learned.<br>A living ledger of public open-source work.</p></div><aside class="verification" aria-label="Data freshness"><div class="signal-line"><span class="signal" id="signal" aria-hidden="true"></span><strong id="freshness">Waiting for verified data</strong></div><p>Last verified snapshot</p><time id="verified">Not available yet</time><p id="refresh-status" role="status" aria-live="polite">Loading public contribution data…</p><button id="refresh" type="button">Refresh data <span aria-hidden="true">↻</span></button></aside></div>
+    <p class="scope" id="scope">Public GitHub data only. Upstream contributions and own-fork review drafts are counted separately.</p>
+  </header>
+  <main>
+    <section class="metrics" aria-label="Contribution totals" id="metrics"><article class="metric"><span>Total tracked</span><strong>—</strong><small>Awaiting snapshot</small></article></section>
+    <section class="workspace" id="ledger" aria-labelledby="ledger-title">
+      <div class="section-top"><div><p class="eyebrow">01 / THE LEDGER</p><h2 id="ledger-title">Every contribution, in context.</h2></div><div class="views" role="group" aria-label="Ledger view"><button type="button" data-view="work" aria-pressed="true">Contributions</button><button type="button" data-view="lessons" aria-pressed="false">Closures & lessons</button></div></div>
+      <div class="controls"><label class="search-label" for="search"><span>Search the ledger</span><input id="search" type="search" placeholder="Repository, title, blocker, lesson…" autocomplete="off"></label><label for="kind"><span>Contribution type</span><select id="kind"><option value="all">Upstream + own fork</option><option value="upstream">Actual upstream only</option><option value="fork">Own-fork review drafts</option></select></label><label class="action-control"><input id="action" type="checkbox"><span>Action needed</span></label></div>
+      <div class="filter-row"><div class="status-filters" role="group" aria-label="Filter contribution status"><button type="button" data-state="all" aria-pressed="true">All <span>—</span></button><button type="button" data-state="open" aria-pressed="false">Open <span>—</span></button><button type="button" data-state="merged" aria-pressed="false">Merged <span>—</span></button><button type="button" data-state="closed" aria-pressed="false">Closed <span>—</span></button></div><p id="result-count" role="status" aria-live="polite">Loading ledger…</p></div>
+      <p class="notice" id="notice" role="status" hidden></p>
+      <div id="records" class="records" aria-busy="true"><div class="empty"><span class="empty-mark" aria-hidden="true">↗</span><h3>Opening the field notes</h3><p>Fetching the latest published snapshot. No contribution counts are assumed.</p></div></div>
+      <button class="reset" id="reset" type="button" hidden>Clear filters</button>
+    </section>
+    <section class="activity-section" aria-labelledby="activity-title"><div><p class="eyebrow">02 / RECENT SIGNAL</p><h2 id="activity-title">From the activity log.</h2><p class="muted">Published events from the snapshot.<br>Not a live GitHub event stream.</p></div><ol id="activity" class="activity"><li>No verified activity loaded.</li></ol></section>
+  </main>
+  <footer><span class="brand">OPEN SOURCE / FIELD NOTES</span><p>Upstream impact ≠ fork activity. Both deserve an honest record.</p><span id="cadence">Checks for a published snapshot every 60 seconds.</span></footer>
+</div>
+<noscript><p class="noscript">JavaScript is required to load this public contribution ledger. No data is embedded in this page.</p></noscript>
+</body>
+</html>
