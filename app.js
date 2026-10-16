@@ -42,7 +42,7 @@
     field(fields, 'Opened', format(r.created_at)); if (r.merged_at) field(fields, 'Merged at', format(r.merged_at));
     field(fields, 'Head commit', text(r.head).slice(0, 12)); field(fields, 'CI status', r.ci);
     field(fields, 'Blocker', r.blocker, 'No blocker recorded'); field(fields, 'Next action', r.next_action);
-    field(fields, 'Closure reason', r.close_reason, r.state === 'open' ? 'Not closed' : 'Not recorded'); field(fields, 'Lesson', r.lesson, 'No lesson recorded');
+    field(fields, 'Closure reason', r.close_reason, r.state === 'open' ? 'Not closed' : 'Not recorded'); if (r.state === 'closed') field(fields, 'Reason confidence', r.close_reason_certainty || 'Not yet audited'); field(fields, 'Lesson', r.lesson, 'No lesson recorded');
     details.append(heading, fields);
     if (r.human_reply) { const reply = el('section', 'human-reply'); reply.append(el('h4', '', 'Latest human reply'), el('blockquote', '', r.human_reply)); details.append(reply); }
     const evidence = el('div', 'evidence'); evidence.append(el('span', 'eyebrow', 'EVIDENCE'));
@@ -112,7 +112,7 @@
   $('#kind').addEventListener('change', e => { model.kind = e.target.value; renderRecords(); });
   $('#action').addEventListener('change', e => { model.action = e.target.checked; renderRecords(); });
   document.querySelectorAll('[data-state]').forEach(b => b.addEventListener('click', () => { model.state = b.dataset.state; renderRecords(); }));
-  document.querySelectorAll('[data-view]').forEach(b => b.addEventListener('click', () => { model.view = b.dataset.view; document.querySelectorAll('[data-view]').forEach(n => n.setAttribute('aria-pressed', String(n === b))); renderRecords(); }));
+  document.querySelectorAll('[data-view]').forEach(b => b.addEventListener('click', () => { model.view = b.dataset.view; if (model.view === 'lessons' && model.state === 'open') { model.state = 'all'; model.action = false; $('#action').checked = false; } document.querySelectorAll('[data-view]').forEach(n => n.setAttribute('aria-pressed', String(n === b))); renderRecords(); }));
   $('#reset').addEventListener('click', () => { model.state = 'all'; model.kind = 'all'; model.view = 'work'; model.query = ''; model.action = false; $('#search').value = ''; $('#kind').value = 'all'; $('#action').checked = false; document.querySelectorAll('[data-view]').forEach(n => n.setAttribute('aria-pressed', String(n.dataset.view === 'work'))); renderRecords(); });
   $('#refresh').addEventListener('click', refresh);
   refresh(); setInterval(refresh, 60000); setInterval(freshness, 15000);
