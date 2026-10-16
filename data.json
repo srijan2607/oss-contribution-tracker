@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T13:06:50.817149+00:00",
+  "generated_at": "2026-10-16T13:15:06.722467+00:00",
   "scope": "Only this implemented contribution campaign with source/publication receipts, starting 15 October 2026. Unrelated account history and unimplemented plans are excluded. Counts are PR records, not distinct fixes. Official merges count actual upstream acceptance only.",
   "refresh_interval_minutes": 10,
   "ci_snapshot_at": "2026-10-16T13:01:27.696029+00:00",
@@ -88,8 +88,8 @@
       "state": "open",
       "draft": true,
       "head": "2accb593205434060412b4c3f2336d0f5722491f",
-      "ci": "Not verified for this head",
-      "blocker": "Draft, not ready for review.",
+      "ci": "Workflow approval required; not green (verified 2026-10-16T13:09:02.353957+00:00)",
+      "blocker": "A current-head Actions workflow requires upstream approval; hosted test CI is not verified. Draft retained.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -98,13 +98,17 @@
           "url": "https://github.com/google/etils/pull/841"
         },
         {
+          "label": "Current-head approval-blocked workflow",
+          "url": "https://github.com/google/etils/actions/runs/38904912246"
+        },
+        {
           "label": "Verified correction commit",
           "url": "https://github.com/google/etils/commit/2accb593205434060412b4c3f2336d0f5722491f"
         }
       ],
       "human_reply": "",
       "upstream_url": "",
-      "updated_at": "2026-10-16T13:03:09Z",
+      "updated_at": "2026-10-16T13:12:28Z",
       "upstream_repo": "google/etils",
       "head_ref": "fix/inherited-unfrozen-dataclass-methods",
       "created_at": "2026-10-16T06:33:40Z",
@@ -114,11 +118,12 @@
       "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
       "completed_actions": [
         "Implementation and publication evidence recorded.",
+        "Google CLA check passed for this exact head at 2026-10-16T13:09:02.353957+00:00.",
         "Requested seven-function / 48-case test relocation and changelog correction published; production unchanged."
       ],
-      "blocker_owner": "Contributor / failing CI infrastructure; individual reviewer responsibility not verified",
-      "owner_url": "https://github.com/google/etils/pull/841",
-      "follow_up_status": "No guessed maintainer tag; current CI/source/policy gates remain."
+      "blocker_owner": "Upstream workflow approver — individual authority not verified",
+      "owner_url": "https://github.com/google/etils/pull/841/checks",
+      "follow_up_status": "No guessed maintainer tag sent; ownership and recent merge-authority checks did not establish an individual approver."
     },
     {
       "id": "jmespath/jmespath.py#384",
@@ -337,8 +342,8 @@
       "state": "open",
       "draft": true,
       "head": "0dbbf7d0a4d27f2696fa5855c8e2528cbf26d378",
-      "ci": "Not verified for this head",
-      "blocker": "Draft, not ready for review.",
+      "ci": "Workflow approval required; not green (verified 2026-10-16T13:09:02.353957+00:00)",
+      "blocker": "A current-head Actions workflow requires upstream approval; hosted test CI is not verified. Draft retained.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -349,6 +354,10 @@
         {
           "label": "Verified maintainer workflow-approval request",
           "url": "https://github.com/python-periodictable/periodictable/pull/137#issuecomment-6216126905"
+        },
+        {
+          "label": "Current-head approval-blocked workflow",
+          "url": "https://github.com/python-periodictable/periodictable/actions/runs/38904881548"
         },
         {
           "label": "Verified maintainer authority",
@@ -601,7 +610,7 @@
       "draft": true,
       "head": "2accb593205434060412b4c3f2336d0f5722491f",
       "ci": "Not verified for this head",
-      "blocker": "Related upstream submission: Draft, not ready for review.",
+      "blocker": "Related upstream submission: A current-head Actions workflow requires upstream approval; hosted test CI is not verified. Draft retained.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -620,7 +629,7 @@
       ],
       "human_reply": "",
       "upstream_url": "https://github.com/google/etils/pull/841",
-      "updated_at": "2026-10-16T13:03:14Z",
+      "updated_at": "2026-10-16T13:12:34Z",
       "upstream_repo": "google/etils",
       "head_ref": "fix/inherited-unfrozen-dataclass-methods",
       "created_at": "2026-10-15T22:38:18Z",
@@ -632,10 +641,10 @@
         "Implementation and publication evidence recorded.",
         "Requested seven-function / 48-case test relocation and changelog correction published; production unchanged."
       ],
-      "blocker_owner": "Contributor / failing CI infrastructure; individual reviewer responsibility not verified",
-      "owner_url": "https://github.com/google/etils/pull/841",
-      "follow_up_status": "No guessed maintainer tag; current CI/source/policy gates remain.",
-      "upstream_ci": "Not verified for this head"
+      "blocker_owner": "Upstream workflow approver — individual authority not verified",
+      "owner_url": "https://github.com/google/etils/pull/841/checks",
+      "follow_up_status": "No guessed maintainer tag sent; ownership and recent merge-authority checks did not establish an individual approver.",
+      "upstream_ci": "Workflow approval required; not green (verified 2026-10-16T13:09:02.353957+00:00)"
     },
     {
       "id": "srijan2607/filesystem_spec#1",
@@ -1231,7 +1240,7 @@
       "draft": true,
       "head": "0dbbf7d0a4d27f2696fa5855c8e2528cbf26d378",
       "ci": "Not verified for this head",
-      "blocker": "Related upstream submission: Draft, not ready for review.",
+      "blocker": "Related upstream submission: A current-head Actions workflow requires upstream approval; hosted test CI is not verified. Draft retained.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -1265,7 +1274,7 @@
       "blocker_owner": "@pkienzle — verified upstream maintainer",
       "owner_url": "https://github.com/pkienzle",
       "follow_up_status": "Tagged on GitHub on 2026-10-16T13:05:00Z for workflow approval; no code-review approval claimed.",
-      "upstream_ci": "Not verified for this head"
+      "upstream_ci": "Workflow approval required; not green (verified 2026-10-16T13:09:02.353957+00:00)"
     },
     {
       "id": "srijan2607/pipx#2",
