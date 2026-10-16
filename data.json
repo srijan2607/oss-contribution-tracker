@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T15:05:03.928465+00:00",
+  "generated_at": "2026-10-16T15:15:05.029907+00:00",
   "scope": "Only this implemented contribution campaign with source/publication receipts, starting 15 October 2026. Unrelated account history and unimplemented plans are excluded. Counts are PR records, not distinct fixes. Official merges count actual upstream acceptance only.",
   "refresh_interval_minutes": 10,
   "ci_snapshot_at": "2026-10-16T15:01:48.581654+00:00",
@@ -409,7 +409,7 @@
       ],
       "human_reply": "",
       "upstream_url": "",
-      "updated_at": "2026-10-16T11:28:55Z",
+      "updated_at": "2026-10-16T15:08:26Z",
       "upstream_repo": "simonw/llm",
       "head_ref": "review/reissued-srijan2607-20261015",
       "created_at": "2026-10-15T15:29:57Z",
