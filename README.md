@@ -1,25 +1,24 @@
-# Contribution control room
+# Implemented contribution control room
 
-A dependency-free public ledger of OSS pull requests authored by `srijan2607`.
+This page contains recorded implementation work from the current contribution campaign, not the account's unrelated GitHub history or a future roadmap. A record must belong to a project with implementation/publication evidence and this campaign's creation window.
 
-## What the numbers mean
+## Official means official
 
-- **Upstream** means the PR targets the actual project's repository.
-- **Own-fork review** is a review copy in the author's fork, not an extra fix or upstream acceptance.
-- Open counts describe the current public inventory. Merged and closed counts include historical records; the recent-merge figure is explicitly limited to the last seven days.
-- A closed PR is not automatically a rejected fix. Closure reasons distinguish explicit evidence, inference and unknowns; evidence links remain available.
-- Private and personal/product repositories are excluded. Only sanitized public GitHub metadata is published.
+- **Official merges** includes only pull requests merged into the actual upstream repository.
+- A merged review PR in the contributor's fork is shown only as **Fork history**, never as an official merge.
+- Fork and upstream review copies remain linked. Record counts are not counts of distinct fixes.
+- Unrelated older account contributions are excluded rather than credited to this work.
 
-## Freshness and gates
+## Implemented but not accepted
 
-The page checks `data.json` every 60 seconds. The publisher's target refresh cadence is ten minutes. The snapshot timestamp is the verification time, not the browser fetch time; a snapshot older than thirty minutes is visibly stale. CI has its own scan timestamp and is only attributed to an exact matching head. Missing or approval-blocked workflows are never called green.
+Open records show their current verified blocker, who can unblock it, and follow-up that was actually sent. Contributor-owned repairs, personal licensing decisions and final review gates are distinguished from upstream maintainer work. Verified GitHub mentions link to the actual posted comment; a name on this page does not imply that person was notified.
 
-Publication to this status site does not approve an upstream contribution. Personal final-head/text approval, licensing requirements, source repairs and CI gates remain separate. The status publisher does not submit PRs, sign agreements or contact maintainers.
+Closed records retain supported reasons, evidence and lessons. Unknown reasons are explicitly marked unknown; closures are not automatically treated as technical rejection.
 
-## Interface
+## Verification and refresh
 
-Search all record fields; filter by lifecycle or actual-upstream/own-fork type; expand a record for its commit, CI, blockers, next action, closure reason, lesson, public human reply and evidence. Use **Closures & lessons** for historical outcomes. Counts are calculated from the snapshot, never hardcoded.
+The page polls its published snapshot every sixty seconds. The independent publisher runs on a ten-minute schedule. Verification time is separate from browser fetch time; stale/error states remain visible. CI is attributed only to matching heads. Missing checks and blocked workflows are not green.
 
-No credentials, API tokens, analytics, external fonts or third-party scripts are used in the browser. Untrusted text uses `textContent`; record links are restricted to HTTPS GitHub URLs.
+Only sanitized public contribution data is published. No tokens, private project records, analytics, third-party scripts or external fonts are sent to the browser. Untrusted text uses textContent, and record links are restricted to HTTPS GitHub URLs.
 
-For local viewing, serve this directory with any static HTTP server. No package installation or build step is needed.
+The status publisher does not submit upstream patches, sign agreements or contact people. Those remain separate, specifically authorized actions. No package installation or build step is needed to serve this static site.
