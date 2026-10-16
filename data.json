@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T11:43:18.927611+00:00",
+  "generated_at": "2026-10-16T11:52:33.963082+00:00",
   "scope": "All public external-OSS and own-fork pull-request records authored by srijan2607, all states. Personal/product repositories excluded. Counts are PR records, not distinct fixes. Lifecycle refreshed separately from head-specific CI.",
   "refresh_interval_minutes": 10,
   "ci_snapshot_at": "2026-10-16T11:36:19.313216+00:00",
@@ -327,7 +327,7 @@
       "draft": false,
       "head": "2bae3d9869ccbe78fef754d9cc89c6d59e9d8eed",
       "ci": "failed (CI scan 2026-10-16T11:36:19.313216+00:00)",
-      "blocker": "",
+      "blocker": " Current-head CI reports a failure; inspect the actual checks before requesting code review.",
       "next_action": "Resolve source/CLA/CI gates, then request one maintainer review without duplicate pings.",
       "close_reason": "",
       "lesson": "",
@@ -335,6 +335,10 @@
         {
           "label": "Pull request",
           "url": "https://github.com/networkx/networkx/pull/8958"
+        },
+        {
+          "label": "Current PR checks",
+          "url": "https://github.com/networkx/networkx/pull/8958/checks"
         }
       ],
       "human_reply": "",
@@ -937,7 +941,7 @@
       "draft": true,
       "head": "3e4a76bf4d02101833f35728b4964aab2152502a",
       "ci": "failed (CI scan 2026-10-16T11:36:19.313216+00:00)",
-      "blocker": "Fork-only review draft; not an upstream submission.  Draft, not ready for review.",
+      "blocker": "Fork-only review draft; not an upstream submission.  Draft, not ready for review. Project human-accountability and human-written-prose requirements remain separate gates. Current-head CI reports a failure; inspect the actual checks before requesting code review.",
       "next_action": "Final head and proposed text approval required before upstream submission.",
       "close_reason": "",
       "lesson": "",
@@ -945,6 +949,10 @@
         {
           "label": "Pull request",
           "url": "https://github.com/srijan2607/networkx/pull/6"
+        },
+        {
+          "label": "Current PR checks",
+          "url": "https://github.com/srijan2607/networkx/pull/6/checks"
         }
       ],
       "human_reply": "",
@@ -967,7 +975,7 @@
       "draft": true,
       "head": "150d99968a47a10b1c2d1fec844f30162115b486",
       "ci": "failed (CI scan 2026-10-16T11:36:19.313216+00:00)",
-      "blocker": "Fork-only review draft; not an upstream submission.  Draft, not ready for review.",
+      "blocker": "Fork-only review draft; not an upstream submission.  Draft, not ready for review. Project human-accountability and human-written-prose requirements remain separate gates. Current-head CI reports a failure; inspect the actual checks before requesting code review.",
       "next_action": "Final head and proposed text approval required before upstream submission.",
       "close_reason": "",
       "lesson": "",
@@ -975,6 +983,10 @@
         {
           "label": "Pull request",
           "url": "https://github.com/srijan2607/networkx/pull/7"
+        },
+        {
+          "label": "Current PR checks",
+          "url": "https://github.com/srijan2607/networkx/pull/7/checks"
         }
       ],
       "human_reply": "",
@@ -1057,8 +1069,8 @@
       "draft": true,
       "head": "0f8582c72d84084dea895ab9c2cd0595f4e991c7",
       "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T11:36:19.313216+00:00)",
-      "blocker": "Fork-only review draft; not an upstream submission.  No hosted CI evidence. Draft, not ready for review.",
-      "next_action": "Final head and proposed text approval required before upstream submission.",
+      "blocker": "Fork-only review draft; not an upstream submission.  No hosted CI evidence. Draft, not ready for review. Final upstream prose must be genuinely human-written; approving generated text does not satisfy that policy.",
+      "next_action": "Personal understanding/testing and human-authored final upstream prose are required before submission.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -1347,8 +1359,8 @@
       "draft": true,
       "head": "192e5b84e7e2eb77099386eae39b8e8d8c48eb73",
       "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T11:36:19.313216+00:00)",
-      "blocker": "Fork review copy; a related upstream PR exists.  No hosted CI evidence. Draft, not ready for review.",
-      "next_action": "Related actual upstream PR already exists. This is a fork review record; inspect upstream status and any pending revision.",
+      "blocker": "Reference-only archive: upstream rejected the unsupported-input premise and prohibited further automated AI issues/PRs.",
+      "next_action": "Do not resubmit, reopen or contact upstream automatically; preserve the decision and evidence.",
       "close_reason": "",
       "lesson": "",
       "evidence": [
@@ -1417,8 +1429,8 @@
       "ci": "Not verified for this head",
       "blocker": "",
       "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "Closed without merge. The specific closure reason is awaiting evidence review; do not infer a technical rejection from the closed state alone.",
-      "lesson": "A superseded or attribution-corrected record is not a new fix or a technical rejection; preserve its replacement link.",
+      "close_reason": "GitHub Actions explicitly closed this for unresolved merge conflicts and prolonged inactivity after its warning window. This was automated backlog cleanup, not a human rejection of the routing fix.",
+      "lesson": "Keep an active contribution conflict-free and respond substantively to conflict warnings; distinguish automated closure from a maintainer decision.",
       "evidence": [
         {
           "label": "Pull request",
@@ -1437,7 +1449,8 @@
       "created_at": "2025-11-15T21:51:19Z",
       "merged_at": null,
       "closed_at": "2026-06-18T07:08:44Z",
-      "close_reason_certainty": "unknown"
+      "close_reason_certainty": "explicit",
+      "closed_by": "github-actions[bot]"
     },
     {
       "id": "AOSSIE-Org/PictoPy#639",
@@ -1452,8 +1465,8 @@
       "ci": "Not verified for this head",
       "blocker": "",
       "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "Closed without merge. The specific closure reason is awaiting evidence review; do not infer a technical rejection from the closed state alone.",
-      "lesson": "Read the actual closure discussion before retrying; a closed record alone does not establish why it closed.",
+      "close_reason": "A human maintainer closed the PR, but the cached comments, reviews and timeline do not state a reason. The bot walkthrough and its docstring warning are not evidence of the closure rationale.",
+      "lesson": "Do not label unexplained closure as technical rejection; confirm current project direction before investing in any authorized follow-up.",
       "evidence": [
         {
           "label": "Pull request",
@@ -1472,7 +1485,8 @@
       "created_at": "2025-11-16T01:34:15Z",
       "merged_at": null,
       "closed_at": "2025-12-31T08:46:26Z",
-      "close_reason_certainty": "unknown"
+      "close_reason_certainty": "unknown",
+      "closed_by": "rahulharpal1603"
     },
     {
       "id": "AOSSIE-Org/PictoPy#643",
@@ -1487,8 +1501,8 @@
       "ci": "Not verified for this head",
       "blocker": "",
       "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "Closed without merge. The specific closure reason is awaiting evidence review; do not infer a technical rejection from the closed state alone.",
-      "lesson": "A superseded or attribution-corrected record is not a new fix or a technical rejection; preserve its replacement link.",
+      "close_reason": "Maintainer explicitly closed this because PR #607 had already addressed the database-connection change. This was a duplicate/already-solved decision, not evidence that context-managed connections were technically rejected.",
+      "lesson": "Search open and merged PRs for the same behavior immediately before implementing and submitting; an issue link alone does not establish that work remains needed.",
       "evidence": [
         {
           "label": "Pull request",
@@ -1511,7 +1525,8 @@
       "created_at": "2025-11-16T02:22:04Z",
       "merged_at": null,
       "closed_at": "2025-12-07T08:09:23Z",
-      "close_reason_certainty": "unknown"
+      "close_reason_certainty": "explicit",
+      "closed_by": "rahulharpal1603"
     },
     {
       "id": "apache/airavata#572",
@@ -1526,8 +1541,8 @@
       "ci": "Not verified for this head",
       "blocker": "",
       "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "Closed without merge. The specific closure reason is awaiting evidence review; do not infer a technical rejection from the closed state alone.",
-      "lesson": "Read the actual closure discussion before retrying; a closed record alone does not establish why it closed.",
+      "close_reason": "Maintainer closed this because the change was no longer required for the new implementation. This was an implementation-direction decision, not evidence of a failed security review.",
+      "lesson": "Confirm the current architecture and whether the proposed deployment change is still needed before expanding security and configuration work.",
       "evidence": [
         {
           "label": "Pull request",
@@ -1546,7 +1561,8 @@
       "created_at": "2025-11-10T00:47:04Z",
       "merged_at": null,
       "closed_at": "2026-09-24T12:43:45Z",
-      "close_reason_certainty": "unknown"
+      "close_reason_certainty": "explicit",
+      "closed_by": "DImuthuUpe"
     },
     {
       "id": "certego/BuffaLogs#488",
@@ -1663,8 +1679,8 @@
       "ci": "Not verified for this head",
       "blocker": "",
       "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "Closed without merge. The specific closure reason is awaiting evidence review; do not infer a technical rejection from the closed state alone.",
-      "lesson": "Read the actual closure discussion before retrying; a closed record alone does not establish why it closed.",
+      "close_reason": "The final closure followed a maintainer statement that PR #562 had already solved the problem. Earlier review requested tests and documentation without AI assistance and demonstrated that a documented multi-value shell command still failed.",
+      "lesson": "Test the actual shell invocation, not just a parser helper; update examples as requested and respect the explicit human-written documentation requirement.",
       "evidence": [
         {
           "label": "Pull request",
@@ -1673,6 +1689,14 @@
         {
           "label": "Closure discussion",
           "url": "https://github.com/certego/BuffaLogs/pull/502#issuecomment-3946545013"
+        },
+        {
+          "label": "Maintainer reproduction",
+          "url": "https://github.com/certego/BuffaLogs/pull/502#issuecomment-3738084228"
+        },
+        {
+          "label": "Documentation authorship instruction",
+          "url": "https://github.com/certego/BuffaLogs/pull/502#issuecomment-3702623141"
         }
       ],
       "human_reply": "@Lorygold: @lucaCigarini @eugenioseveri this can be **closed** Already solved by the PR #562",
@@ -1683,7 +1707,8 @@
       "created_at": "2025-12-18T00:33:35Z",
       "merged_at": null,
       "closed_at": "2026-02-24T08:12:48Z",
-      "close_reason_certainty": "unknown"
+      "close_reason_certainty": "explicit",
+      "closed_by": "lucaCigarini"
     },
     {
       "id": "certego/BuffaLogs#508",
@@ -1762,8 +1787,8 @@
       "ci": "Not verified for this head",
       "blocker": "",
       "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "Closed without merge. The specific closure reason is awaiting evidence review; do not infer a technical rejection from the closed state alone.",
-      "lesson": "A superseded or attribution-corrected record is not a new fix or a technical rejection; preserve its replacement link.",
+      "close_reason": "The author closed this and then explained on successor PR #646 that the earlier PR had become messy and had been replaced. This is an author-requested clean reissue, not a maintainer rejection; the nearby GitGuardian alert does not establish a closure cause.",
+      "lesson": "Keep unrelated changes out of the diff and explicitly cross-link clean replacements; do not infer closure reasons from a security bot alert appearing nearby.",
       "evidence": [
         {
           "label": "Pull request",
@@ -1776,6 +1801,10 @@
         {
           "label": "Latest public human comment",
           "url": "https://github.com/GreedyBear-Project/GreedyBear/pull/645#issuecomment-3686206251"
+        },
+        {
+          "label": "Author explanation on successor",
+          "url": "https://github.com/GreedyBear-Project/GreedyBear/pull/646#issuecomment-3686514598"
         }
       ],
       "human_reply": "@regulartim: Yes, will do.",
@@ -1786,7 +1815,8 @@
       "created_at": "2025-12-23T10:41:38Z",
       "merged_at": null,
       "closed_at": "2025-12-23T11:42:09Z",
-      "close_reason_certainty": "unknown"
+      "close_reason_certainty": "explicit",
+      "closed_by": "srijan2607"
     },
     {
       "id": "GreedyBear-Project/GreedyBear#646",
@@ -1801,8 +1831,8 @@
       "ci": "Not verified for this head",
       "blocker": "",
       "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "Closed without merge. The specific closure reason is awaiting evidence review; do not infer a technical rejection from the closed state alone.",
-      "lesson": "Read the actual closure discussion before retrying; a closed record alone does not establish why it closed.",
+      "close_reason": "Maintainer closed this without an explicit closing explanation. Earlier human reviews requested migration/legacy-API validation, a narrowly scoped formatting diff, passing linters, and resolution of merge conflicts; those requests are documented context, not a proven final closure reason.",
+      "lesson": "Keep migration PRs narrowly scoped, demonstrate legacy API and representative-data compatibility, and resolve requested changes and conflicts before asking for approval.",
       "evidence": [
         {
           "label": "Pull request",
@@ -1811,6 +1841,14 @@
         {
           "label": "Closure discussion",
           "url": "https://github.com/GreedyBear-Project/GreedyBear/pull/646#pullrequestreview-3665949776"
+        },
+        {
+          "label": "Migration compatibility questions",
+          "url": "https://github.com/GreedyBear-Project/GreedyBear/pull/646#issuecomment-3687802543"
+        },
+        {
+          "label": "Reviewability feedback",
+          "url": "https://github.com/GreedyBear-Project/GreedyBear/pull/646#issuecomment-3689363811"
         }
       ],
       "human_reply": "@regulartim: Please resolve the merge conflicts and react to Copilot's review comments.",
@@ -1821,7 +1859,8 @@
       "created_at": "2025-12-23T12:34:11Z",
       "merged_at": null,
       "closed_at": "2026-01-21T13:33:39Z",
-      "close_reason_certainty": "unknown"
+      "close_reason_certainty": "unknown",
+      "closed_by": "regulartim"
     },
     {
       "id": "GreedyBear-Project/GreedyBear#649",
@@ -1900,8 +1939,8 @@
       "ci": "Not verified for this head",
       "blocker": "",
       "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "Closed without merge. The specific closure reason is awaiting evidence review; do not infer a technical rejection from the closed state alone.",
-      "lesson": "Read the actual closure discussion before retrying; a closed record alone does not establish why it closed.",
+      "close_reason": "Maintainer closed this without an explicit closing explanation. The prior human comment said the issue was not assigned to the author and that the author already had other PRs pending; the cached record supports that process objection, not a technical rejection.",
+      "lesson": "Confirm issue assignment and the project’s contribution-workload rules before starting another PR, and finish pending review work first.",
       "evidence": [
         {
           "label": "Pull request",
@@ -1924,7 +1963,8 @@
       "created_at": "2025-12-03T14:46:11Z",
       "merged_at": null,
       "closed_at": "2025-12-30T15:53:48Z",
-      "close_reason_certainty": "unknown"
+      "close_reason_certainty": "unknown",
+      "closed_by": "fgibertoni"
     },
     {
       "id": "intelowlproject/IntelOwl#3099",
@@ -1939,8 +1979,8 @@
       "ci": "Not verified for this head",
       "blocker": "",
       "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "Closed without merge. The specific closure reason is awaiting evidence review; do not infer a technical rejection from the closed state alone.",
-      "lesson": "Read the actual closure discussion before retrying; a closed record alone does not establish why it closed.",
+      "close_reason": "Maintainer explicitly rejected silencing intentional production network errors to make tests pass. They asked for mocked tests instead of changing runtime failure behavior.",
+      "lesson": "Repair test isolation with mocks while preserving the production error contract; never turn a failed security/network check into a misleading clean result.",
       "evidence": [
         {
           "label": "Pull request",
@@ -1963,7 +2003,8 @@
       "created_at": "2025-12-04T11:53:08Z",
       "merged_at": null,
       "closed_at": "2025-12-30T16:29:41Z",
-      "close_reason_certainty": "unknown"
+      "close_reason_certainty": "explicit",
+      "closed_by": "mlodic"
     },
     {
       "id": "intelowlproject/IntelOwl#3126",
@@ -1978,8 +2019,8 @@
       "ci": "Not verified for this head",
       "blocker": "",
       "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "Closed without merge. The specific closure reason is awaiting evidence review; do not infer a technical rejection from the closed state alone.",
-      "lesson": "Read the actual closure discussion before retrying; a closed record alone does not establish why it closed.",
+      "close_reason": "Maintainer closed this without an explicit final reason in the cached thread. Earlier human discussion opposed adding another frontend dependency and requested removing dangerouslySetInnerHTML instead; a stale warning alone does not prove the reason for the later human closure.",
+      "lesson": "Agree on dependency and rendering strategy before implementation, then address the requested revision rather than treating a stale warning as the maintainer decision.",
       "evidence": [
         {
           "label": "Pull request",
@@ -1992,6 +2033,14 @@
         {
           "label": "Latest public human comment",
           "url": "https://github.com/intelowlproject/IntelOwl/pull/3126#issuecomment-3762823357"
+        },
+        {
+          "label": "Maintainer dependency objection",
+          "url": "https://github.com/intelowlproject/IntelOwl/pull/3126#issuecomment-3709784715"
+        },
+        {
+          "label": "Requested alternative",
+          "url": "https://github.com/intelowlproject/IntelOwl/pull/3126#issuecomment-3743123388"
         }
       ],
       "human_reply": "@mlodic: @srijan2607 any update about this?",
@@ -2002,7 +2051,8 @@
       "created_at": "2025-12-19T23:15:22Z",
       "merged_at": null,
       "closed_at": "2026-01-27T14:44:19Z",
-      "close_reason_certainty": "unknown"
+      "close_reason_certainty": "unknown",
+      "closed_by": "mlodic"
     },
     {
       "id": "jenkinsci/jenkins#23875",
@@ -2085,8 +2135,8 @@
       "ci": "Not verified for this head",
       "blocker": "",
       "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "Closed without merge. The specific closure reason is awaiting evidence review; do not infer a technical rejection from the closed state alone.",
-      "lesson": "Read the actual closure discussion before retrying; a closed record alone does not establish why it closed.",
+      "close_reason": "The author closed this PR, and the cached thread gives no explicit reason. Its CLA reminder is automated boilerplate, not proof of a licensing-related rejection or a maintainer decision.",
+      "lesson": "Record a short author-closure explanation and cross-link any replacement; keep stacked changes independently reviewable and do not infer licensing failure from a reminder.",
       "evidence": [
         {
           "label": "Pull request",
@@ -2105,7 +2155,8 @@
       "created_at": "2025-11-13T20:47:28Z",
       "merged_at": null,
       "closed_at": "2025-11-14T06:12:31Z",
-      "close_reason_certainty": "unknown"
+      "close_reason_certainty": "unknown",
+      "closed_by": "srijan2607"
     },
     {
       "id": "jitsi/jitsi-meet#16651",
@@ -2120,8 +2171,8 @@
       "ci": "Not verified for this head",
       "blocker": "",
       "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "Closed without merge. The specific closure reason is awaiting evidence review; do not infer a technical rejection from the closed state alone.",
-      "lesson": "Read the actual closure discussion before retrying; a closed record alone does not establish why it closed.",
+      "close_reason": "After internal discussion, maintainers chose to retain the existing whiteboard menu button rather than add the proposed dedicated close button. This was an explicit product/UI decision.",
+      "lesson": "Confirm that maintainers want an additional control before implementing it; an existing alternate interaction can make a technically valid feature unwanted.",
       "evidence": [
         {
           "label": "Pull request",
@@ -2140,7 +2191,8 @@
       "created_at": "2025-11-14T07:13:30Z",
       "merged_at": null,
       "closed_at": "2026-01-05T17:47:58Z",
-      "close_reason_certainty": "unknown"
+      "close_reason_certainty": "explicit",
+      "closed_by": "damencho"
     },
     {
       "id": "jitsi/jitsi-meet#16655",
@@ -2223,8 +2275,8 @@
       "ci": "Not verified for this head",
       "blocker": "",
       "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "Closed without merge. The specific closure reason is awaiting evidence review; do not infer a technical rejection from the closed state alone.",
-      "lesson": "Refresh competing fixes before submission; support existing work instead of duplicating it.",
+      "close_reason": "The final closure was by Calinteodor, who stated that a fix was available in PR #16691. The chronology also includes an earlier author close and reopen; earlier CI failures are feedback, not the stated final reason.",
+      "lesson": "Reproduce packaging failures locally, inspect actual CI failures, and check whether another contributor has already supplied the fix before requesting reruns.",
       "evidence": [
         {
           "label": "Pull request",
@@ -2237,6 +2289,10 @@
         {
           "label": "Latest public human comment",
           "url": "https://github.com/jitsi/jitsi-meet/pull/16681#issuecomment-3562461713"
+        },
+        {
+          "label": "Earlier human CI feedback",
+          "url": "https://github.com/jitsi/jitsi-meet/pull/16681#issuecomment-3557914365"
         }
       ],
       "human_reply": "@Calinteodor: Fix is available in #16691",
@@ -2247,7 +2303,8 @@
       "created_at": "2025-11-19T23:46:45Z",
       "merged_at": null,
       "closed_at": "2025-11-21T10:44:25Z",
-      "close_reason_certainty": "unknown"
+      "close_reason_certainty": "explicit",
+      "closed_by": "Calinteodor"
     },
     {
       "id": "jitsi/jitsi-meet#16694",
@@ -2262,8 +2319,8 @@
       "ci": "Not verified for this head",
       "blocker": "",
       "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "Closed without merge. The specific closure reason is awaiting evidence review; do not infer a technical rejection from the closed state alone.",
-      "lesson": "Read the actual closure discussion before retrying; a closed record alone does not establish why it closed.",
+      "close_reason": "Maintainer closed this because the issue was addressed in PR #16702. Earlier human feedback rejected changing every session on every join and warned that client-supplied room identifiers cannot be trusted like visitor infrastructure.",
+      "lesson": "Validate room-context changes against the trust boundary, and check competing fixes before revising a rejected approach.",
       "evidence": [
         {
           "label": "Pull request",
@@ -2276,6 +2333,10 @@
         {
           "label": "Latest public human comment",
           "url": "https://github.com/jitsi/jitsi-meet/pull/16694#issuecomment-3969898114"
+        },
+        {
+          "label": "Trust-boundary feedback",
+          "url": "https://github.com/jitsi/jitsi-meet/pull/16694#issuecomment-3563578518"
         }
       ],
       "human_reply": "@damencho: This was addressed in [link]",
@@ -2286,7 +2347,8 @@
       "created_at": "2025-11-21T14:42:31Z",
       "merged_at": null,
       "closed_at": "2026-02-26T23:46:28Z",
-      "close_reason_certainty": "unknown"
+      "close_reason_certainty": "explicit",
+      "closed_by": "damencho"
     },
     {
       "id": "jitsi/jitsi-meet#16708",
@@ -2301,8 +2363,8 @@
       "ci": "Not verified for this head",
       "blocker": "",
       "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "Closed without merge. The specific closure reason is awaiting evidence review; do not infer a technical rejection from the closed state alone.",
-      "lesson": "Read the actual closure discussion before retrying; a closed record alone does not establish why it closed.",
+      "close_reason": "GitHub Actions closed this after an inactivity/stale warning, but the cached record has no explicit closing explanation. No human technical rejection is recorded; the standard CLA reminder does not establish the cause.",
+      "lesson": "Keep approved work active with concrete progress, but do not interpret a stale-bot closure or boilerplate CLA reminder as a maintainer rejection.",
       "evidence": [
         {
           "label": "Pull request",
@@ -2325,7 +2387,8 @@
       "created_at": "2025-11-26T05:40:03Z",
       "merged_at": null,
       "closed_at": "2026-03-14T02:20:06Z",
-      "close_reason_certainty": "unknown"
+      "close_reason_certainty": "unknown",
+      "closed_by": "github-actions[bot]"
     },
     {
       "id": "kubearmor/KubeArmor#2287",
@@ -2404,12 +2467,16 @@
       "ci": "Not verified for this head",
       "blocker": "",
       "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "Closed without merge. The specific closure reason is awaiting evidence review; do not infer a technical rejection from the closed state alone.",
-      "lesson": "Read the actual closure discussion before retrying; a closed record alone does not establish why it closed.",
+      "close_reason": "The author closed this draft; no closing explanation is present in its cached thread. PR #8958 subsequently carries the same hidden-edge proposal, consistent with operational author-supersession, but the cached evidence does not establish attribution correction as the reason for closing #8957.",
+      "lesson": "Retain an explicit old-to-new replacement notice and verify attribution before publication; do not describe an author-closed draft as a maintainer rejection or count its successor as another distinct fix.",
       "evidence": [
         {
           "label": "Pull request",
           "url": "https://github.com/networkx/networkx/pull/8957"
+        },
+        {
+          "label": "Subsequent same-topic PR",
+          "url": "https://github.com/networkx/networkx/pull/8958"
         }
       ],
       "human_reply": "",
@@ -2420,7 +2487,8 @@
       "created_at": "2026-10-15T14:43:21Z",
       "merged_at": null,
       "closed_at": "2026-10-15T14:46:21Z",
-      "close_reason_certainty": "unknown"
+      "close_reason_certainty": "unknown",
+      "closed_by": "srijan2607"
     },
     {
       "id": "PalisadoesFoundation/talawa-api#3139",
@@ -2435,8 +2503,8 @@
       "ci": "Not verified for this head",
       "blocker": "",
       "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "Closed without merge. The specific closure reason is awaiting evidence review; do not infer a technical rejection from the closed state alone.",
-      "lesson": "Read the actual closure discussion before retrying; a closed record alone does not establish why it closed.",
+      "close_reason": "The author closed this PR without a stated reason in the cached comments, reviews or timeline. The author had asked for help fixing errors, but that does not establish why the PR was closed.",
+      "lesson": "Reproduce and isolate errors before requesting help, and record the closure or replacement rationale explicitly rather than leaving later readers to infer it.",
       "evidence": [
         {
           "label": "Pull request",
@@ -2455,7 +2523,8 @@
       "created_at": "2025-02-04T09:49:05Z",
       "merged_at": null,
       "closed_at": "2025-02-04T09:59:30Z",
-      "close_reason_certainty": "unknown"
+      "close_reason_certainty": "unknown",
+      "closed_by": "srijan2607"
     },
     {
       "id": "PalisadoesFoundation/talawa-api#3140",
@@ -2470,8 +2539,8 @@
       "ci": "Not verified for this head",
       "blocker": "",
       "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "Closed without merge. The specific closure reason is awaiting evidence review; do not infer a technical rejection from the closed state alone.",
-      "lesson": "Read the actual closure discussion before retrying; a closed record alone does not establish why it closed.",
+      "close_reason": "Maintainer explicitly closed this while requesting proper issue-closing links, a more complete PR template, and a searchable title. Immediately beforehand they also requested fixes for failing tests.",
+      "lesson": "Complete the project template and correct issue-closing syntax, choose a specific searchable title, and verify required tests before submitting.",
       "evidence": [
         {
           "label": "Pull request",
@@ -2480,6 +2549,10 @@
         {
           "label": "Closure discussion",
           "url": "https://github.com/PalisadoesFoundation/talawa-api/pull/3140#issuecomment-2637863327"
+        },
+        {
+          "label": "Maintainer test feedback",
+          "url": "https://github.com/PalisadoesFoundation/talawa-api/pull/3140#issuecomment-2637862066"
         }
       ],
       "human_reply": "@palisadoes: Please fix the first comment so that each issue listed automatically closes. The PR_GUIDELINES.md file has details. Please also fill in the template for the pull request as completely as you can. It greatly helps others searching for code changes in future and helps others understand the summarized rationale for the work you have done Also make sure the title is easily searchable for terms related to what the PR is about. Closing",
@@ -2490,7 +2563,8 @@
       "created_at": "2025-02-04T10:44:57Z",
       "merged_at": null,
       "closed_at": "2025-02-05T19:38:10Z",
-      "close_reason_certainty": "unknown"
+      "close_reason_certainty": "explicit",
+      "closed_by": "palisadoes"
     },
     {
       "id": "pypa/pipx#2150",
@@ -2539,8 +2613,8 @@
       "ci": "Not verified for this head",
       "blocker": "",
       "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "Closed without merge. The specific closure reason is awaiting evidence review; do not infer a technical rejection from the closed state alone.",
-      "lesson": "Verify supported behaviour and prior maintainer decisions before implementation. Respect the no-further-contact boundary.",
+      "close_reason": "Maintainer rejected the premise: credentials embedded in repository URLs are unsupported; Twine expects .pypirc or a keyring backend. In the linked issue decision, the same maintainer explicitly prohibited automated AI issues or PRs to this repository.",
+      "lesson": "Verify that an input is supported before implementing a fix, use the supported credential mechanisms, and stop automated AI submissions to Twine rather than reopening or rephrasing this proposal.",
       "evidence": [
         {
           "label": "Pull request",
@@ -2559,7 +2633,8 @@
       "created_at": "2026-10-15T15:33:07Z",
       "merged_at": null,
       "closed_at": "2026-10-15T15:46:17Z",
-      "close_reason_certainty": "unknown"
+      "close_reason_certainty": "explicit",
+      "closed_by": "woodruffw"
     },
     {
       "id": "Textualize/trogon#129",
@@ -2574,12 +2649,16 @@
       "ci": "Not verified for this head",
       "blocker": "",
       "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "Closed without merge. The specific closure reason is awaiting evidence review; do not infer a technical rejection from the closed state alone.",
-      "lesson": "Read the actual closure discussion before retrying; a closed record alone does not establish why it closed.",
+      "close_reason": "Operational author-superseded: the author closed this in favor of PR #130 to correct account-linked commit attribution. The public historical description identifies the replacement and states that the tested file tree was unchanged; this was not a maintainer technical rejection.",
+      "lesson": "Check author and committer attribution before publication, preserve replacement cross-links, and count replacement records separately from distinct fixes.",
       "evidence": [
         {
           "label": "Pull request",
           "url": "https://github.com/Textualize/trogon/pull/129"
+        },
+        {
+          "label": "Replacement PR",
+          "url": "https://github.com/Textualize/trogon/pull/130"
         }
       ],
       "human_reply": "",
@@ -2590,7 +2669,8 @@
       "created_at": "2026-10-15T13:54:53Z",
       "merged_at": null,
       "closed_at": "2026-10-15T15:30:12Z",
-      "close_reason_certainty": "unknown"
+      "close_reason_certainty": "explicit",
+      "closed_by": "srijan2607"
     },
     {
       "id": "srijan2607/etils#1",
@@ -2767,8 +2847,8 @@
       "ci": "Not verified for this head",
       "blocker": "",
       "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "Closed after an overlapping upstream implementation was found in amazon-ion/ion-python#452.",
-      "lesson": "Check live competing work before publication and offer validated tests rather than duplicate the fix.",
+      "close_reason": "Author-closed after an overlapping upstream fix was found in amazon-ion/ion-python#452; this was not an upstream rejection of this fork PR.",
+      "lesson": "Refresh competing work before publication and offer validated additional tests instead of opening a duplicate fix.",
       "evidence": [
         {
           "label": "Pull request",
@@ -2790,7 +2870,8 @@
       "head_ref": "fix/reject-binary-negative-integer-zero",
       "created_at": "2026-10-15T22:39:58Z",
       "merged_at": null,
-      "closed_at": "2026-10-16T07:23:43Z"
+      "closed_at": "2026-10-16T07:23:43Z",
+      "close_reason_certainty": "inferred"
     },
     {
       "id": "srijan2607/jitsi-meet#1",
@@ -2839,8 +2920,8 @@
       "ci": "Not verified for this head",
       "blocker": "",
       "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "Superseded by [link] The replacement retains the same corrected commit and complete patch; prior review artifacts remain archived here.",
-      "lesson": "A superseded or attribution-corrected record is not a new fix or a technical rejection; preserve its replacement link.",
+      "close_reason": "Explicitly superseded by own-fork PR #2, retaining the same corrected commit and complete patch. The older review was archived, not rejected by the upstream maintainer.",
+      "lesson": "Cross-link replacement records and do not count a reissued review copy as a new distinct fix.",
       "evidence": [
         {
           "label": "Pull request",
@@ -2858,7 +2939,8 @@
       "head_ref": "fix/function-argument-separators",
       "created_at": "2026-10-15T14:25:31Z",
       "merged_at": null,
-      "closed_at": "2026-10-15T15:32:02Z"
+      "closed_at": "2026-10-15T15:32:02Z",
+      "close_reason_certainty": "explicit"
     },
     {
       "id": "srijan2607/knack#1",
@@ -2941,8 +3023,8 @@
       "ci": "Not verified for this head",
       "blocker": "",
       "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "# PROPOSED UPSTREAM TEXT — approval required; not submitted by this update No mandatory PR template was found in the captured project policy/head evidence. No prerequisite issue requirement was found there. Refresh policy/duplicates before any approved publication. ## Exact proposed upstream title Accept multiline JSON in toolbox specifications ## Exact proposed upstream body <!-- BEGIN PROPOSED UPSTREAM BODY --> ### Problem Toolbox specifications containing pretty-printed JSON are rejected before JSON parsing because the outer argument matcher does not span newlines. ### Change Enable DOTALL for that matcher while retaining full-string match",
-      "lesson": "Refresh competing fixes before submission; support existing work instead of duplicating it.",
+      "close_reason": "The public historical description explicitly supersedes this review with own-fork PR #2, preserving the tested file tree with corrected account-linked commit attribution.",
+      "lesson": "Verify both author and committer identity before publication and preserve a clear old-to-new review link.",
       "evidence": [
         {
           "label": "Pull request",
@@ -2951,6 +3033,10 @@
         {
           "label": "Closure discussion",
           "url": "https://github.com/srijan2607/llm/pull/1#issuecomment-6194146286"
+        },
+        {
+          "label": "Replacement review",
+          "url": "https://github.com/srijan2607/llm/pull/2"
         }
       ],
       "human_reply": "",
@@ -2960,7 +3046,8 @@
       "head_ref": "fix/multiline-toolbox-configuration",
       "created_at": "2026-10-15T09:08:59Z",
       "merged_at": null,
-      "closed_at": "2026-10-15T15:29:54Z"
+      "closed_at": "2026-10-15T15:29:54Z",
+      "close_reason_certainty": "explicit"
     },
     {
       "id": "srijan2607/networkx#1",
@@ -2975,8 +3062,8 @@
       "ci": "Not verified for this head",
       "blocker": "",
       "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "Superseded by #2 and #3, now merged into main.",
-      "lesson": "A superseded or attribution-corrected record is not a new fix or a technical rejection; preserve its replacement link.",
+      "close_reason": "The combined review was superseded by separate own-fork PRs #2 and #3 for scope review. The author's closing comment records those fork merges; neither that closure nor the fork merges establish upstream acceptance.",
+      "lesson": "Split independently reviewable behaviours and keep fork review outcomes separate from actual upstream decisions.",
       "evidence": [
         {
           "label": "Pull request",
@@ -2994,7 +3081,8 @@
       "head_ref": "review/8456-hidden-bellman-ford",
       "created_at": "2026-10-15T09:19:21Z",
       "merged_at": null,
-      "closed_at": "2026-10-15T14:53:47Z"
+      "closed_at": "2026-10-15T14:53:47Z",
+      "close_reason_certainty": "explicit"
     },
     {
       "id": "srijan2607/networkx#2",
@@ -3167,8 +3255,8 @@
       "ci": "Not verified for this head",
       "blocker": "",
       "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "Archived in favor of the fresh draft [link] on `review/reissued-srijan2607-20261015`. The replacement and its separate official-text preview have been read back and verified at corrected code/test head 918e9f3e3f37abeb86286056f8b4da161fbbaf1f. This old branch remains preserved; no merge or readiness claim is made.",
-      "lesson": "A superseded or attribution-corrected record is not a new fix or a technical rejection; preserve its replacement link.",
+      "close_reason": "The author archived this in favour of own-fork PR #2 on a fresh review branch, preserving the corrected code and test head. This closure was a review-record replacement, not a failed upstream fix.",
+      "lesson": "Keep historical review artifacts but direct reviewers to the current exact revision; count the upstream merge separately.",
       "evidence": [
         {
           "label": "Pull request",
@@ -3186,7 +3274,8 @@
       "head_ref": "fix/absolute-file-package-urls",
       "created_at": "2026-10-15T12:38:44Z",
       "merged_at": null,
-      "closed_at": "2026-10-15T15:34:28Z"
+      "closed_at": "2026-10-15T15:34:28Z",
+      "close_reason_certainty": "explicit"
     },
     {
       "id": "srijan2607/python-dotenv#1",
@@ -3201,8 +3290,8 @@
       "ci": "Not verified for this head",
       "blocker": "",
       "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "Superseded by [link] The replacement draft targets this fork’s main and retains the same corrected code head `0f7609f116b19ac7355daa6b5d9147a8c5817907`. Please use the replacement and its separate official-submission preview; closing this older draft without merging.",
-      "lesson": "A superseded or attribution-corrected record is not a new fix or a technical rejection; preserve its replacement link.",
+      "close_reason": "The author's closing comment explicitly supersedes this review with own-fork PR #2, retaining the same corrected code head and a separate official-submission preview.",
+      "lesson": "Preserve replacement pointers and verify the actual upstream PR rather than treating a fork-review closure as rejection.",
       "evidence": [
         {
           "label": "Pull request",
@@ -3220,7 +3309,8 @@
       "head_ref": "fix/valueless-load-result",
       "created_at": "2026-10-15T14:25:26Z",
       "merged_at": null,
-      "closed_at": "2026-10-15T15:30:49Z"
+      "closed_at": "2026-10-15T15:30:49Z",
+      "close_reason_certainty": "explicit"
     },
     {
       "id": "srijan2607/submitit#1",
@@ -3299,8 +3389,8 @@
       "ci": "Not verified for this head",
       "blocker": "",
       "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "# PROPOSED UPSTREAM TEXT — approval required; not submitted by this update **An official PR already exists:** [link] . This is a review copy of proposed text for that existing submission, not a request to create another PR. Nothing is being edited upstream. No mandatory Trogon template was found in the captured/head policy evidence; issue #36 already supplies the problem reference. ## Exact proposed upstream title Preserve tuple positions when comparing option defaults ## Exact proposed upstream body <!-- BEGIN PROPOSED UPSTREAM BODY --> Fixes #36. ### Problem Comparing non-repeated option values with their defaults sorts flattened tuples. Mi",
-      "lesson": "Read the actual closure discussion before retrying; a closed record alone does not establish why it closed.",
+      "close_reason": "The original description explicitly points to own-fork PR #2 as the replacement, with the same tested tree and corrected account-linked attribution.",
+      "lesson": "Check attribution before opening reviews, and retain the historical record without duplicating the distinct-fix count.",
       "evidence": [
         {
           "label": "Pull request",
@@ -3313,6 +3403,10 @@
         {
           "label": "Related actual upstream PR",
           "url": "https://github.com/Textualize/trogon/pull/129"
+        },
+        {
+          "label": "Replacement review",
+          "url": "https://github.com/srijan2607/trogon/pull/2"
         }
       ],
       "human_reply": "",
@@ -3322,7 +3416,8 @@
       "head_ref": "fix/preserve-tuple-option-default-order",
       "created_at": "2026-10-15T12:38:38Z",
       "merged_at": null,
-      "closed_at": "2026-10-15T15:30:07Z"
+      "closed_at": "2026-10-15T15:30:07Z",
+      "close_reason_certainty": "explicit"
     },
     {
       "id": "srijan2607/twine#1",
@@ -3335,10 +3430,10 @@
       "draft": true,
       "head": "ceb8a03ec9faf1036529ca67910d4607da374958",
       "ci": "Not verified for this head",
-      "blocker": "",
-      "next_action": "Do not reopen or resubmit automatically; inspect the linked evidence.",
-      "close_reason": "Maintainer rejected credentials embedded in repository URLs as unsupported and prohibited further automated issues/PRs.",
-      "lesson": "Verify supported behaviour and prior maintainer decisions before implementation. Respect the no-further-contact boundary.",
+      "blocker": "Reference-only archive: upstream rejected the unsupported-input premise and prohibited further automated AI issues/PRs.",
+      "next_action": "Do not resubmit, reopen or contact upstream automatically; preserve the decision and evidence.",
+      "close_reason": "This own-fork review was explicitly superseded by own-fork PR #2, preserving its reviewed source tree. The later actual-upstream unsupported-input rejection is a separate lifecycle event.",
+      "lesson": "Distinguish a replaced fork-review record from the actual project's decision; respect the later upstream no-further-automated-submissions boundary.",
       "evidence": [
         {
           "label": "Pull request",
@@ -3360,7 +3455,8 @@
       "head_ref": "fix/decode-repository-url-credentials",
       "created_at": "2026-10-15T12:23:06Z",
       "merged_at": null,
-      "closed_at": "2026-10-15T15:33:01Z"
+      "closed_at": "2026-10-15T15:33:01Z",
+      "close_reason_certainty": "explicit"
     },
     {
       "id": "srijan2607/uncertainties#1",
@@ -3713,7 +3809,7 @@
   },
   "exclusions_count": 7,
   "recent_upstream_merges": 1,
-  "closure_audit_count": 0,
-  "closure_audit_pending": 20,
+  "closure_audit_count": 20,
+  "closure_audit_pending": 0,
   "notifications_count": 4
 }
