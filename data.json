@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-16T14:25:06.287770+00:00",
+  "generated_at": "2026-10-16T14:35:31.209825+00:00",
   "scope": "Only this implemented contribution campaign with source/publication receipts, starting 15 October 2026. Unrelated account history and unimplemented plans are excluded. Counts are PR records, not distinct fixes. Official merges count actual upstream acceptance only.",
   "refresh_interval_minutes": 10,
-  "ci_snapshot_at": "2026-10-16T14:09:40.785291+00:00",
+  "ci_snapshot_at": "2026-10-16T14:26:52.866510+00:00",
   "records": [
     {
       "id": "facebookincubator/submitit#1826",
@@ -14,7 +14,7 @@
       "state": "open",
       "draft": true,
       "head": "42c750e9c330db53c2828ab94fd450b7ef65c661",
-      "ci": "Workflow approval required; not green (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "Workflow approval required; not green (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Contributor agreement check unresolved; personal action or coverage verification required. Test workflow awaits maintainer approval; no passing CI established. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
@@ -51,7 +51,7 @@
       "state": "open",
       "draft": true,
       "head": "e61ddd8ef46c11292cabe4d70a1de92b060abc32",
-      "ci": "Workflow approval required; not green (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "Workflow approval required; not green (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Contributor agreement check unresolved; personal action or coverage verification required. Test workflow awaits maintainer approval; no passing CI established. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
@@ -88,7 +88,7 @@
       "state": "open",
       "draft": true,
       "head": "2accb593205434060412b4c3f2336d0f5722491f",
-      "ci": "Workflow approval required; not green (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "Workflow approval required; not green (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Test workflow awaits maintainer approval; no passing CI established. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
@@ -131,7 +131,7 @@
       "state": "open",
       "draft": true,
       "head": "9ac1905ac3459d054ff66cc46cce255f6258a83a",
-      "ci": "Workflow approval required; not green (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "Workflow approval required; not green (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Test workflow awaits maintainer approval; no passing CI established. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
@@ -177,7 +177,7 @@
       "state": "open",
       "draft": true,
       "head": "1cb05794a7037769e72a47afa9504794bd4e3159",
-      "ci": "Workflow approval required; not green (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "Workflow approval required; not green (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Test workflow awaits maintainer approval; no passing CI established. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
@@ -223,7 +223,7 @@
       "state": "open",
       "draft": true,
       "head": "78abf0ef682955e1b9a1cba61865affa3085111a",
-      "ci": "pending (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "pending (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Contributor agreement check unresolved; personal action or coverage verification required. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
@@ -260,7 +260,7 @@
       "state": "open",
       "draft": true,
       "head": "7f0589c452a96613bd85002e4e84bc3ab3566165",
-      "ci": "pending (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "pending (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Contributor agreement check unresolved; personal action or coverage verification required. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
@@ -297,7 +297,7 @@
       "state": "open",
       "draft": false,
       "head": "2bae3d9869ccbe78fef754d9cc89c6d59e9d8eed",
-      "ci": "observed success required test coverage unverified (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "observed success required test coverage unverified (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "",
       "close_reason": "",
       "lesson": "",
@@ -338,7 +338,7 @@
       "state": "open",
       "draft": true,
       "head": "0dbbf7d0a4d27f2696fa5855c8e2528cbf26d378",
-      "ci": "Workflow approval required; not green (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "Workflow approval required; not green (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Test workflow awaits maintainer approval; no passing CI established. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
@@ -389,7 +389,7 @@
       "state": "open",
       "draft": false,
       "head": "29512960204d3ccbd527e819e6ae03bdc076ae8f",
-      "ci": "Workflow approval required; not green (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "Workflow approval required; not green (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Test workflow awaits maintainer approval; no passing CI established.",
       "close_reason": "",
       "lesson": "",
@@ -435,7 +435,7 @@
       "state": "open",
       "draft": false,
       "head": "1dd8354e492a4125d49fe13897fe8ca0beaee004",
-      "ci": "Workflow approval required; not green (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "Workflow approval required; not green (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Test workflow awaits maintainer approval; no passing CI established.",
       "close_reason": "",
       "lesson": "",
@@ -481,7 +481,7 @@
       "state": "open",
       "draft": false,
       "head": "0f7609f116b19ac7355daa6b5d9147a8c5817907",
-      "ci": "observed success required test coverage unverified (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "observed success required test coverage unverified (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Awaiting upstream review; a prior review request is verified.",
       "close_reason": "",
       "lesson": "",
@@ -522,7 +522,7 @@
       "state": "open",
       "draft": true,
       "head": "9414305762556e4509c57440a77e479077ec4273",
-      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Fork-only review draft; not an upstream submission.  No hosted CI evidence. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
@@ -559,7 +559,7 @@
       "state": "open",
       "draft": true,
       "head": "e61ddd8ef46c11292cabe4d70a1de92b060abc32",
-      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Related upstream submission: Contributor agreement check unresolved; personal action or coverage verification required. Test workflow awaits maintainer approval; no passing CI established. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
@@ -589,7 +589,7 @@
       "blocker_owner": "Contributor (@srijan2607) and CLA provider — personal agreement/identity coverage",
       "owner_url": "https://github.com/srijan2607",
       "follow_up_status": "No maintainer ping for a personal CLA gate; no agreement signed automatically.",
-      "upstream_ci": "Workflow approval required; not green (CI scan 2026-10-16T14:09:40.785291+00:00)"
+      "upstream_ci": "Workflow approval required; not green (CI scan 2026-10-16T14:26:52.866510+00:00)"
     },
     {
       "id": "srijan2607/etils#4",
@@ -601,7 +601,7 @@
       "state": "open",
       "draft": true,
       "head": "2accb593205434060412b4c3f2336d0f5722491f",
-      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Related upstream submission: Test workflow awaits maintainer approval; no passing CI established. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
@@ -636,7 +636,7 @@
       "blocker_owner": "Upstream workflow approver — individual authority not verified",
       "owner_url": "https://github.com/google/etils/pull/841/checks",
       "follow_up_status": "No guessed maintainer tag sent; ownership and recent merge-authority checks did not establish an individual approver.",
-      "upstream_ci": "Workflow approval required; not green (CI scan 2026-10-16T14:09:40.785291+00:00)"
+      "upstream_ci": "Workflow approval required; not green (CI scan 2026-10-16T14:26:52.866510+00:00)"
     },
     {
       "id": "srijan2607/filesystem_spec#1",
@@ -648,7 +648,7 @@
       "state": "open",
       "draft": true,
       "head": "ffac38db2c51eda51e0af3e943f99b969c352df0",
-      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Fork-only review draft; not an upstream submission.  No hosted CI evidence. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
@@ -685,7 +685,7 @@
       "state": "open",
       "draft": true,
       "head": "79d581331a32e9474927558ec78e048b8cad9258",
-      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Personal Apache licensing affirmation remains outstanding. Fork-only review draft; not an upstream submission.  No hosted CI evidence. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
@@ -722,7 +722,7 @@
       "state": "open",
       "draft": true,
       "head": "9ac1905ac3459d054ff66cc46cce255f6258a83a",
-      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Related upstream submission: Test workflow awaits maintainer approval; no passing CI established. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
@@ -752,44 +752,7 @@
       "blocker_owner": "@jamesls — verified upstream maintainer",
       "owner_url": "https://github.com/jamesls",
       "follow_up_status": "Tagged on GitHub on 2026-10-16T11:29:04Z for workflow approval; no code-review approval claimed.",
-      "upstream_ci": "Workflow approval required; not green (CI scan 2026-10-16T14:09:40.785291+00:00)"
-    },
-    {
-      "id": "srijan2607/joblib#1",
-      "url": "https://github.com/srijan2607/joblib/pull/1",
-      "repo": "srijan2607/joblib",
-      "number": 1,
-      "title": "Review: prevent incorrect Memory reuse from dictionary hash collisions",
-      "kind": "fork",
-      "state": "open",
-      "draft": true,
-      "head": "8b5e63ad4a8d9a8875c1007e9653dd34f1916381",
-      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:09:40.785291+00:00)",
-      "blocker": "Fork-only review draft; not an upstream submission.  No hosted CI evidence. Draft, not ready for review.",
-      "close_reason": "",
-      "lesson": "",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/srijan2607/joblib/pull/1"
-        }
-      ],
-      "human_reply": "",
-      "upstream_url": "",
-      "updated_at": "2026-10-16T01:39:13Z",
-      "upstream_repo": "joblib/joblib",
-      "head_ref": "fix/dict-hash-namespace",
-      "created_at": "2026-10-16T01:39:11Z",
-      "merged_at": null,
-      "closed_at": null,
-      "implementation_recorded": true,
-      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
-      "completed_actions": [
-        "Implementation and publication evidence recorded."
-      ],
-      "blocker_owner": "Contributor / final reviewer (@srijan2607)",
-      "owner_url": "https://github.com/srijan2607",
-      "follow_up_status": "No upstream maintainer mention: this is a fork-only review or contributor-owned gate."
+      "upstream_ci": "Workflow approval required; not green (CI scan 2026-10-16T14:26:52.866510+00:00)"
     },
     {
       "id": "srijan2607/knack#3",
@@ -801,7 +764,7 @@
       "state": "open",
       "draft": true,
       "head": "78abf0ef682955e1b9a1cba61865affa3085111a",
-      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Related upstream submission: Contributor agreement check unresolved; personal action or coverage verification required. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
@@ -831,7 +794,7 @@
       "blocker_owner": "Contributor (@srijan2607) and CLA provider — personal agreement/identity coverage",
       "owner_url": "https://github.com/srijan2607",
       "follow_up_status": "No maintainer ping for a personal CLA gate; no agreement signed automatically.",
-      "upstream_ci": "pending (CI scan 2026-10-16T14:09:40.785291+00:00)"
+      "upstream_ci": "pending (CI scan 2026-10-16T14:26:52.866510+00:00)"
     },
     {
       "id": "srijan2607/knack#4",
@@ -843,7 +806,7 @@
       "state": "open",
       "draft": true,
       "head": "7f0589c452a96613bd85002e4e84bc3ab3566165",
-      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Related upstream submission: Contributor agreement check unresolved; personal action or coverage verification required. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
@@ -873,7 +836,7 @@
       "blocker_owner": "Contributor (@srijan2607) and CLA provider — personal agreement/identity coverage",
       "owner_url": "https://github.com/srijan2607",
       "follow_up_status": "No maintainer ping for a personal CLA gate; no agreement signed automatically.",
-      "upstream_ci": "pending (CI scan 2026-10-16T14:09:40.785291+00:00)"
+      "upstream_ci": "pending (CI scan 2026-10-16T14:26:52.866510+00:00)"
     },
     {
       "id": "srijan2607/laspy#1",
@@ -885,7 +848,7 @@
       "state": "open",
       "draft": true,
       "head": "67c0316e4871ab5f055836b18c8390dec87517e8",
-      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Fork-only review draft; not an upstream submission.  No hosted CI evidence. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
@@ -922,7 +885,7 @@
       "state": "open",
       "draft": true,
       "head": "29512960204d3ccbd527e819e6ae03bdc076ae8f",
-      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Related upstream submission: Test workflow awaits maintainer approval; no passing CI established.",
       "close_reason": "",
       "lesson": "",
@@ -952,7 +915,7 @@
       "blocker_owner": "@simonw — verified upstream maintainer",
       "owner_url": "https://github.com/simonw",
       "follow_up_status": "Tagged on GitHub on 2026-10-16T11:28:55Z for workflow approval; no code-review approval claimed.",
-      "upstream_ci": "Workflow approval required; not green (CI scan 2026-10-16T14:09:40.785291+00:00)"
+      "upstream_ci": "Workflow approval required; not green (CI scan 2026-10-16T14:26:52.866510+00:00)"
     },
     {
       "id": "srijan2607/meshio#1",
@@ -964,7 +927,7 @@
       "state": "open",
       "draft": true,
       "head": "a2f0113fb4afdabf10208d75ffb54701e8d50501",
-      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Fork-only review draft; not an upstream submission.  No hosted CI evidence. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
@@ -1001,7 +964,7 @@
       "state": "open",
       "draft": true,
       "head": "27f72f95bb815857ab0c57977807c09c9f1f30ad",
-      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Explicit final-head/text approval still required; no upstream submission or maintainer contact authorized. Fork-only review draft; not an upstream submission.  No hosted CI evidence. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
@@ -1038,7 +1001,7 @@
       "state": "open",
       "draft": true,
       "head": "3e4a76bf4d02101833f35728b4964aab2152502a",
-      "ci": "failed (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "failed (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Fork-only review draft; not an upstream submission.  Draft, not ready for review. Project human-accountability and human-written-prose requirements remain separate gates. Current-head CI reports a failure; inspect the actual checks before requesting code review.",
       "close_reason": "",
       "lesson": "",
@@ -1079,7 +1042,7 @@
       "state": "open",
       "draft": true,
       "head": "150d99968a47a10b1c2d1fec844f30162115b486",
-      "ci": "failed (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "failed (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Fork-only review draft; not an upstream submission.  Draft, not ready for review. Project human-accountability and human-written-prose requirements remain separate gates. Current-head CI reports a failure; inspect the actual checks before requesting code review.",
       "close_reason": "",
       "lesson": "",
@@ -1120,7 +1083,7 @@
       "state": "open",
       "draft": true,
       "head": "8b4326a1b0ff6f5654b8e30aa1af28ea92f57e1f",
-      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Fork-only review draft; not an upstream submission.  No hosted CI evidence. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
@@ -1157,7 +1120,7 @@
       "state": "open",
       "draft": true,
       "head": "1c54b4291ef750b450079b28a896efa8b29b4c52",
-      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Fork-only review draft; not an upstream submission.  No hosted CI evidence. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
@@ -1185,43 +1148,6 @@
       "follow_up_status": "No upstream maintainer mention: this is a fork-only review or contributor-owned gate."
     },
     {
-      "id": "srijan2607/partd#1",
-      "url": "https://github.com/srijan2607/partd/pull/1",
-      "repo": "srijan2607/partd",
-      "number": 1,
-      "title": "[Unsupervised AI draft] Preserve Buffer append chronology across flushes",
-      "kind": "fork",
-      "state": "open",
-      "draft": true,
-      "head": "0f8582c72d84084dea895ab9c2cd0595f4e991c7",
-      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:09:40.785291+00:00)",
-      "blocker": "Fork-only review draft; not an upstream submission.  No hosted CI evidence. Draft, not ready for review. Final upstream prose must be genuinely human-written; approving generated text does not satisfy that policy.",
-      "close_reason": "",
-      "lesson": "",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/srijan2607/partd/pull/1"
-        }
-      ],
-      "human_reply": "",
-      "upstream_url": "",
-      "updated_at": "2026-10-16T03:23:26Z",
-      "upstream_repo": "dask/partd",
-      "head_ref": "fix/buffer-append-order",
-      "created_at": "2026-10-16T03:23:13Z",
-      "merged_at": null,
-      "closed_at": null,
-      "implementation_recorded": true,
-      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
-      "completed_actions": [
-        "Implementation and publication evidence recorded."
-      ],
-      "blocker_owner": "Contributor / final reviewer (@srijan2607)",
-      "owner_url": "https://github.com/srijan2607",
-      "follow_up_status": "No upstream maintainer mention: this is a fork-only review or contributor-owned gate."
-    },
-    {
       "id": "srijan2607/periodictable#2",
       "url": "https://github.com/srijan2607/periodictable/pull/2",
       "repo": "srijan2607/periodictable",
@@ -1231,7 +1157,7 @@
       "state": "open",
       "draft": true,
       "head": "0dbbf7d0a4d27f2696fa5855c8e2528cbf26d378",
-      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Related upstream submission: Test workflow awaits maintainer approval; no passing CI established. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
@@ -1266,50 +1192,7 @@
       "blocker_owner": "@pkienzle — verified upstream maintainer",
       "owner_url": "https://github.com/pkienzle",
       "follow_up_status": "Tagged on GitHub on 2026-10-16T13:05:00Z for workflow approval; no code-review approval claimed.",
-      "upstream_ci": "Workflow approval required; not green (CI scan 2026-10-16T14:09:40.785291+00:00)"
-    },
-    {
-      "id": "srijan2607/pipx#2",
-      "url": "https://github.com/srijan2607/pipx/pull/2",
-      "repo": "srijan2607/pipx",
-      "number": 2,
-      "title": "Review: accept absolute file URLs for local package installs",
-      "kind": "fork",
-      "state": "open",
-      "draft": true,
-      "head": "13dfc942875f72ef2765690192cf7202a065889f",
-      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:09:40.785291+00:00)",
-      "blocker": "The associated fix is officially merged upstream. This fork review copy remains open; it is not an additional pending upstream fix.",
-      "close_reason": "",
-      "lesson": "",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/srijan2607/pipx/pull/2"
-        },
-        {
-          "label": "Related actual upstream PR",
-          "url": "https://github.com/pypa/pipx/pull/2150"
-        }
-      ],
-      "human_reply": "",
-      "upstream_url": "https://github.com/pypa/pipx/pull/2150",
-      "updated_at": "2026-10-15T22:35:37Z",
-      "upstream_repo": "pypa/pipx",
-      "head_ref": "review/reissued-srijan2607-20261015",
-      "created_at": "2026-10-15T15:33:05Z",
-      "merged_at": null,
-      "closed_at": null,
-      "implementation_recorded": true,
-      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
-      "completed_actions": [
-        "Implementation and publication evidence recorded."
-      ],
-      "blocker_owner": "No blocker — officially merged upstream",
-      "owner_url": "https://github.com/srijan2607",
-      "follow_up_status": "Official upstream merge verified.",
-      "upstream_ci": "Not verified for this head",
-      "upstream_accepted": true
+      "upstream_ci": "Workflow approval required; not green (CI scan 2026-10-16T14:26:52.866510+00:00)"
     },
     {
       "id": "srijan2607/PyAbel#1",
@@ -1321,7 +1204,7 @@
       "state": "open",
       "draft": true,
       "head": "7fd3b7f4bc82383e17689a0eea4401cb78a7af00",
-      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Fork-only review draft; not an upstream submission.  No hosted CI evidence. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
@@ -1358,7 +1241,7 @@
       "state": "open",
       "draft": true,
       "head": "2c1025578f0c4bf030b818dbfa27a83b360aecf0",
-      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Fork-only review draft; not an upstream submission.  No hosted CI evidence. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
@@ -1395,7 +1278,7 @@
       "state": "open",
       "draft": true,
       "head": "0f7609f116b19ac7355daa6b5d9147a8c5817907",
-      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Related upstream submission: Awaiting upstream review; a prior review request is verified.",
       "close_reason": "",
       "lesson": "",
@@ -1425,7 +1308,7 @@
       "blocker_owner": "@theskumar / upstream reviewers",
       "owner_url": "https://github.com/theskumar",
       "follow_up_status": "Code review was already requested; no duplicate ping sent.",
-      "upstream_ci": "observed success required test coverage unverified (CI scan 2026-10-16T14:09:40.785291+00:00)"
+      "upstream_ci": "observed success required test coverage unverified (CI scan 2026-10-16T14:26:52.866510+00:00)"
     },
     {
       "id": "srijan2607/spectral#1",
@@ -1437,7 +1320,7 @@
       "state": "open",
       "draft": true,
       "head": "6f221fbcf5bc68704672c7dc5a02e61eb6819362",
-      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Fork-only review draft; not an upstream submission.  No hosted CI evidence. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
@@ -1474,7 +1357,7 @@
       "state": "open",
       "draft": true,
       "head": "42c750e9c330db53c2828ab94fd450b7ef65c661",
-      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Related upstream submission: Contributor agreement check unresolved; personal action or coverage verification required. Test workflow awaits maintainer approval; no passing CI established. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
@@ -1504,7 +1387,7 @@
       "blocker_owner": "Contributor (@srijan2607) and CLA provider — personal agreement/identity coverage",
       "owner_url": "https://github.com/srijan2607",
       "follow_up_status": "No maintainer ping for a personal CLA gate; no agreement signed automatically.",
-      "upstream_ci": "Workflow approval required; not green (CI scan 2026-10-16T14:09:40.785291+00:00)"
+      "upstream_ci": "Workflow approval required; not green (CI scan 2026-10-16T14:26:52.866510+00:00)"
     },
     {
       "id": "srijan2607/trogon#2",
@@ -1516,7 +1399,7 @@
       "state": "open",
       "draft": true,
       "head": "1dd8354e492a4125d49fe13897fe8ca0beaee004",
-      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Related upstream submission: Test workflow awaits maintainer approval; no passing CI established.",
       "close_reason": "",
       "lesson": "",
@@ -1546,49 +1429,7 @@
       "blocker_owner": "@daneah — verified upstream maintainer",
       "owner_url": "https://github.com/daneah",
       "follow_up_status": "Tagged on GitHub on 2026-10-16T11:28:59Z for workflow approval; no code-review approval claimed.",
-      "upstream_ci": "Workflow approval required; not green (CI scan 2026-10-16T14:09:40.785291+00:00)"
-    },
-    {
-      "id": "srijan2607/twine#2",
-      "url": "https://github.com/srijan2607/twine/pull/2",
-      "repo": "srijan2607/twine",
-      "number": 2,
-      "title": "Review: decode percent-encoded repository URL credentials",
-      "kind": "fork",
-      "state": "open",
-      "draft": true,
-      "head": "192e5b84e7e2eb77099386eae39b8e8d8c48eb73",
-      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:09:40.785291+00:00)",
-      "blocker": "Reference-only archive: upstream rejected the unsupported-input premise and prohibited further automated AI issues/PRs.",
-      "close_reason": "",
-      "lesson": "",
-      "evidence": [
-        {
-          "label": "Pull request",
-          "url": "https://github.com/srijan2607/twine/pull/2"
-        },
-        {
-          "label": "Related actual upstream PR",
-          "url": "https://github.com/pypa/twine/pull/1405"
-        }
-      ],
-      "human_reply": "",
-      "upstream_url": "https://github.com/pypa/twine/pull/1405",
-      "updated_at": "2026-10-15T15:36:19Z",
-      "upstream_repo": "pypa/twine",
-      "head_ref": "fix/decode-repository-url-credentials-reissue",
-      "created_at": "2026-10-15T15:32:34Z",
-      "merged_at": null,
-      "closed_at": null,
-      "implementation_recorded": true,
-      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
-      "completed_actions": [
-        "Implementation and publication evidence recorded."
-      ],
-      "blocker_owner": "Historical record; see closure/review evidence",
-      "owner_url": "https://github.com/srijan2607",
-      "follow_up_status": "No new contact sent for this historical record.",
-      "upstream_ci": "Not verified for this head"
+      "upstream_ci": "Workflow approval required; not green (CI scan 2026-10-16T14:26:52.866510+00:00)"
     },
     {
       "id": "srijan2607/uncertainties#2",
@@ -1600,7 +1441,7 @@
       "state": "open",
       "draft": true,
       "head": "1cb05794a7037769e72a47afa9504794bd4e3159",
-      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:09:40.785291+00:00)",
+      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:26:52.866510+00:00)",
       "blocker": "Related upstream submission: Test workflow awaits maintainer approval; no passing CI established. Draft, not ready for review.",
       "close_reason": "",
       "lesson": "",
@@ -1630,7 +1471,7 @@
       "blocker_owner": "@newville — verified upstream maintainer",
       "owner_url": "https://github.com/newville",
       "follow_up_status": "Tagged on GitHub on 2026-10-16T11:29:09Z for workflow approval; no code-review approval claimed.",
-      "upstream_ci": "Workflow approval required; not green (CI scan 2026-10-16T14:09:40.785291+00:00)"
+      "upstream_ci": "Workflow approval required; not green (CI scan 2026-10-16T14:26:52.866510+00:00)"
     },
     {
       "id": "networkx/networkx#8957",
@@ -2048,6 +1889,47 @@
       "follow_up_status": "No new contact sent for this historical record."
     },
     {
+      "id": "srijan2607/joblib#1",
+      "url": "https://github.com/srijan2607/joblib/pull/1",
+      "repo": "srijan2607/joblib",
+      "number": 1,
+      "title": "Review: prevent incorrect Memory reuse from dictionary hash collisions",
+      "kind": "fork",
+      "state": "closed",
+      "draft": true,
+      "head": "8b5e63ad4a8d9a8875c1007e9653dd34f1916381",
+      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:26:52.866510+00:00)",
+      "blocker": "No hosted CI evidence.",
+      "close_reason": "Preview only; not submitted upstream. Human approval of the exact head `8b5e63ad4a8d9a8875c1007e9653dd34f1916381` AND the text below is required. No prerequisite issue is required by the repository's current contribution instructions; none has been posted. No CLA/DCO affirmation is supplied. ## Exact proposed upstream title FIX distinguish fallback dictionary hash representations ## Exact proposed upstream body ### Problem When dictionary keys cannot be sorted directly, `Hasher._batch_setitems` substitutes `joblib.hash(key)` strings for the keys. A different dictionary whose keys are those strings therefore receives the same hash: ```python i",
+      "lesson": "Read the actual closure discussion before retrying; a closed record alone does not establish why it closed.",
+      "evidence": [
+        {
+          "label": "Pull request",
+          "url": "https://github.com/srijan2607/joblib/pull/1"
+        },
+        {
+          "label": "Closure discussion",
+          "url": "https://github.com/srijan2607/joblib/pull/1#issuecomment-6206062899"
+        }
+      ],
+      "human_reply": "",
+      "upstream_url": "",
+      "updated_at": "2026-10-16T14:34:32Z",
+      "upstream_repo": "joblib/joblib",
+      "head_ref": "fix/dict-hash-namespace",
+      "created_at": "2026-10-16T01:39:11Z",
+      "merged_at": null,
+      "closed_at": "2026-10-16T14:34:32Z",
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Historical record; see closure/review evidence",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No new contact sent for this historical record."
+    },
+    {
       "id": "srijan2607/knack#1",
       "url": "https://github.com/srijan2607/knack/pull/1",
       "repo": "srijan2607/knack",
@@ -2370,6 +2252,47 @@
       "follow_up_status": "No new contact sent for this historical record."
     },
     {
+      "id": "srijan2607/partd#1",
+      "url": "https://github.com/srijan2607/partd/pull/1",
+      "repo": "srijan2607/partd",
+      "number": 1,
+      "title": "[Unsupervised AI draft] Preserve Buffer append chronology across flushes",
+      "kind": "fork",
+      "state": "closed",
+      "draft": true,
+      "head": "0f8582c72d84084dea895ab9c2cd0595f4e991c7",
+      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:26:52.866510+00:00)",
+      "blocker": "No hosted CI evidence. Final upstream prose must be genuinely human-written; approving generated text does not satisfy that policy.",
+      "close_reason": "## Preview gate: facts/prompts worksheet only — NOT SUBMITTABLE **Preview only; not submitted upstream.** This is a separate artifact for the own-fork review. There is deliberately **no final proposed official title/body or prerequisite issue prose**: Dask requires the contributor to replace all AI-generated prose with their own thoughts. Do not paste this worksheet upstream. The public own-fork draft is clearly labeled unsupervised AI and must remain a draft; no personal human review or licensing affirmation is claimed. ### Facts to use when writing your own issue/title/body - Component: `partd.buffer.Buffer._get`. - Supported contract: the ",
+      "lesson": "A superseded or attribution-corrected record is not a new fix or a technical rejection; preserve its replacement link.",
+      "evidence": [
+        {
+          "label": "Pull request",
+          "url": "https://github.com/srijan2607/partd/pull/1"
+        },
+        {
+          "label": "Closure discussion",
+          "url": "https://github.com/srijan2607/partd/pull/1#issuecomment-6207357700"
+        }
+      ],
+      "human_reply": "",
+      "upstream_url": "",
+      "updated_at": "2026-10-16T14:34:28Z",
+      "upstream_repo": "dask/partd",
+      "head_ref": "fix/buffer-append-order",
+      "created_at": "2026-10-16T03:23:13Z",
+      "merged_at": null,
+      "closed_at": "2026-10-16T14:34:28Z",
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Historical record; see closure/review evidence",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No new contact sent for this historical record."
+    },
+    {
       "id": "srijan2607/periodictable#1",
       "url": "https://github.com/srijan2607/periodictable/pull/1",
       "repo": "srijan2607/periodictable",
@@ -2443,6 +2366,51 @@
       "merged_at": null,
       "closed_at": "2026-10-15T15:34:28Z",
       "close_reason_certainty": "explicit",
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Historical record; see closure/review evidence",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No new contact sent for this historical record."
+    },
+    {
+      "id": "srijan2607/pipx#2",
+      "url": "https://github.com/srijan2607/pipx/pull/2",
+      "repo": "srijan2607/pipx",
+      "number": 2,
+      "title": "Review: accept absolute file URLs for local package installs",
+      "kind": "fork",
+      "state": "closed",
+      "draft": true,
+      "head": "13dfc942875f72ef2765690192cf7202a065889f",
+      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:26:52.866510+00:00)",
+      "blocker": "No hosted CI evidence.",
+      "close_reason": "# Official text preview — published drafts, not ready for review Final head: `02bc9817b5e94a8c91a88604a29815cd2fa81b97`. Source and tests are byte-identical to reviewed code/test head `918e9f3e3f37abeb86286056f8b4da161fbbaf1f`; only `changelog.d/2150.bugfix.md` was added. Issue: [link] Official draft: [link] No completed personal human review or passing CI. This single preview comment is updated in place. ## Exact issue title Bare absolute file URLs are rejected before installation ## Exact issue body **Issue** Expected: `pipx install` accepts a bare absolute `file:///...` URL to an existing local wheel, passes it unchanged to the installer, ",
+      "lesson": "Read the actual closure discussion before retrying; a closed record alone does not establish why it closed.",
+      "evidence": [
+        {
+          "label": "Pull request",
+          "url": "https://github.com/srijan2607/pipx/pull/2"
+        },
+        {
+          "label": "Closure discussion",
+          "url": "https://github.com/srijan2607/pipx/pull/2#issuecomment-6195903813"
+        },
+        {
+          "label": "Related actual upstream PR",
+          "url": "https://github.com/pypa/pipx/pull/2150"
+        }
+      ],
+      "human_reply": "",
+      "upstream_url": "https://github.com/pypa/pipx/pull/2150",
+      "updated_at": "2026-10-16T14:34:16Z",
+      "upstream_repo": "pypa/pipx",
+      "head_ref": "review/reissued-srijan2607-20261015",
+      "created_at": "2026-10-15T15:33:05Z",
+      "merged_at": null,
+      "closed_at": "2026-10-16T14:34:16Z",
       "implementation_recorded": true,
       "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
       "completed_actions": [
@@ -2632,6 +2600,55 @@
       "follow_up_status": "No new contact sent for this historical record."
     },
     {
+      "id": "srijan2607/twine#2",
+      "url": "https://github.com/srijan2607/twine/pull/2",
+      "repo": "srijan2607/twine",
+      "number": 2,
+      "title": "Review: decode percent-encoded repository URL credentials",
+      "kind": "fork",
+      "state": "closed",
+      "draft": true,
+      "head": "192e5b84e7e2eb77099386eae39b8e8d8c48eb73",
+      "ci": "No current-head checks or workflow runs; not green (CI scan 2026-10-16T14:26:52.866510+00:00)",
+      "blocker": "Reference-only archive: upstream rejected the unsupported-input premise and prohibited further automated AI issues/PRs.",
+      "close_reason": "Maintainer rejected credentials embedded in repository URLs as unsupported and prohibited further automated issues/PRs.",
+      "lesson": "Verify supported behaviour and prior maintainer decisions before implementation. Respect the no-further-contact boundary.",
+      "evidence": [
+        {
+          "label": "Pull request",
+          "url": "https://github.com/srijan2607/twine/pull/2"
+        },
+        {
+          "label": "Closure discussion",
+          "url": "https://github.com/srijan2607/twine/pull/2#issuecomment-6195870327"
+        },
+        {
+          "label": "Maintainer decision",
+          "url": "https://github.com/pypa/twine/issues/1404#issuecomment-6196144662"
+        },
+        {
+          "label": "Related actual upstream PR",
+          "url": "https://github.com/pypa/twine/pull/1405"
+        }
+      ],
+      "human_reply": "",
+      "upstream_url": "https://github.com/pypa/twine/pull/1405",
+      "updated_at": "2026-10-16T14:34:24Z",
+      "upstream_repo": "pypa/twine",
+      "head_ref": "fix/decode-repository-url-credentials-reissue",
+      "created_at": "2026-10-15T15:32:34Z",
+      "merged_at": null,
+      "closed_at": "2026-10-16T14:34:24Z",
+      "implementation_recorded": true,
+      "implementation_scope": "Recorded implementation and published review/submission; not a planned feature.",
+      "completed_actions": [
+        "Implementation and publication evidence recorded."
+      ],
+      "blocker_owner": "Historical record; see closure/review evidence",
+      "owner_url": "https://github.com/srijan2607",
+      "follow_up_status": "No new contact sent for this historical record."
+    },
+    {
       "id": "srijan2607/uncertainties#1",
       "url": "https://github.com/srijan2607/uncertainties/pull/1",
       "repo": "srijan2607/uncertainties",
@@ -2674,6 +2691,26 @@
     }
   ],
   "activity": [
+    {
+      "at": "2026-10-16T14:34:32Z",
+      "text": "srijan2607/joblib#1: closed",
+      "url": "https://github.com/srijan2607/joblib/pull/1"
+    },
+    {
+      "at": "2026-10-16T14:34:28Z",
+      "text": "srijan2607/partd#1: closed",
+      "url": "https://github.com/srijan2607/partd/pull/1"
+    },
+    {
+      "at": "2026-10-16T14:34:24Z",
+      "text": "srijan2607/twine#2: closed",
+      "url": "https://github.com/srijan2607/twine/pull/2"
+    },
+    {
+      "at": "2026-10-16T14:34:16Z",
+      "text": "srijan2607/pipx#2: closed",
+      "url": "https://github.com/srijan2607/pipx/pull/2"
+    },
     {
       "at": "2026-10-16T13:05:00Z",
       "text": "python-periodictable/periodictable#137: workflow approval requested from @pkienzle",
@@ -2832,9 +2869,9 @@
       "closed": 3
     },
     "fork": {
-      "open": 28,
+      "open": 24,
       "merged": 13,
-      "closed": 8
+      "closed": 12
     }
   },
   "exclusions_count": 7,
