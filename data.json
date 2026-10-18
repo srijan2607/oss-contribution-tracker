@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T23:34:19.457790+00:00",
+  "generated_at": "2026-10-18T23:44:21.014854+00:00",
   "scope": "Only this implemented contribution campaign with source/publication receipts, starting 15 October 2026. Unrelated account history and unimplemented plans are excluded. Counts are PR records, not distinct fixes. Official merges count actual upstream acceptance only.",
   "refresh_interval_minutes": 10,
   "ci_snapshot_at": "2026-10-18T23:33:15.607147+00:00",
