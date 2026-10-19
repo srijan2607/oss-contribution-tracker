@@ -3,11 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="referrer" content="no-referrer">
   <meta name="theme-color" content="#f4f0e6">
   <meta name="description" content="A public open-source contribution ledger: upstream work, fork review drafts, decisions, and lessons.">
   <title>Contribution control room · Open source field notes</title>
   <link rel="stylesheet" href="./styles.css">
-  <script defer src="./app.js?v=implemented-only-3"></script>
+  <script defer src="./app.js?v=conversations-v1"></script>
 </head>
 <body>
 <a class="skip" href="#ledger">Skip to contributions</a>
@@ -19,18 +20,22 @@
   </header>
   <main>
     <section class="metrics" aria-label="Contribution totals" id="metrics"><article class="metric"><span>Total tracked</span><strong>—</strong><small>Awaiting snapshot</small></article></section>
+    <section class="companion-bar" aria-label="Private companion"><div><strong>Private companion</strong><p id="companion-status" role="status">Public read-only ledger. Copy instructions into your main Hermes chat; nothing here posts to GitHub.</p></div><button id="disconnect" type="button" hidden>Disconnect & clear private history</button></section>
+    <section class="merge-section" aria-labelledby="merge-title"><div><p class="eyebrow">ACTUAL UPSTREAM / MERGED AT</p><h2 id="merge-title">Acceptance, day by day.</h2><p class="muted" id="merge-note">Awaiting verified merge dates.</p></div><ol id="merge-history" class="merge-history"><li>No merge history loaded.</li></ol></section>
     <section class="workspace" id="ledger" aria-labelledby="ledger-title">
-      <div class="section-top"><div><p class="eyebrow">01 / THE LEDGER</p><h2 id="ledger-title">Implemented work, in context.</h2></div><div class="views" role="group" aria-label="Ledger view"><button type="button" data-view="work" aria-pressed="true">Contributions</button><button type="button" data-view="lessons" aria-pressed="false">Closures & lessons</button></div></div>
+      <div class="section-top"><div><p class="eyebrow">01 / THE LEDGER</p><h2 id="ledger-title">Implemented work, in context.</h2></div><div class="views" role="group" aria-label="Ledger view"><button type="button" data-view="work" aria-pressed="true">Contributions</button><button type="button" data-view="reply" aria-pressed="false">Needs your reply <span id="needs-count">—</span></button><button type="button" data-view="lessons" aria-pressed="false">Closures & lessons</button></div></div>
       <div class="controls"><label class="search-label" for="search"><span>Search the ledger</span><input id="search" type="search" placeholder="Repository, title, blocker, lesson…" autocomplete="off"></label><label for="kind"><span>Contribution type</span><select id="kind"><option value="all">Upstream + own fork</option><option value="upstream">Actual upstream only</option><option value="fork">Own-fork review drafts</option></select></label><label class="action-control"><input id="action" type="checkbox"><span>Blocked only</span></label></div>
       <div class="filter-row"><div class="status-filters" role="group" aria-label="Filter contribution status"><button type="button" data-state="all" aria-pressed="false">All <span>—</span></button><button type="button" data-state="open" aria-pressed="true">Open <span>—</span></button><button type="button" data-state="merged" aria-pressed="false">Official merges <span>—</span></button><button type="button" data-state="reviewed" aria-pressed="false">Fork history <span>—</span></button><button type="button" data-state="closed" aria-pressed="false">Closed <span>—</span></button></div><p id="result-count" role="status" aria-live="polite">Loading ledger…</p></div>
       <p class="notice" id="notice" role="status" hidden></p>
       <div id="records" class="records" aria-busy="true"><div class="empty"><span class="empty-mark" aria-hidden="true">↗</span><h3>Opening the field notes</h3><p>Fetching the latest published snapshot. No contribution counts are assumed.</p></div></div>
       <button class="reset" id="reset" type="button" hidden>Clear filters</button>
     </section>
+    <section id="private-history" class="private-history" aria-labelledby="requests-title" hidden><p class="eyebrow">PRIVATE / NOT PUBLISHED</p><h2 id="requests-title">Your request inbox.</h2><p id="requests-status" role="status"></p><ol id="requests-list" class="request-list"></ol></section>
     <section class="activity-section" aria-labelledby="activity-title"><div><p class="eyebrow">02 / RECENT SIGNAL</p><h2 id="activity-title">From the activity log.</h2><p class="muted">Published events from the snapshot.<br>Not a live GitHub event stream.</p></div><ol id="activity" class="activity"><li>No verified activity loaded.</li></ol></section>
   </main>
   <footer><span class="brand">OPEN SOURCE / FIELD NOTES</span><p>Upstream impact ≠ fork activity. Both deserve an honest record.</p><span id="cadence">Checks for a published snapshot every 60 seconds.</span></footer>
 </div>
+<dialog id="request-dialog" aria-labelledby="request-title" aria-describedby="request-policy"><div class="dialog-heading"><h2 id="request-title">Prepare a private request</h2><button id="request-close" type="button" aria-label="Close request dialog">×</button></div><p id="request-pr"></p><p id="request-policy" class="muted">These actions stay private. Drafting is not permission to send. Final message and policy approval must happen in main Hermes chat; this page never posts to GitHub.</p><p id="request-target" class="muted"></p><label for="request-action">Action</label><select id="request-action"><option value="draft_reply">Draft a reply</option><option value="draft_question">Draft a question</option><option value="mark_handled">Mark handled — local reminder only</option><option value="snooze">Snooze 1 hour — local reminder only</option></select><label for="request-instruction">Your instruction <span id="instruction-required">(required for drafts)</span></label><textarea id="request-instruction" rows="5" maxlength="4000" placeholder="What should the private draft address?"></textarea><p id="request-feedback" role="status" aria-live="polite"></p><div class="request-actions"><button id="request-submit" type="button" disabled>Private companion unavailable</button><button id="request-copy" type="button">Copy instruction for chat</button></div><div id="copy-fallback" hidden><label for="copy-text">Clipboard unavailable. Select and copy this instruction manually.</label><textarea id="copy-text" rows="8" readonly></textarea></div></dialog>
 <noscript><p class="noscript">JavaScript is required to load this public contribution ledger. No data is embedded in this page.</p></noscript>
 </body>
 </html>
