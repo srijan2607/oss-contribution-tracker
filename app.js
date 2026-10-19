@@ -163,6 +163,22 @@
   }
   const storageKey = 'oss-dashboard-private-capability';
   let key = '';
+  // Epochs fence even promises already resolved when abort/disconnect occurs.
+  let privateGeneration = 0, dialogGeneration = 0;
+  const privateControllers = new Set();
+  const sessionCurrent = generation => generation === privateGeneration;
+  const dialogCurrent = (session, dialog) => sessionCurrent(session) && dialog === dialogGeneration;
+  function invalidateDialog() {
+    dialogGeneration++; model.submitting = false; model.attempt = null;
+    $('#copy-text').value = ''; $('#copy-fallback').hidden = true;
+    $('#request-feedback').textContent = '';
+  }
+  function closeRequest() {
+    invalidateDialog(); model.selected = null;
+    $('#request-instruction').value = ''; $('#request-pr').textContent = ''; $('#request-target').textContent = '';
+    if ($('#request-dialog').open) $('#request-dialog').close();
+    updateDialog();
+  }
   const publicHost = /(^|\.)(github\.io|github\.com)$/.test(location.hostname);
   const privateEligible = !publicHost && (location.protocol === 'https:' || (location.protocol === 'http:' && ['localhost', '127.0.0.1', '[::1]'].includes(location.hostname)));
   function rebuildData() {
@@ -173,15 +189,16 @@
     }
   }
   function clearPrivate() {
+    privateGeneration++;
+    for (const controller of privateControllers) controller.abort();
+    privateControllers.clear();
+    model.privateBusy = false;
     key = ''; model.private = false; model.capability = null; model.requests = [];
     model.privateConversations = {}; rebuildData();
     if (model.data) { renderMetrics(); renderRecords(); }
-    model.selected = null; model.attempt = null;
-    $('#request-instruction').value = ''; $('#copy-text').value = ''; $('#copy-fallback').hidden = true;
-    $('#request-feedback').textContent = '';
-    if ($('#request-dialog').open) $('#request-dialog').close();
+    closeRequest();
     try { sessionStorage.removeItem(storageKey); } catch { /* Storage may be blocked. */ }
-    $('#private-history').hidden = true; $('#requests-list').replaceChildren(); $('#disconnect').hidden = true;
+    $('#private-history').hidden = true; $('#requests-list').replaceChildren(); $('#requests-status').textContent = ''; $('#disconnect').hidden = true;
     $('#companion-status').textContent = 'Read-only mode. Private companion unavailable or disconnected. Copy instructions into main Hermes chat; nothing is sent to GitHub.';
     updateDialog();
   }
@@ -189,44 +206,57 @@
     if (!privateEligible || !key || !['/api/control', '/api/requests', '/api/conversations'].includes(path)) throw new Error('Private companion unavailable');
     const target = new URL(path, location.origin);
     if (target.origin !== location.origin) throw new Error('Origin mismatch');
+    const generation = privateGeneration;
     const controller = new AbortController(); const timer = setTimeout(() => controller.abort(), 15000);
+    privateControllers.add(controller);
     try {
       const response = await fetch(target.href, { ...options, credentials: 'omit', redirect: 'error', cache: 'no-store', signal: controller.signal, headers: { ...options.headers, Authorization: 'Bearer ' + key } });
+      if (!sessionCurrent(generation)) throw new Error('Private session changed.');
       if (response.status === 401 || response.status === 403) { if (!options.method || options.method === 'GET') clearPrivate(); }
       if (!response.ok) throw new Error('Private request failed (HTTP ' + response.status + ').');
-      return await response.json();
-    } finally { clearTimeout(timer); }
+      const data = await response.json();
+      if (!sessionCurrent(generation)) throw new Error('Private session changed.');
+      return data;
+    } finally { clearTimeout(timer); privateControllers.delete(controller); }
   }
   async function initPrivate() {
     let candidate = '';
     try { const fragment = new URLSearchParams(location.hash.slice(1)); if (fragment.has('key')) { candidate = fragment.get('key') || ''; history.replaceState(null, '', location.pathname + location.search); } } catch { clearPrivate(); return; }
     if (!privateEligible) { clearPrivate(); return; }
     try { key = candidate || sessionStorage.getItem(storageKey) || ''; } catch { key = candidate; }
+    const nextKey = key;
+    clearPrivate(); key = nextKey;
     if (!key || !/^[a-f0-9]{64}$/.test(key)) { clearPrivate(); return; }
     // A supplied fragment opts in only to this origin. Persist only after capability authentication.
     await refreshPrivate();
   }
   async function refreshPrivate() {
     if (!key || model.privateBusy) return;
+    const generation = privateGeneration;
     model.privateBusy = true;
     try {
       const capabilities = await api('/api/control');
+      if (!sessionCurrent(generation)) return;
       if (!key || capabilities.enabled !== true || capabilities.mode !== 'drafts_only' || capabilities.outbound_authorized !== false) throw new Error('Unsafe or unsupported companion capabilities.');
       model.capability = capabilities; model.private = true;
       try { sessionStorage.setItem(storageKey, key); } catch { /* Memory-only session still works. */ }
       $('#disconnect').hidden = false; $('#private-history').hidden = false;
       $('#companion-status').textContent = 'Authenticated private companion · drafts and local reminders only. A request is never permission to post.';
       const privateData = await api('/api/conversations');
+      if (!sessionCurrent(generation)) return;
       if (!privateData.conversations || typeof privateData.conversations !== 'object' || Array.isArray(privateData.conversations)) throw new Error('Invalid private conversations');
       model.privateConversations = privateData.conversations; rebuildData();
       if (model.data) { renderMetrics(); renderRecords(); }
       updateDialog(); await loadRequests();
-    } catch { clearPrivate(); } finally { model.privateBusy = false; }
+    } catch { if (sessionCurrent(generation)) clearPrivate(); }
+    finally { if (sessionCurrent(generation)) model.privateBusy = false; }
   }
-  async function loadRequests(expectedId) {
+  async function loadRequests(expectedId, expectedDialog) {
+    const generation = privateGeneration;
+    const current = () => sessionCurrent(generation) && model.private && (expectedDialog === undefined || expectedDialog === dialogGeneration);
     try {
       const data = await api('/api/requests');
-      if (!model.private) return false;
+      if (!current()) return false;
       if (!Array.isArray(data.requests)) throw new Error('Invalid private history');
       model.requests = data.requests;
       const list = $('#requests-list'); list.replaceChildren();
@@ -240,7 +270,7 @@
       if (!list.children.length) list.append(el('li', 'muted', 'No private requests recorded.'));
       $('#requests-status').textContent = 'Authenticated history checked ' + format(new Date()) + '. Refreshes every 60 seconds. Queued is not sent; local applied is not a verified GitHub reply.';
       return !expectedId || data.requests.some(r => r && r.id === expectedId);
-    } catch { if (model.private) { $('#requests-list').replaceChildren(); $('#requests-status').textContent = 'Private history unavailable. No results can be verified; refresh again later.'; } return false; }
+    } catch { if (current()) { $('#requests-list').replaceChildren(); $('#requests-status').textContent = 'Private history unavailable. No results can be verified; refresh again later.'; } return false; }
   }
   function targetFor(r) { return safeURL(r.conversation?.latest_human?.url) || safeURL(r.url) || ''; }
   function updateDialog() {
@@ -252,6 +282,7 @@
     $('#request-submit').textContent = model.submitting ? 'Submitting private request…' : !model.private ? 'Private companion unavailable' : !allowed ? 'Action unavailable' : action === 'mark_handled' ? 'Confirm mark handled locally' : action === 'snooze' ? 'Confirm snooze for 1 hour' : 'Queue private draft request';
   }
   function openRequest(r) {
+    invalidateDialog();
     model.selected = r; model.attempt = null;
     $('#request-pr').textContent = text(r.repo) + '#' + text(r.number) + ' · ' + text(r.title);
     $('#request-target').textContent = 'Exact target: ' + (targetFor(r) || 'No valid GitHub target provided.');
@@ -263,27 +294,33 @@
     return ['Private request: ' + $('#request-action').selectedOptions[0].textContent, 'PR: ' + (safeURL(r?.url) || 'Not provided'), 'Exact human target (or PR if none verified): ' + targetFor(r), 'Instruction: ' + ($('#request-instruction').value.trim() || '(No text; explicit local reminder action only.)'), 'Draft only / local reminder only. Do not post to GitHub. Exact final wording and policy approval must be confirmed in main Hermes chat.'].join('\n');
   }
   $('#disconnect').addEventListener('click', clearPrivate);
-  $('#request-close').addEventListener('click', () => $('#request-dialog').close());
-  $('#request-action').addEventListener('change', () => { model.attempt = null; updateDialog(); });
-  $('#request-instruction').addEventListener('input', () => { model.attempt = null; updateDialog(); });
+  $('#request-close').addEventListener('click', closeRequest);
+  $('#request-dialog').addEventListener('close', () => { if (!$('#request-dialog').open) closeRequest(); });
+  $('#request-dialog').addEventListener('cancel', closeRequest);
+  $('#request-action').addEventListener('change', () => { invalidateDialog(); updateDialog(); });
+  $('#request-instruction').addEventListener('input', () => { invalidateDialog(); updateDialog(); });
   $('#request-copy').addEventListener('click', async () => {
+    const generation = privateGeneration, dialog = dialogGeneration;
     const value = instruction(); $('#copy-fallback').hidden = true;
-    try { if (!navigator.clipboard?.writeText) throw new Error('Clipboard unavailable'); await navigator.clipboard.writeText(value); $('#request-feedback').textContent = 'Instruction copied. Paste into main Hermes chat; nothing has been queued or sent.'; }
-    catch { $('#copy-text').value = value; $('#copy-fallback').hidden = false; $('#copy-text').focus(); $('#copy-text').select(); $('#request-feedback').textContent = 'Not copied. Use the selectable instruction below.'; }
+    try { if (!navigator.clipboard?.writeText) throw new Error('Clipboard unavailable'); await navigator.clipboard.writeText(value); if (!dialogCurrent(generation, dialog)) return; $('#request-feedback').textContent = 'Instruction copied. Paste into main Hermes chat; nothing has been queued or sent.'; }
+    catch { if (!dialogCurrent(generation, dialog)) return; $('#copy-text').value = value; $('#copy-fallback').hidden = false; $('#copy-text').focus(); $('#copy-text').select(); $('#request-feedback').textContent = 'Not copied. Use the selectable instruction below.'; }
   });
   $('#request-submit').addEventListener('click', async () => {
     updateDialog(); if ($('#request-submit').disabled) return;
+    const generation = privateGeneration, dialog = dialogGeneration;
     const payload = { pr_id: model.selected.id, action: $('#request-action').value, instruction: $('#request-instruction').value.trim(), target_url: targetFor(model.selected) };
     const serialized = JSON.stringify(payload);
     if (!model.attempt || model.attempt.body !== serialized) model.attempt = { body: serialized, id: globalThis.crypto?.randomUUID?.() || 'ui-' + Date.now() + '-' + Math.random().toString(36).slice(2) };
     model.submitting = true; updateDialog(); $('#request-feedback').textContent = 'Submitting to this private companion only…';
     try {
       const result = await api('/api/requests', { method: 'POST', headers: { 'Content-Type': 'application/json', 'Idempotency-Key': model.attempt.id }, body: serialized });
+      if (!dialogCurrent(generation, dialog)) return;
       if (!result.request?.id) throw new Error('Companion returned no request identifier.');
-      const verified = await loadRequests(result.request.id);
+      const verified = await loadRequests(result.request.id, dialog);
+      if (!dialogCurrent(generation, dialog)) return;
       $('#request-feedback').textContent = 'Request ' + text(result.request.id) + ' · ' + text(result.request.status) + '. ' + (verified ? 'Verified in private history. ' : 'Accepted response received, but history read-back could not verify it. Retry uses the same request ID to avoid duplication. ') + 'Not sent to GitHub; local reminder actions do not prove a human reply.';
-    } catch (error) { $('#request-feedback').textContent = text(error.message) + ' Delivery is unconfirmed. No automatic retry; retrying unchanged text is deduplicated. You can copy the instruction instead.'; }
-    finally { model.submitting = false; updateDialog(); }
+    } catch (error) { if (dialogCurrent(generation, dialog)) $('#request-feedback').textContent = text(error.message) + ' Delivery is unconfirmed. No automatic retry; retrying unchanged text is deduplicated. You can copy the instruction instead.'; }
+    finally { if (dialogCurrent(generation, dialog)) { model.submitting = false; updateDialog(); } }
   });
   setInterval(() => { if (key) refreshPrivate(); }, 60000);
   $('#search').addEventListener('input', e => { model.query = e.target.value.trim().toLocaleLowerCase(); renderRecords(); });
